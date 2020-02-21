@@ -27,7 +27,7 @@ const SEO = ({ description, lang, meta, title, imageSrc }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const imageUrl = imageSrc && `${data.site.siteMetadata.siteUrl}${imageSrc}`
+  const imageUrl = imageSrc && `${site.siteMetadata.siteUrl}${imageSrc}`
 
   return (
     <Helmet
@@ -81,7 +81,9 @@ const SEO = ({ description, lang, meta, title, imageSrc }) => {
           property: `image`,
           content: imageUrl,
         },
-      ].concat(meta)}
+      ]
+        .filter(Boolean)
+        .concat(meta)}
     />
   )
 }
