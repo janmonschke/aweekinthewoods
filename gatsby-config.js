@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `A week in the woods`,
+    author: `Jan Monschke`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://friendly-stonebraker-86d468.netlify.com/`,
     social: {
       twitter: `kylemathews`,
     },
