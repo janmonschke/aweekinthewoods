@@ -25,18 +25,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          {coverImg && (
-            <a href={coverImg.src}>
-              <Image
-                fluid={coverImg}
-                style={{
-                  marginTop: rhythm(1.4),
-                  marginBottom: rhythm(1.4),
-                }}
-              />
-            </a>
-          )}
-
           <h1
             style={{
               marginTop: rhythm(1),
@@ -54,6 +42,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {date}
           </p>
+          {coverImg && (
+            <Image
+              fluid={coverImg}
+              style={{
+                marginTop: rhythm(1.4),
+                marginBottom: rhythm(1.4),
+              }}
+            />
+          )}
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

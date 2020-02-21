@@ -30,10 +30,11 @@ The original plan was to finish the hike in 7 days but we decided on the first d
 
 The start of the West Highland Way is located just north of Glasgow in Milngavie which is easily accessible by train or by car. You will definitely bump into other WHW hikers there eagerly stocking up on supplies and taking pictures at the starting point. The trail starts off smoothly through a lightly vegetated forest, then leads you over farmland, passing by a whiskey distillery always having the peaks of the highlands ahead of you. We were lucky with the weather in the beginning with only very light rain and almost no wind but the sun peeking through the clouds every now and then.
 
-Overcast but mostly dry weather on our way to Drymen
+![](./images/01-drymen-to-conic-hill.jpg)
 
 It did not take us long before we arrived in Drymen where we wanted to camp in one of the dedicated "wild campsites" (farmers offering their backyard and facilities to hikers for some pounds). Since it was still early afternoon and the weather was nice we decided to continue up until Balmaha. After Drymen the path leads you through a forest before arriving at the foot of Conic Hill. Right when we could see Conic Hill through the forest we also saw heavy rain clouds coming towards us which started to rain right when we were ascending the hill. At that point we were halfway to Balmaha and decided it would not make sense to go back to Drymen to stop there.
 
+![](./images/01-loch-lomond-from-conic-hill.jpg)
 Rain started pouring on top of Conic Hill but the view onto Lake Lomond made up for it
 
 The peak of Conic Hill presented a great view onto Loch Lomond. Sadly the rain picked up on our way down to Balmaha which left us arriving completely soaked in the evening. It then turned out that there was no campsite in Balmaha and all hotels were booked out. A quick look in our book showed a campsite a couple of miles outside of Balmaha and we started our the last stretch of our hike right when it started to get dark and the rain still pouring heavily on our already soaked backpacks. When we arrived at the campsite it was pretty hard to find a spot that was not completely flooded but a wet floor was no problem for our tent which I bought with the possibility in mind to pitch it on very wet Scottish soil. The campsite had excellent facilities so we were able to cook with a roof over our heads. We were completely exhausted and the simple pasta dinner tasted like the best thing we ever ate!
@@ -42,13 +43,15 @@ The peak of Conic Hill presented a great view onto Loch Lomond. Sadly the rain p
 
 The morning of day two we had a giant breakfast which contained of ALL the cereals and milk we had brought all at once. We did not anticipate at all the appetite that you get when hiking for almost 40km. It was also this morning that we started to socialise with other hikers for the first time. There was a group of 4 hikers (2 German, 2 English) that we connected with immediately and we decided to start the day together.
 
+![](./images/02-we-reached-loch-lomond.jpg)
+
 It was beautiful to hike in the woods and shores right next to Loch Lomond and the sun also came out for most of the day. The trail was easier than on day one but we both felt the exhaustion in our legs from the previous day and we made more breaks. Hiking with another group really made it easier to forget the exhaustion though and we happily chatted along with them.
 
-Beautiful weather when we reached Loch Lomond
-Drying our wet gear on warm stones at Loch Lomond
-Lunch with a great view on the lake
+![](./images/02-loch-lomond-lunch.jpg)
 
 At noon we stopped for a lunch right at the stone shore with plenty of sun to dry our clothes. The other group decided to take a ferry to shortcut Loch Lomond and we were by ourselves again. Looking at all the clothes that were drying we realised that we packed way too many clothes for the hike. I brought 4 T-Shirts, socks for each day, jeans and two jumpers. I had no prior experience hiking a long trail so I thought it would be like on a regular vacation where you change clothes very often. In the end I only used 2 T-Shirts (fast-drying ones) and three pairs of socks. The jeans I should've just left home since it never really dried during the hike and was just excess weight.
+
+![](./images/02-enjoying-the-view.jpg)
 
 After lunch we met another group of hikers who were had a similar rhythm like us and we continued together along the shores of Loch Lomond. After some hours it started to rain heavily again and we found shelter in the Inversnaid Hotel where, of all people, we met the group of hikers from the morning again. They also got caught in the rain after leaving the ferry. Since it did not stop raining we all camped at the Inversnaid Bunkhouse which has a tiny campsite but great facilities and warm, comfy food. It felt great to warm up with the entire group in the bunk house after all the rain.
 
