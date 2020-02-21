@@ -4,6 +4,8 @@ date: "2019-12-12"
 cover: "./cover.jpg"
 ---
 
+![](./cover.jpg)
+
 The West Highland Way (WHW) was my first ever long-distance hike. Before that I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And I, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are.
 
 In May 2014 I spoke at a conference in Edinburgh, Scotland. While preparing for the talk I got in touch with the organiser's to ask about nice day hikes in the Edinburgh region. I was told there were some nice ones but they were not comparable with the ones in the Highlands and I should rather looking into going on a longer hike there for example the famous West Highland Way. A quick image search resulted in pictures of the stunning landscapes of the Highlands and I was immediately convinced that this was the hike I wanted to go on. Gladly I was not the only one who was super into that idea and a friend happily offered to hike it with me.

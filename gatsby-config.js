@@ -3,9 +3,9 @@ module.exports = {
     title: `A week in the woods`,
     author: `Jan Monschke`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://friendly-stonebraker-86d468.netlify.com/`,
+    siteUrl: `https://friendly-stonebraker-86d468.netlify.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `janmonschke`,
     },
   },
   plugins: [

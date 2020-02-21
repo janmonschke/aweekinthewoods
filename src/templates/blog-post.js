@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -14,7 +13,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const { cover, title, description, date } = post.frontmatter
-  const coverImg = cover && cover.childImageSharp.fluid
+  const coverImg = cover && cover.childImageSharp.fixed
 
   return (
     <Layout location={location} title={siteTitle} className="blogPost">
@@ -42,15 +41,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           >
             {date}
           </p>
-          {coverImg && (
-            <Image
-              fluid={coverImg}
-              style={{
-                marginTop: rhythm(1.4),
-                marginBottom: rhythm(1.4),
-              }}
-            />
-          )}
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
@@ -112,8 +102,8 @@ export const pageQuery = graphql`
         description
         cover {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fixed {
+              ...GatsbyImageSharpFixed
             }
           }
         }
