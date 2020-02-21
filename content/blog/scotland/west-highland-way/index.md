@@ -10,12 +10,6 @@ In May 2014 I spoke at a conference in Edinburgh, Scotland. While preparing for 
 
 The West Highland Way is a long-distance hike that leads you over 154km (96mi) through the west highlands in Scotland. It's a quite famous hike as it offers a variety of landscapes and is very beginner friendly due it's many places to stock up your food supplies and the many hotels along the way. We, however, decided to pack tent and stove and go all in on this hike.
 
-## Research
-
-As for all famous Scottish hikes, the best source of information for the West Highland Way is [walkhighlands.co.uk][]. There you will find detailed section descriptions with images and exhaustive lists of accommodations along the trail. As it turns out, this hike is probably one of the best equipped hikes in Scotland and for every sections there are plenty of options to refill your water, to re-stock with food and to stay over night (hotels and campsites). Each hike on that website has a little forum where people share their experiences and tips and tricks which I found really helpful (even though I should have read them more carefully ;) ).
-
-In addition to the website I bought a book with maps which seemed to be the go-to book for the trail. I saw so many other hikers with the same book while hiking and I can recommend it a lot. It's this one: West Highland Way by Charlie Loram. The maps are hand-drawn which at first seems silly but they turned out to be very exact and the measurements (time and distance) always prove to be correct. On top of that it has great descriptions of the landmarks, the towns, the trails's history and all accommodations.
-
 ## Itinerary
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1gXGDClJ1598Wz-I2wyujKGGvC28"></iframe>
@@ -132,12 +126,18 @@ Ben Lomond
 
 That big breakfast gave us the needed energy for the last leg up the mountains, through valleys, alongside moors with stunning views on various munros. The weather was great again, no wind, the sun was shining as if Scotland wanted to show itself from its best side on this last stretch. Hiking into Fort William felt great, even though people give you the looks for showing up in dirty hiking clothes but it didn't matter to us. Finishing was a great feeling and we rested up in the sun in Fort Williams that afternoon. Our train left later that day and it took just 3.5h to get back to Glasgow. 3.5h by train what took us 6 days by foot ;)
 
-Learnings
+## Learnings
 
 This being my first long-distance hike, I naturally made many mistakes. The first one being that I packed way too many things. I probably did not thing about it too much before, because why else would I have started the hike in jeans and brought so many extra pairs of clothes. It is totally fine to not wear fresh clothes every day. After one day of hiking your fresh clothes will be dirty again anyways so it does not really make a difference if they're worn when you start the next day. It will only take you a day or two to get used to it but it is totally fine.
 
 The next thing I learned was to get yourself familiar with your gear before you start the hike. In our case we had troubles setting up the tent at night with heavy rain pouring down on us because we had never really set it up before. Try to set up your tent just once before you start and you're good ;) Same goes for your backpack. You should find a comfortable setting before you start, otherwise you will spend days fiddling around with it which can be very tiring. Best seek for help in an outdoor shop, the staff there usually is pretty helpful.
 
 Boots! Yes, boots! Bring boots that are worn in and that you feel comfortable in. This was probably my biggest problem on the hike. I had bought boots just before the hike, the same ones that I usually bought, but I did not wear them in before which resulted in very bad blisters from day one on. Whenever I buy a pair of boots now I make sure to wear them for a couple of days during the week or I go on day hikes. You really don't want to increase the risk for blisters on such a long hike. It is probably not possible to 100% prevent them, but at least you're minimizing the risk by bringing good shoes.
+
+## Research
+
+As for all famous Scottish hikes, the best source of information for the West Highland Way is [walkhighlands.co.uk][]. There you will find detailed section descriptions with images and exhaustive lists of accommodations along the trail. As it turns out, this hike is probably one of the best equipped hikes in Scotland and for every sections there are plenty of options to refill your water, to re-stock with food and to stay over night (hotels and campsites). Each hike on that website has a little forum where people share their experiences and tips and tricks which I found really helpful (even though I should have read them more carefully ;) ).
+
+In addition to the website I bought a book with maps which seemed to be the go-to book for the trail. I saw so many other hikers with the same book while hiking and I can recommend it a lot. It's this one: West Highland Way by Charlie Loram. The maps are hand-drawn which at first seems silly but they turned out to be very exact and the measurements (time and distance) always prove to be correct. On top of that it has great descriptions of the landmarks, the towns, the trails's history and all accommodations.
 
 [walkhighlands.co.uk]: https://walkhighlands.co.uk
