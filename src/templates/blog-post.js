@@ -25,13 +25,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <Image
-            fluid={coverImg}
-            style={{
-              marginTop: rhythm(1.4),
-              marginBottom: rhythm(1.4),
-            }}
-          />
+          <a href={coverImg.src}>
+            <Image
+              fluid={coverImg}
+              style={{
+                marginTop: rhythm(1.4),
+                marginBottom: rhythm(1.4),
+              }}
+            />
+          </a>
+
           <h1
             style={{
               marginTop: rhythm(1),
