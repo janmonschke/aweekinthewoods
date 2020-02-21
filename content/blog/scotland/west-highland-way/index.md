@@ -1,7 +1,7 @@
 ---
 title: West Highland Way (2014)
 date: "2019-12-12"
-cover: "./cover2.jpg"
+cover: "./cover.jpg"
 ---
 
 The West Highland Way (WHW) was my first ever long-distance hike. Before that I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And I, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are.
