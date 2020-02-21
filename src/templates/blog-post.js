@@ -21,7 +21,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <SEO
         title={title}
         description={description || post.excerpt}
-        coverSrc={coverImg.src}
+        coverSrc={coverImg && coverImg.src}
       />
       <article>
         <header>
