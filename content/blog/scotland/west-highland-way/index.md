@@ -59,40 +59,42 @@ After lunch we met another group of hikers who were had a similar rhythm like us
 
 ### <a name='section3'></a>Day 3: Inversnaid to Tyndrum (30km)
 
-The morning after another rainy night
+![](./images/03-inversnaid-bunkhouse-campsite.jpg)
 Inversnaid Bunkhouse has a small but ideal campsite
 
 We woke up early from the sun shining super bright onto our tent and the sun kept shining the entire day. This was probably the best day on our hike. Starting out with the German / English crew onto the last section on the hike next to Loch Lomond. There were more and more hills on the trail now and it really felt like we finally arrived in the Highlands. The north of Loch Lomond was even more beautiful than what we had seen of it the prior days but we were also looking forward to finally reach the hills.
 
-North of Loch Lomond
-Almost the end of Loch Lomond with great view on the mountains
-Walking through marsh landscape
-
-Resting in the shade after reaching the end of Loch Lomond
+![](./images/03-loch-lomond-marshland.jpg)
+![](./images/03-mountains-after-loch-lomond.jpg)
 
 After a lunch stop in Inverarnan we said goodbye to the other group who had to take a break in that town due injuries and my friend and me were on our own again. But only for a short period of time because we started talking to a fellow hiker who was going at a pretty fast pace. He agreed to hike together for some time but he wanted us to not feel like we had to walk slower only to join him because he was already 64 years old and probably not as fast as us. He said that while pretty much running next us. His name was Collin and he was a shepherd. It was perfect to hike with him because he taught us so much about the flowers and animals along the path which kept us very entertained.
 
-It always stunned me how far you could see on the trail
-Beautiful Highlands
-Reaching Tyndrum via the road
+![](./images/03-mountain-views.jpg)
 
-We decided to hike together up until Tyndrum and he told us that he would always stop there to get his favourite Cullen Sink, a rich potato soup with smoke Haddock. The second half of this section provided us with nice hikes through the hills with great weather. Just a perfect place and time for a hike. On top of that we also saw the Hogwarts Express which is the actual train from the Harry Potter movies which rides through the Highlands a couple of times per day. We were completely caught off guard when it arrived and it was a pretty magical moment seeing it. Even though we did not want to hike for that long again, he kept motivating us to push through with him. Sadly we arrived just 15 minutes too late for the restaurant that served his soup but found a great pub that had enormous pizzas which was an equally good alternative. We pitched our tents together just outside of Tyndrum, next to, what we only found out the next morning, what seemed to be an abandoned grave yard 👻.
+We decided to hike together up until Tyndrum and he told us that he would always stop there to get his favourite Cullen Sink, a rich potato soup with smoke Haddock. The second half of this section provided us with nice hikes through the hills with great weather. Just a perfect place and time for a hike. On top of that we also saw the Hogwarts Express which is the actual train from the Harry Potter movies which rides through the Highlands a couple of times per day. We were completely caught off guard when it arrived and it was a pretty magical moment seeing it.
+
+![](./images/03-reaching-tyndrum-by-road.jpg)
+
+Even though we did not want to hike for that long again, he kept motivating us to push through with him. Sadly we arrived just 15 minutes too late for the restaurant that served his soup but found a great pub that had enormous pizzas which was an equally good alternative. We pitched our tents together just outside of Tyndrum, next to, what we only found out the next morning, what seemed to be an abandoned grave yard 👻.
 
 ### <a name='section4'></a>Day 4: Tyndrum to Kingshouse (29km)
 
+![](./images/04-into-the-mountains-after-tyndrum.jpg)
+
 Colin was already gone when we woke up the next day. We think we were probably too slow for him ;) This section of the hike was again dominated by green hills and a lot of up and down but started with several miles of mostly level hiking on the foot of several hills. An easy start after the long day before. After passing Bridge of Orchy the path got more challenging going up Black Mount and then passing several lochs and moors. Again very typical Scottish landscape that did not grew old on us.
 
-IRN BRU gives you all the energy you need ;)
-Many natural sources to refill your water
-Gloomy atmosphere arriving at Kingshouse
+![](./images/04-irnbru-tea-time.jpg)
+IRN Bru tea time on our way to Kingshouse
 
-Yes, there was still snow on top of some mountains
+![](./images/04-gloomy-weather-kingshouse.jpg)
 
 We expected bad weather on this section from feedback that we got from other hikers and the book guide but apart from some drops of rain and fog on the hills we were fine. The last bit that day was a long descend into the valley of Kingshouse. Kingshouse is a hotel in the middle of nowhere, literally the middle of nowhere. There is a highway in the valley but no other houses in sight for several kilometres. After what seemed like an eternity we finally arrived at the Kingshouse campsite (free!) and were greeted by a smiling Colin who arrived there an hour before us.
 
-Kingshouse tent pitch
-Tent pitch behind Kingshouse right next to a creek
-Kingshouse
+![](./images/04-kingshouse-campsite.jpg)
+Perfect campsite at Kingshouse, right next to a creek
+
+![](./images/04-kingshouse-campsite-deer.jpg)
+It's not uncommon to befriend some of the local wildlife at the campsite
 
 We pitched our tent next to the many other tents right behind Kingshouse surrounded by deer. A very magical place to arrive to after a long hike. While the main hotel is not open for hikers without reservations, Kingshouse has a special pub-like room dedicated to WHW hikers where they serve gigantic dinners and a variety of local whiskeys. We spent the evening eating, drinking and talking with our friend Colin and his daughter (who joined him there to finish the rest of hike together). It always surprises me how easy it is to get caught in deep conversations with people that you just met that day. Must be something about the hiker's nature...
 
