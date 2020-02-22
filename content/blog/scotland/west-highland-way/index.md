@@ -6,11 +6,9 @@ cover: "./cover.jpg"
 
 ![](./cover.jpg)
 
-The West Highland Way (WHW) was my first ever long-distance hike. Before that I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And I, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are.
-
-In May 2014 I spoke at a conference in Edinburgh, Scotland. While preparing for the talk I got in touch with the organiser's to ask about nice day hikes in the Edinburgh region. I was told there were some nice ones but they were not comparable with the ones in the Highlands and I should rather looking into going on a longer hike there for example the famous West Highland Way. A quick image search resulted in pictures of the stunning landscapes of the Highlands and I was immediately convinced that this was the hike I wanted to go on. Gladly I was not the only one who was super into that idea and a friend happily offered to hike it with me.
-
 The West Highland Way is a long-distance hike that leads you over 154km (96mi) through the west highlands in Scotland. It's a quite famous hike as it offers a variety of landscapes and is very beginner friendly due it's many places to stock up your food supplies and the many hotels along the way. We, however, decided to pack tent and stove and go all in on this hike.
+
+The West Highland Way (WHW) was my first ever long-distance hike. Before, I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are. This long-distance hike report is from the summer of 2014.
 
 ## Itinerary
 
@@ -26,30 +24,32 @@ The West Highland Way is a long-distance hike that leads you over 154km (96mi) t
 1. [Kingshouse to Kinlochleven MacDonald Campsite](#section5) (15km)
 1. [Kinlochleven MacDonald Campsite to Fort William](#section6) (23km)
 
-The original plan was to finish the hike in 7 days but we decided on the first day that it would be a great idea to actually do it in only 6 days. We made that decision before it started to rain that afternoon and not knowing that we would have to hike way longer than planned because it was forbidden to camp at the beginning of the WHW back then. Since there are plenty of villages along the trail you can also make more stops than we did. In fact, if you want to fully indulge on the beautiful landscapes, you should make more stops.
+The original plan was to finish the hike in 7 days, but on the first day we decided that it would be a great idea to actually do it in only 6 days ;). We made that decision before it started to rain that afternoon and not knowing that we would have to hike a lot longer than planned that day, because it was forbidden to camp at the beginning of the hike back then. Since there are plenty of villages along the trail we could have stopped before, but we were already committed.
 
 ### <a name='section1'></a>Day 1: Milngavie to Milarrochry Bay (37km)
 
-The start of the West Highland Way is located just north of Glasgow in Milngavie which is easily accessible by train or by car. You will definitely bump into other WHW hikers there eagerly stocking up on supplies and taking pictures at the starting point. The trail starts off smoothly through a lightly vegetated forest, then leads you over farmland, passing by a whiskey distillery always having the peaks of the highlands ahead of you. We were lucky with the weather in the beginning with only very light rain and almost no wind but the sun peeking through the clouds every now and then.
+The start of the West Highland Way is located just north of Glasgow in Milngavie which is easily accessible by train or by car. You will definitely bump into other WHW hikers there. Everyone is eager to stock up on supplies and taking pictures at the starting point. The trail starts off smoothly through a lightly vegetated forest, then leads you over farmland, passing by a whiskey distillery. You are always facing the peaks of the highlands ahead of you. We were lucky with the weather in the beginning with only very light rain and almost no wind but plenty of sun peeking through the clouds every now and then.
 
 ![](./images/01-drymen-to-conic-hill.jpg)
 <span class="image-caption">First views of Loch Lomond right after Drymen</span>
 
-It did not take us long before we arrived in Drymen where we wanted to camp in one of the dedicated "wild campsites" (farmers offering their backyard and facilities to hikers for some pounds). Since it was still early afternoon and the weather was nice we decided to continue up until Balmaha. After Drymen the path leads you through a forest before arriving at the foot of Conic Hill. Right when we could see Conic Hill through the forest we also saw heavy rain clouds coming towards us which started to rain right when we were ascending the hill. At that point we were halfway to Balmaha and decided it would not make sense to go back to Drymen to stop there.
+It did not take us long before we arrived in Drymen where we wanted to camp in one of the dedicated "wild campsites" (farmers offering their backyard and facilities to hikers for some pounds). Since it was still early afternoon and the weather was nice, we decided to continue further until Balmaha. After Drymen, the path leads you through a forest before arriving at the foot of Conic Hill. Right when we could see Conic Hill through the forest we also saw heavy rain clouds coming towards us and the rain started right when we were starting the ascent. At that point we were halfway to Balmaha and decided it would not make sense to go back to Drymen and stop there, rather than pushing over the the hill.
 
 ![](./images/01-loch-lomond-from-conic-hill.jpg)
 <span class="image-caption">Rain started pouring on top of Conic Hill but the view onto Lake Lomond made up for it</span>
 
-The peak of Conic Hill presented a great view onto Loch Lomond. Sadly the rain picked up on our way down to Balmaha which left us arriving completely soaked in the evening. It then turned out that there was no campsite in Balmaha and all hotels were booked out. A quick look in our book showed a campsite a couple of miles outside of Balmaha and we started our the last stretch of our hike right when it started to get dark and the rain still pouring heavily on our already soaked backpacks. When we arrived at the campsite it was pretty hard to find a spot that was not completely flooded but a wet floor was no problem for our tent which I bought with the possibility in mind to pitch it on very wet Scottish soil. The campsite had excellent facilities so we were able to cook with a roof over our heads. We were completely exhausted and the simple pasta dinner tasted like the best thing we ever ate!
+The peak of Conic Hill presented a great view onto Loch Lomond. Sadly the rain picked up even more on our way down to Balmaha which left us arriving completely soaked in the evening. It then turned out that there was no campsite in Balmaha and all hotels were booked out. A quick look in our guide book showed a campsite a couple of miles outside of Balmaha. So we started the last stretch of that day right when it started to get dark and when the rain was still pouring heavily onto our already soaked backpacks.
+
+When we arrived at the campsite it was pretty hard to find a spot that was not completely flooded. Luckily, a wet ground was no problem for our tent. I bought it with the possibility in mind to pitch it on very wet Scottish soil. The campsite had excellent facilities so we were able to cook in a dry spot with a roof over our heads. We were completely exhausted and the simple pasta dinner tasted like the best thing we ever ate!
 
 ### <a name='section2'></a>Day 2: Milarrochry Bay to Inversnaid (17km)
 
-The morning of day two we had a giant breakfast which contained of ALL the cereals and milk we had brought all at once. We did not anticipate at all the appetite that you get when hiking for almost 40km. It was also this morning that we started to socialise with other hikers for the first time. There was a group of 4 hikers (2 German, 2 English) that we connected with immediately and we decided to start the day together.
+The next morning we had a giant breakfast which contained of ALL the cereals and milk we had brought. We did not anticipate at all the appetite that you get when hiking for almost 40km. It was also this morning that we started to mingle with other hikers for the first time. There was a group of 4 hikers (2 German, 2 English) that we bonded with immediately and we decided to start to hike together that day.
 
 ![](./images/02-we-reached-loch-lomond.jpg)
 <span class="image-caption">We started the morning hiking along Loch Lomond</span>
 
-It was beautiful to hike in the woods and shores right next to Loch Lomond and the sun also came out for most of the day. The trail was easier than on day one but we both felt the exhaustion in our legs from the previous day and we made more breaks. Hiking with another group really made it easier to forget the exhaustion though and we happily chatted along with them.
+It was beautiful to hike in the woods and shores right next to Loch Lomond and the sun also came out for most of the day. The trail was easier than on the day before but we both felt the exhaustion in our legs. Nedless to say, we took it a lot easier that day and made sure to take more breaks. Hiking with other people also really made it easier to forget the exhaustion.
 
 ![](./images/02-loch-lomond-lunch.jpg)
 <span class="image-caption">Enjoying a hearty lunch at the shore of Loch Lomond</span>
