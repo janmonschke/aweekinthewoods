@@ -1,10 +1,10 @@
 ---
-title: "3 days of mountain hiking in the Auvergne"
+title: "Mountain hiking in the Auvergne"
 date: "2018-03-02"
 cover: "./cover.jpg"
 ---
 
-![3 days of mountain hiking in the Auvergne](./cover.jpg)
+![Mountain hiking in the Auvergne](./cover.jpg)
 
 This hike I wanted to be different. I wanted to go into the mountains walking all day under the sun. I also wanted it to be less strenuous than the other multi day hikes before. Little did I know when planning this trip how much more exhausting it is to climb mountains, especially when it’s 30°C all day long.
 

@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,21 +16,22 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const { title, cover } = node.frontmatter
         const coverImg = cover && cover.childImageSharp.fluid
-        console.log(coverImg)
+        console.log(scale(20))
         return (
-          <article key={node.fields.slug}>
-            <header>
-              <Image fluid={coverImg} />
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+          <article key={node.fields.slug} style={{ marginBottom: rhythm(2.4) }}>
+            <header style={{ marginBottom: rhythm(1.4) }}>
+              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <h2
+                  style={{
+                    marginBottom: rhythm(1),
+                    textAlign: "center",
+                    ...scale(1.2),
+                  }}
+                >
                   {title || node.fields.slug}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
+                </h2>
+                <Image fluid={coverImg} />
+              </Link>
             </header>
             <section>
               <p
@@ -58,7 +59,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 400)
           fields {
             slug
           }
