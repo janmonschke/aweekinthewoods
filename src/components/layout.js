@@ -16,6 +16,7 @@ const Layout = ({ location, title, className, children }) => {
           ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
+          textAlign: "center",
         }}
       >
         <Link
@@ -32,7 +33,7 @@ const Layout = ({ location, title, className, children }) => {
     )
   } else {
     header = (
-      <h3>
+      <h3 style={{ textAlign: "center" }}>
         <Link
           style={{
             boxShadow: `none`,

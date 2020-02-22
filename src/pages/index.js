@@ -15,12 +15,14 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const { title, cover } = node.frontmatter
+        const displayTitle = title || node.fields.slug
+        const articleLink = node.fields.slug
         const coverImg = cover && cover.childImageSharp.fluid
-        console.log(scale(20))
+
         return (
           <article key={node.fields.slug} style={{ marginBottom: rhythm(2.4) }}>
             <header style={{ marginBottom: rhythm(1.4) }}>
-              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <Link style={{ boxShadow: `none` }} to={articleLink}>
                 <h2
                   style={{
                     marginBottom: rhythm(1),
@@ -28,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
                     ...scale(1.2),
                   }}
                 >
-                  {title || node.fields.slug}
+                  {displayTitle}
                 </h2>
                 <Image fluid={coverImg} />
               </Link>
@@ -38,7 +40,11 @@ const BlogIndex = ({ data, location }) => {
                 dangerouslySetInnerHTML={{
                   __html: node.excerpt,
                 }}
+                style={{
+                  marginBottom: rhythm(0.4),
+                }}
               />
+              <Link to={articleLink}>Continue reading</Link>
             </section>
           </article>
         )
