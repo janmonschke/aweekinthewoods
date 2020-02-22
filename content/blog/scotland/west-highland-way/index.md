@@ -69,7 +69,7 @@ We woke up early from the sun shining super bright onto our tent and the sun kep
 
 After a lunch stop in Inverarnan we said goodbye to the other group who had to take a break in that town due injuries and my friend and me were on our own again. But only for a short period of time because we started talking to a fellow hiker who was going at a pretty fast pace. He agreed to hike together for some time but he wanted us to not feel like we had to walk slower only to join him because he was already 64 years old and probably not as fast as us. He said that while pretty much running next us. His name was Collin and he was a shepherd. It was perfect to hike with him because he taught us so much about the flowers and animals along the path which kept us very entertained.
 
-![](./images/03-mountain-views.jpg)
+![](./images/03-mountain-views-before-tyndrum.jpg)
 
 We decided to hike together up until Tyndrum and he told us that he would always stop there to get his favourite Cullen Sink, a rich potato soup with smoke Haddock. The second half of this section provided us with nice hikes through the hills with great weather. Just a perfect place and time for a hike. On top of that we also saw the Hogwarts Express which is the actual train from the Harry Potter movies which rides through the Highlands a couple of times per day. We were completely caught off guard when it arrived and it was a pretty magical moment seeing it.
 
@@ -100,38 +100,40 @@ We pitched our tent next to the many other tents right behind Kingshouse surroun
 
 ### <a name='section5'></a>Day 5: Kingshouse to Kinlochleven (15km)
 
-Fellow hikers
-Sun and clouds providing us with a stunning atmosphere
+![](./images/05-view-of-mountains-from-kingshouse.jpg)
 View on the mountains right behind Kingshouse
+
+![](./images/05-fellow-hikers-on-their-way-to-kinlochleven.jpg)
+Fellow hikers
 
 Again, Colin had already left when we woke up, even though we set an early timer. We wanted to be up early for this section. Not a long section but definitely a tough one since the first major hurdle on this hike is the devil's staircase. After descending to Kingshouse's valley the day before we now had to go back up the mountain on this steep zig-zag path that just did not want to end. To be fair, we had walked faster than we had anticipated and our untrained bodies were not ready for hiking so long without a pause. So this steep incline took us quite a while to finish. Almost at the top we had a quick snack break and we turned around to take in the great views onto Glencoe. The entire day we hiked with great views until we started the descent onto Kinlochleven which should mark our stop for that day.
 
-Crossing rivers on our way to Kinlochleven
+![](./images/05-path-to-kinlochleven.jpg)
+Sun and clouds providing us with a stunning atmosphere
+
+![](./images/05-kinlochleven-campsite.jpg)
 Resting at MacDonal campsite in Kinlochleven
 
 A shorter day than usual but a well deserved "rest" day. When we arrived at the MacDonald Campsite we met the English / German hiking group again who made their way to Kinlochleven partly by bus and small hikes. They seemed very beaten up but when they saw us they lit up again.
 
 ### <a name='section6'></a>Day 6: Kinlochleven to Fort William
 
-More bacon
-All of the eggs we had left
-English bacon
-
-Preparing a big breakfast in save distance from the midges
+![](./images/06-view-on-mountains-after-kinlochleven.jpg)
+View on Kinlochleven after hiking up the mountains for a couple kilometers
 
 For our last day of hiking we wanted to make sure to start with a great breakfast so we cooked up pretty much all we had left from in our bags. The day before we found a great spot at the campsite right next to a lake and we were wondering why no one pitched their tent there. Well, we found out pretty quickly why that morning because we got attacked by clouds of Highland midges. Many people had warned us about these special kinds of mosquitos that only exist in the Scottish Highlands but we were lucky to not have encountered them before. They do bite, but their bites don't sting much and go away quite quickly. The worst thing about them is the fact that they are super tiny and come in clouds that eat surround you within seconds. Luckily we could cook in a little shed, safe from the beasts.
 
-Again, beautiful weather on our last day
+![](./images/06-valleys-on-our-way-to-fort-william.jpg)
 Great valley on the final stretch
-View on Kinlochleven after hiking up the mountains for a couple kilometers
 
-Mountain in the clouds
-So many sheep!
-View on Ben Lomond
-
+![](./images/06-ben-lomond.jpg)
 Ben Lomond
 
-That big breakfast gave us the needed energy for the last leg up the mountains, through valleys, alongside moors with stunning views on various munros. The weather was great again, no wind, the sun was shining as if Scotland wanted to show itself from its best side on this last stretch. Hiking into Fort William felt great, even though people give you the looks for showing up in dirty hiking clothes but it didn't matter to us. Finishing was a great feeling and we rested up in the sun in Fort Williams that afternoon. Our train left later that day and it took just 3.5h to get back to Glasgow. 3.5h by train what took us 6 days by foot ;)
+That big breakfast gave us the needed energy for the last leg up the mountains, through valleys, alongside moors with stunning views on various munros. The weather was great again, no wind, the sun was shining as if Scotland wanted to show itself from its best side on this last stretch.
+
+![](./images/06-we-made-it.jpg)
+
+Hiking into Fort William felt great, even though people give you the looks for showing up in dirty hiking clothes but it didn't matter to us. Finishing was a great feeling and we rested up in the sun in Fort Williams that afternoon. Our train left later that day and it took just 3.5h to get back to Glasgow. 3.5h by train what took us 6 days by foot ;)
 
 ## Learnings
 
