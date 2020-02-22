@@ -4,6 +4,12 @@
   margin: 0 auto;
 }
 
+.image-caption {
+  margin-top: 0.5em;
+  text-align: center;
+  display: block;
+}
+
 .layout .gatsby-resp-image-wrapper,
 .layout section .gatsby-image-wrapper {
   margin-left: -200px !important;
