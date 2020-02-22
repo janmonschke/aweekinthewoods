@@ -16,7 +16,7 @@ const BlogPostFooter = ({ date }) => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 100, height: 100) {
+          fixed(width: 80, height: 80) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -42,7 +42,7 @@ const BlogPostFooter = ({ date }) => {
         style={{
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
-          minWidth: 100,
+          minWidth: 80,
           borderRadius: `100%`,
         }}
         imgStyle={{
@@ -51,7 +51,7 @@ const BlogPostFooter = ({ date }) => {
       />
       <p style={{ marginBottom: 0 }}>
         Written by <strong>{author}</strong>, an avid hiker living in Berlin,
-        which is way too far from the mountains.
+        which is way too far away from the mountains.
         <p
           style={{
             ...scale(-1 / 10),
