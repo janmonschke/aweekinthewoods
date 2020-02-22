@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import BlogPostFooter from "../components/blogpost-footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 import "./blog-post.css"
 
@@ -23,33 +23,22 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         coverSrc={coverImg && coverImg.src}
       />
       <article>
-        <header>
+        <header style={{ textAlign: "center" }}>
           <h1
             style={{
-              marginTop: rhythm(1),
-              marginBottom: 0,
+              marginTop: rhythm(2),
+              marginBottom: rhythm(2),
             }}
           >
             {post.frontmatter.title}
           </h1>
-          <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-              marginBottom: rhythm(1),
-            }}
-          >
-            {date}
-          </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          style={{ marginBottom: rhythm(2) }}
         />
-        <footer>
-          <Bio />
+        <footer style={{ marginBottom: rhythm(2) }}>
+          <BlogPostFooter date={date} />
         </footer>
       </article>
 

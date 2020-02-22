@@ -1,5 +1,5 @@
 ---
-title: West Highland Way (2014)
+title: West Highland Way
 date: "2019-12-12"
 cover: "./cover.jpg"
 ---
