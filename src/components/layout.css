@@ -11,7 +11,8 @@
 }
 
 .layout .gatsby-resp-image-wrapper,
-.layout section .gatsby-image-wrapper {
+.layout section .gatsby-image-wrapper,
+.layout.blog-index .gatsby-image-wrapper {
   margin-left: -200px !important;
   margin-right: -200px !important;
 }
@@ -29,7 +30,8 @@
   }
 
   .layout.layout .gatsby-resp-image-wrapper,
-  .layout.layout section .gatsby-image-wrapper {
+  .layout.layout section .gatsby-image-wrapper,
+  .layout.layout.blog-index .gatsby-image-wrapper {
     margin-left: -100px !important;
     margin-right: -100px !important;
   }
@@ -41,7 +43,8 @@
   }
 
   .layout.layout.layout .gatsby-resp-image-wrapper,
-  .layout.layout.layout section .gatsby-image-wrapper {
+  .layout.layout.layout section .gatsby-image-wrapper,
+  .layout.layout.blog-index .gatsby-image-wrapper {
     margin-left: -40px !important;
     margin-right: -40px !important;
   }
@@ -54,7 +57,8 @@
   }
 
   .layout.layout.layout.layout .gatsby-resp-image-wrapper,
-  .layout.layout.layout.layout section .gatsby-image-wrapper {
+  .layout.layout.layout.layout section .gatsby-image-wrapper,
+  .layout.layout.blog-index.layout .gatsby-image-wrapper {
     margin-left: -20px !important;
     margin-right: -20px !important;
   }

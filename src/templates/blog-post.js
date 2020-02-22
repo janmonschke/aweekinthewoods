@@ -12,14 +12,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-  const { cover, title, description, date } = post.frontmatter
+  const { cover, title, date } = post.frontmatter
   const coverImg = cover && cover.childImageSharp.fixed
 
   return (
     <Layout location={location} title={siteTitle} className="blogPost">
       <SEO
         title={title}
-        description={description || post.excerpt}
+        description={post.excerpt}
         coverSrc={coverImg && coverImg.src}
       />
       <article>
@@ -88,7 +88,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
         cover {
           childImageSharp {
             fixed {
