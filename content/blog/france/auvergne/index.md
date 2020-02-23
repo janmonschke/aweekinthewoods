@@ -151,8 +151,8 @@ Puy Mary turned out to be a tough scramble. The ascent is definitely doable for 
 
 The perfect reward for climbing the Puy Mary is a big meal at the restaurant that is right at its foot on the northern side. I can highly recommend the **Truffade**, a delicious mix of potatoes and melted cheeses.
 
-![Watching paragliders on our ascend](./images/03-watching-paragliders.jpg)
-<span class="image-caption">Watching paragliders on our ascend</span>
+![Watching paragliders on our ascent](./images/03-watching-paragliders.jpg)
+<span class="image-caption">Watching paragliders on our ascent</span>
 
 After a long rest at the restaurant we walked the remaining 12km of the day down into Le Falgoux on a very slight descending slope. We could all feel the exhaustion of the last days in our muscles and bones so we took our time and just enjoyed the view.
 
