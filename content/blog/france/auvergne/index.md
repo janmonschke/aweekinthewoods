@@ -14,7 +14,7 @@ The Auvergne region in France seemed like the perfect beginner region to start m
 
 In total the GR400 is 133km long of which we hiked 52km in three days. It makes for a great combination of a shorter hike and vacation in the countryside in France.
 
-## Itinerary
+## Map
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Hp-H3HSlLKOjw-Og2gOW_VNqrQ"></iframe>
 

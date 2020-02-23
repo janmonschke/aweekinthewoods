@@ -12,10 +12,10 @@ The West Highland Way is a long-distance hike that leads you over 154km (96mi) t
 
 The West Highland Way (WHW) was my first ever long-distance hike. Before, I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are. This long-distance hike report is from the summer of 2014.
 
-## Itinerary
+## Map
 
 <iframe src="https://www.google.com/maps/d/embed?mid=1gXGDClJ1598Wz-I2wyujKGGvC28"></iframe>
-(I marked all our stops on the map with blue markers)
+(I marked all our campsites on the map with blue markers)
 
 ## Sections
 
@@ -163,7 +163,7 @@ Boots! Yes, boots! **Bring boots that are worn in and that you feel comfortable 
 
 ## Research
 
-As for all famous Scottish hikes, the best source of information for the West Highland Way is **[walkhighlands.co.uk][]**. There you will find detailed section descriptions with images and exhaustive lists of accommodations along the trail. As it turns out, this hike is probably one of the best equipped hikes in Scotland and for every sections there are plenty of options to refill your water, to re-stock food and to stay at over night (hotels and campsites). Each hike on that website has a little forum where people share their experiences and tips and tricks which I found really helpful (even though I should have read them more carefully ;) ).
+As for all famous Scottish hikes, the best source of information for the West Highland Way is **[walkhighlands.co.uk]**. There you will find detailed section descriptions with images and exhaustive lists of accommodations along the trail. As it turns out, this hike is probably one of the best equipped hikes in Scotland and for every sections there are plenty of options to refill your water, to re-stock food and to stay at over night (hotels and campsites). Each hike on that website has a little forum where people share their experiences and tips and tricks which I found really helpful (even though I should have read them more carefully ;) ).
 
 In addition to the website I bought a book with maps which seemed to be the go-to book for the trail. I saw so many other hikers with the same book while hiking and I can recommend it a lot. It's **"West Highland Way" by Charlie Loram**. The maps are hand-drawn which at first seemed silly to me but they turned out to be very exact and the times and distances always prove to be correct. On top of that it has great descriptions of the landmarks, the towns, the trails's history and all accommodations.
 

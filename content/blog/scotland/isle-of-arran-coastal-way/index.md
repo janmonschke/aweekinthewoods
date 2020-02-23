@@ -12,7 +12,11 @@ I had been eyeing another hike in Scotland for a long time and when I cam across
 
 Since some of the stages require a lot of road-walking, I decided to re-route us through the mountains for two of the stages. That way we avoided the roads and had a couple relaxed slack-packing hikes. The island features a regular bus service which came in very handy on our alternative stages and when we wanted to restock our supplies.
 
-## Itinerary
+## Map
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1gHXmJeUnjF6K9LHgLwCTWnFeT_yVLbbZ"></iframe>
+
+## Sections
 
 1. [Brodick to Sannox Bay](#section1) (17km)
 1. [Sannox Bay to Lochranza](#section2) (14km)
