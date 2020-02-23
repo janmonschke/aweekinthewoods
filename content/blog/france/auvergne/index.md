@@ -10,26 +10,21 @@ This hike I wanted to be different. I wanted to go into the mountains walking al
 
 <!-- more -->
 
-The Auvergne in France seemed like the perfect beginner region to start mountaineering since the dormant volcanoes in the middle of France are covered in beautiful green pastures and therefore are quite easy to walk and they are easily accessible through public footpaths of the GR400.
-Research
+The Auvergne in France seemed like the perfect beginner region to start mountaineering since the dormant volcanoes in the middle of France are covered in beautiful green pastures and therefore are quite easy to walk and they are easily accessible through public footpaths of the [GR400][].
 
-    The GR400 is one of the “grande randonnées” in France, publicly maintaned routes of long distance hikes all over France.
+## Itinerary
 
-Most hike descriptions were written in French though and described how to hike the GR400 in its entirety but 133km through the mountains sounded too much. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on hikideas.com.
-
-Instead of the full 133km of the GR400, this path only stretched over 51km which sounded much more doable to me at that point. The description contained a lot of information about how to get to the starting point (in a tiny village), what to do with your car (park it on the church’s parking lot) and tips & tricks for finding places to pitch your tent (since wild camping is still technically illegal in France).
-
-For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into maps.me on my phone. I use this app for all hikes because it has detailed maps for hiking with trails and water sources. It is as easy to use as Google Maps and you can download and use it for free.
-Itinerary
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Hp-H3HSlLKOjw-Og2gOW_VNqrQ"></iframe>
 
 The red markers show the places where we pitched out tents and the blue markers are water sources. There were very few ones which was a problem on the first day (which I will get to in just a second).
-Stages:
 
-        Le Falgoux to Refuge De Cabrespine (16km)
-        Refuge de Cabrespine to Col de Cabré (19km)
-        Col de Cabré to Le Falgoux (17km)
+## Sections
 
-Day 1: Le Falgoux to Refuge De Cabrespine (16km)
+1. [Le Falgoux to Refuge De Cabrespine (16km)](#section1)
+1. [Refuge de Cabrespine to Col de Cabré (19km)](#section2)
+1. [Col de Cabré to Le Falgoux (17km)](#section3)
+
+### <a name='section1'></a>Day 1: Le Falgoux to Refuge De Cabrespine (16km)
 
 Le Falgoux, the village at the beginning of the hike is at around 950m which makes it an exciting car ride up the mountains already. When you get out of the car and look at the mountains in front of you, you realize that the hardest part has not even started yet.
 
@@ -56,7 +51,8 @@ More hills
 Found the refuge!
 Perfect place to pitch the tents
 That sunrise, tho!
-Day 2: Refuge de Cabrespine to Col de Cabré
+
+### <a name='section2'></a>Day 2: Refuge de Cabrespine to Col de Cabré
 
 While the first day started hiking up the mountain, the second day started with a long descent into the valley village of Mandailles. It prove to be a much easier beginning with a 12km hike down the mountain back to 950m altitude from around 1600m. It was luckily less hot in the morning and we walked protected by the forest around noon when the sun got stronger.
 Curious cows observing us
@@ -83,7 +79,8 @@ Rocky paths
 Ski lift in summer
 Great view on the other mountains
 Again, a perfect place to pitch the tents
-Day 3: Col de Cabré to Le Falgoux
+
+### <a name='section3'></a>Day 3: Col de Cabré to Le Falgoux
 
 On day three we woke up to a stunning sunrise. Our tents were still covered in morning mist and fog as the golden sun slowly became visible from behind the mountains. All the pain from the strenuous days before was forgotten all of a sudden and we quietly enjoyed this once in a lifetime sunrise.
 What a sunrise
@@ -108,3 +105,14 @@ Nope, we're definitely not lost
 This way...I think
 
 Those three intense days of hiking in the mountains, sleeping only in the wild and struggling to find water sources prove to be the hardest hike that we’d all ever done. I definitely underestimated the strenuous slopes of the mountains. But now I know how to plan better for the next adventures and we’re all looking forward to our next hiking trip.
+
+## Research & Navigation
+
+Most hike descriptions were written in French though and described how to hike the GR400 in its entirety but 133km through the mountains sounded too much. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on [hikideas.com][].
+
+Instead of the full 133km of the GR400, this path only stretched over 51km which sounded much more doable to me at that point. The description contained a lot of information about how to get to the starting point (in a tiny village), what to do with your car (park it on the church’s parking lot) and tips & tricks for finding places to pitch your tent (since wild camping is still technically illegal in France).
+
+For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into maps.me on my phone. I use this app for all hikes because it has detailed maps for hiking with trails and water sources. It is as easy to use as Google Maps and you can download and use it for free.
+
+[gr400]: http://www.gr-infos.com/en/gr400.htm
+[hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
