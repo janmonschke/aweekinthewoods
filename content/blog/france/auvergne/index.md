@@ -74,31 +74,52 @@ We set up camp next to a the **Refuge De Cabrespine**. A perfectly flat camping 
 
 ### <a name='section2'></a>Day 2: Refuge de Cabrespine to Col de Cabré
 
-While the first day started hiking up the mountain, the second day started with a long descent into the valley village of Mandailles. It prove to be a much easier beginning with a 12km hike down the mountain back to 950m altitude from around 1600m. It was luckily less hot in the morning and we walked protected by the forest around noon when the sun got stronger.
-Curious cows observing us
-day 2 - morning
-Down to the valley!!
+![Our neighbours observing us in the morning](./images/02-cows-observing-us.jpg)
+<span class="image-caption">Our neighbours observing us in the morning</span>
 
-In Maindailles you find a sweet little Restaurant with great local food. We got introduced to the hearty Aligot which is a mixture of potato mash, butter, cream and local cheeses. Perfect energy refill after a long hike. They also offered steak platters made from the meat of the typical red cows of the region that you would see everywhere along the hike.
-Cute village
-Resting in the restaurant
+The second day started with a long descent into the village of **Mandailles**. The first 12km we hiked downhill exclusively back to back to 950m altitude from around 1600m. It was less hot in the morning and we again walked through forests that protected us from the strong sun.
 
-We took a longer break at the restaurant because we knew what was ahead of us. We came to Auvergne for the mountains so we had to climb up around 500m again. We also had to be a bit faster this time because we agreed to meet a friend at the top of the mountain at a specific time. So naturally we tried to shortcut the path where we could and most of the time the shortcuts were easy to reach.
+![Looking down into the valley](./images/02-looking-down-into-the-valley.jpg)
+<span class="image-caption">Looking down into the valley</span>
 
-Most of them apart from the last one. It was displayed in maps.me as a regular path along a creek. We found the creek, but no regular path. Nonetheless we wanted to get to our meeting point quickly so we started to wade through knee deep foliage with a crazy steep ascent. Hiking sticks and good shoes were definitely helping a lot here but the shortcut turned out to take longer than the regular path in the end. It might not have been shorter but it was clearly the more adventurous option.
-Yes, this is supposed t be the shortcut
-We should've taken the regular path
-At this point, there is not even a path anymore
+![The valley of Mandailles](./images/02-the-valley.jpg)
+<span class="image-caption">The valley of Mandailles</span>
 
-It is crazy to think that we actually managed to meet our friend on top of a mountain ridge in the middle of France in a region where you don’t have phone reception. We agreed on a GPS location before we embarked on our journey and a week later we meet on a mountain.
+In Maindailles we found a sweet little Restaurant ([Au Bout du Monde][]) with great local food. We got introduced to the hearty **Aligot** which is a mixture of potato mash, butter, cream and local cheeses. A perfect energy refill after that long hike down into the valley. They also offered steak platters made from the meat of the typical red cows of the region that you would see everywhere along the hike.
 
-Speaking of mountains, we still had to climb 100m at that point but we were finally surrounded with great views again and it cooled down a bit more. We hiked close to Le Lioran which, in winter, is a famous ski area and we could see the ski lifts. It’s hard to imagine a place covered in snow when you see it in summer at 30°C.
+![Auberge - Au Bout Du Monde](./images/02-restaurant.jpg)
+<span class="image-caption">Auberge - Au Bout Du Monde</span>
+
+We took a longer break at the restaurant because we knew what was ahead of us. We came to Auvergne for the mountains after all and we had to climb around 500m next. We also had to be a bit faster this time because we agreed to meet a friend at the top of the mountain at a specific time. So naturally we tried to shortcut the path where we could and most of the time the shortcuts were easy to reach.
+
+![A rather steep shortcut](./images/02-steep-shortcut.jpg)
+<span class="image-caption">A rather steep shortcut</span>
+
+The final shortcut looked like a regular path along a creek on our maps. We found the creek, but no regular path. Nonetheless we wanted to get to our meeting point quickly so we started to wade through knee deep foliage with a crazy steep ascent. Hiking sticks and good shoes were definitely helping a lot here but the shortcut turned out to take longer than the regular path in the end. It might not have been shorter but it was clearly the more adventurous option.
+
+![Shortcut through the bushes](./images/02-shortcut-through-the-bushes.jpg)
+<span class="image-caption">Shortcut through the bushes</span>
+
+![Looking for our friend](./images/02-looking-for-our-friend.jpg)
+<span class="image-caption">Looking for our friend</span>
+
+It is crazy to think that we actually managed to meet our friend on top of a mountain ridge in the middle of France. Especially in a region where you don’t have phone reception. Two weeks before the hike, we agreed on a GPS location and a time when we would roughly meet and two weeks later we meet on a mountain.
+
+![Sun rays breaking through the clouds](./images/02-sun-rays-breaking-through-the-clouds.jpg)
+<span class="image-caption">Sun rays breaking through the clouds</span>
+
+![Finally we were back in the mountains](./images/02-back-in-the-mountains-again.jpg)
+<span class="image-caption">Finally we were back in the mountains</span>
+
+Speaking of mountains, we still had to climb 100m at that point but we were finally surrounded with great views again and it cooled down a bit more. We hiked close to **Le Lioran** which, is a famous ski area and we could see the ski lifts. It’s hard to imagine a place covered in snow when you see it in summer at 30°C.
+
+![The final meters before camp](./images/02-the-final-meters-before-camp.jpg)
+<span class="image-caption">The final meters before camp</span>
 
 Just like the night before we found a great spot to pitch our tents that had an amazing view onto two different valleys. After a short dinner, everybody was very quickly fast asleep in order to recover from this long day.
-Rocky paths
-Ski lift in summer
-Great view on the other mountains
-Again, a perfect place to pitch the tents
+
+![Setting up camp in the clouds](./images/02-setting-up-camp-in-the-clouds.jpg)
+<span class="image-caption">Setting up camp in the clouds</span>
 
 ### <a name='section3'></a>Day 3: Col de Cabré to Le Falgoux
 
@@ -136,3 +157,4 @@ For navigation during the hike I prepared a kml file with Google Maps that conta
 
 [gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
+[au bout du monde]: https://google.com
