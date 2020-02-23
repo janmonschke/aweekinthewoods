@@ -14,7 +14,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
   const { cover, title, date } = post.frontmatter
   const coverImg = cover && cover.childImageSharp.fixed
-
   return (
     <Layout location={location} title={siteTitle} className="blogPost">
       <SEO

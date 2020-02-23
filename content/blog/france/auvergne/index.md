@@ -6,11 +6,13 @@ cover: "./cover.jpg"
 
 ![Mountain hiking in the Auvergne](./cover.jpg)
 
-This hike I wanted to be different. I wanted to go into the mountains walking all day under the sun. I also wanted it to be less strenuous than the other multi day hikes before. Little did I know when planning this trip how much more exhausting it is to climb mountains, especially when it’s 30°C all day long.
+This hike I wanted to be different than all previous. For the first time, I wanted to guide our group into higher mountains. I also wanted it to be less strenuous than the other hikes before so I planned shorter days. Little did I know how much more exhausting it is to climb mountains, especially when it’s 30°C all day long 😅
 
 <!-- more -->
 
-The Auvergne in France seemed like the perfect beginner region to start mountaineering since the dormant volcanoes in the middle of France are covered in beautiful green pastures and therefore are quite easy to walk and they are easily accessible through public footpaths of the [GR400][].
+The Auvergne region in France seemed like the perfect beginner region to start mountaineering. These dormant volcanoes in the center of France are covered in beautiful green pastures and are quite easy to walk on. They are also easily accessible through the public footpaths of the [GR400 - Tour des Volcans du Cantal][].
+
+In total the GR400 is 133km long of which we hiked 52km in three days. It makes for a great combination of a shorter hike and vacation in the countryside in France.
 
 ## Itinerary
 
@@ -26,31 +28,49 @@ The red markers show the places where we pitched out tents and the blue markers 
 
 ### <a name='section1'></a>Day 1: Le Falgoux to Refuge De Cabrespine (16km)
 
-Le Falgoux, the village at the beginning of the hike is at around 950m which makes it an exciting car ride up the mountains already. When you get out of the car and look at the mountains in front of you, you realize that the hardest part has not even started yet.
+![Start from Le Falgoux](./images/01-start-from-le-falgoux.jpg)
+<span class="image-caption">Start from Le Falgoux</span>
 
-It was a super sunny day with 29°C, no clouds, sun glaring above our heads. We made sure to pack 4 litres of water each to make it through the first day, knowing that the first source on our map was 3km into the second day. Luckily, the ascent onto the volcano mountain is routed through the woods. Perfectly soft ground and slightly lower temperatures due to the shade. The slope was pretty intense though. 7km in we already covered around 700m in height and we had more to cover on top of the mountains.
-Little break in the forest
-Up and up we walk!
-Almost made it out of the woods!
+Le Falgoux, the village at the beginning of the hike, is around 950m above sea level which makes it an exciting car ride up and through the mountains to get there. Then when you get out of the car and look at the mountains in front of you, you realize that the hardest part has not even started yet.
 
-Once we made it onto the mountain we were greeted by the green pastures we could see from afar already. It was great to take a break there and just lay in the soft gras and enjoy the sun.
-From there on the walk became much easier with less steep slopes and plenty of stunning views to take in. The sun however became a problem at that point because there was no shade anywhere and we had to cover ourselves in thick layers of sunscreen. Mild winds cooled down the heavy heat a bit and it was quite enjoyable to hike about those beautiful green ridges.
-That view
-Green everywhere
-Jep, we have to walk even higher up
+It was a super sunny day with 29°C, no clouds, sun glaring above our heads. We made sure to pack 4 litres of water each to make it through the first day. According to our maps, the first water source was 3km into the second day, so that water needed to last us all day. Luckily, the ascent onto the volcano mountain goes through a dense forest. Perfectly soft ground and slightly lower temperatures due to the shade. The slope was pretty intense though. 7km in we already covered around 700m in height and we had more to cover to get to the top of the mountains.
 
-A couple of kilometers before the stop for the night we realized we did not have enough water for the remaining route, for cooking that night and for the beginning of the next day. As it was mentioned in the guide it would be hard to find sources during day one so we stopped to check maps.me for water sources and sure enough we found one not too far off the trail. The only problem was, that this source was down a steep pasture and not visible from our location. We had to trust the map data and sent an exploration group down the valley. We lost sight of them and after what seemed an eternity (30min) we could see them again, holding up the filled bottles of water triumphally, cheering. Another success moment for the depleted group which motivated everyone to make it to the finish line today.
-The source has to be somewhere down there
-Wahooo, we found it
-Phew, now we have to walk all the way up
+![In the forest, protected from the sun](./images/01-in-the-forest-protected-from-the-sun.jpg)
+<span class="image-caption">In the forest, protected from the sun</span>
 
-We set up camp next to a former refuge. A perfect camping spot with wind protection, pretty flat with few stones. For dinner we hiked up a little peak where we watched sun go down slowly. Around that time we also had some curious cows coming up to our tents. We probably pitched them at a spot where they usually come in for the night. After licking half our tents and staring at us for about half an hour they could not be bothered by our presence anymore and continued up the mountain.
-Day 1 - before evening
-Enjoying the view
-More hills
-Found the refuge!
-Perfect place to pitch the tents
-That sunrise, tho!
+![Made it to the "top"](./images/01-made-it-to-the-top.jpg)
+<span class="image-caption">Made it to the "top"</span>
+
+Once we made it to the top of the mountain, we were greeted by beautiful green pastures. It felt great to take a break there and just sit on the soft gras and enjoy the sun.
+
+From there on the walk got a lot easier with less steep slopes and plenty of stunning views to take in. The sun, however, became a problem at that point because there was no shade anywhere and we had to cover ourselves in thick layers of sunscreen. Mild winds cooled down the heavy heat a bit and we enjoyed to hiking on those beautiful green ridges.
+
+![Scenic hike on the green ridges with Puy Mary in the background](./images/01-green-ridges-puy-mary-in-background.jpg)
+<span class="image-caption">Scenic hike on the green ridges with **Puy Mary** in the background</span>
+
+![Enjoying the view](./images/01-that-view.jpg)
+<span class="image-caption">Enjoying the view</span>
+
+![Some of us took detours to the peaks](./images/01-exploring-the-peaks.jpg)
+<span class="image-caption">Some of us took detours exploring the peaks</span>
+
+A couple of kilometers before where we wanted to stop for the night we realized we were running out of water a lot quicker than we expected. It was mentioned in the guide that it would be hard to find sources on the first section, so we stopped to check our map for water sources and sure enough we found one not too far off the trail. The only problem was that this source was down a steep pasture and not visible from our location.
+
+![Trying to spot the water source](./images/01-the-source-has-to-be-down-there.jpg)
+<span class="image-caption">Trying to spot the water source</span>
+
+We trusted in our map and sent an exploration group down the valley. We lost sight of them and after what seemed an eternity we could see them again, triumphally holding up the filled bottles into the air. A great moment of success for the group which motivated everyone to make it to the finish line today.
+
+![Up and down the hills](./images/01-up-and-down-the-hills.jpg)
+<span class="image-caption">Up and down the hills</span>
+
+![Making it over the last hill before the night](./images/01-making-it-over-the-last-hill-before-the-night.jpg)
+<span class="image-caption">Making it over the last hill before the night</span>
+
+![Arrival at Refuge the Cabrespine](./images/01-arrival-at-refuge-de-cabrespine.jpg)
+<span class="image-caption">Arrival at Refuge the Cabrespine</span>
+
+We set up camp next to a the **Refuge De Cabrespine**. A perfectly flat camping spot with wind protection. For dinner we hiked up a little peak where we watched sun go down slowly. Around that time we also had some curious cows coming up to our tents. We probably pitched them at a spot where they usually come in for the night. After licking half our tents and staring at us for about half an hour they could not be bothered by our presence anymore and continued up the mountain.
 
 ### <a name='section2'></a>Day 2: Refuge de Cabrespine to Col de Cabré
 
@@ -114,5 +134,5 @@ Instead of the full 133km of the GR400, this path only stretched over 51km which
 
 For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into maps.me on my phone. I use this app for all hikes because it has detailed maps for hiking with trails and water sources. It is as easy to use as Google Maps and you can download and use it for free.
 
-[gr400]: http://www.gr-infos.com/en/gr400.htm
+[gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
