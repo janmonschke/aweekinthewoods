@@ -123,38 +123,56 @@ Just like the night before we found a great spot to pitch our tents that had an 
 
 ### <a name='section3'></a>Day 3: Col de Cabré to Le Falgoux
 
-On day three we woke up to a stunning sunrise. Our tents were still covered in morning mist and fog as the golden sun slowly became visible from behind the mountains. All the pain from the strenuous days before was forgotten all of a sudden and we quietly enjoyed this once in a lifetime sunrise.
-What a sunrise
-Watching a sunrise from above the clouds
-Watching the clouds
+![What a sunrise!!](./images/03-sunrise.jpg)
+<span class="image-caption">What a sunrise!!</span>
 
-Along the ridges of the mountains we made our way to this day’s highlight, the Puy Mary. It was a very relaxed start of the day on mostly plane path until shortly before Puy Mary where we had to climb a 10m stone wall. It was more thrilling than it probably looks on the photos, because you can’t see how far it went down to the left and the right.
-Easy start of the day
-Yep, you have to climb up here
-The scramble
-Puy Mary in sight
+On day three we woke up to a stunning sunrise. Our tents were still covered in morning mist and fog as the golden sun slowly became visible from behind the mountains. All the pain and exhaustion from the previous days was forgotten all of a sudden and we quietly enjoyed this sunrise together all morning.
 
-Puy Mary also turned out to be a nice scramble. The ascent is definitely doable for any regular hiker, give that they are not too much afraid of heights and can walk on tiny ridges without problem. There where no clouds in the sky so we could enjoy the greatest views onto the Auvergne region from the top. The perfect reward for climbing the Puy Mary is a hot meal at the restaurant that is right on its foot on the northern side. I can highly recommend the Truffade, a delicious mix of potatoes and melted cheeses.
-Tiny ridges
-It won't stop
-Gotta take a little break
+![Packing up in the clouds](./images/03-packing-up-in-the-clouds.jpg)
+<span class="image-caption">Packing up in the clouds</span>
+
+Along the ridges of the mountains we made our way to this day’s highlight, the mountain **Puy Mary** (1783m) . It was a very relaxed start of the day on mostly plane path until shortly before Puy Mary where we had to climb a 10m stone wall.
+
+![Climbing with our backpacks](./images/03-climbing.jpg)
+<span class="image-caption">Climbing with our backpacks</span>
+
+It was more thrilling than it probably looks on the photos, because you can’t see how far it went down to the left and the right. None of us had actual climbing experience but we all managed, despite our heavy backpacks.
+
+![Puy Mary ahead of us](./images/03-puy-mary-in-the-back.jpg)
+<span class="image-caption">Puy Mary ahead of us</span>
+
+![Going up Puy Mary](./images/03-going-up-puy-mary.jpg)
+<span class="image-caption">Going up Puy Mary</span>
+
+Puy Mary turned out to be a tough scramble. The ascent is definitely doable for any regular hiker, given that they are not too much afraid of heights and can walk on small ridges without problem. There where no clouds in the sky so we could enjoy the best views onto the Auvergne region from the top.
+
+![On top of Puy Mary](./images/03-on-top-of-puy-mary.jpg)
+<span class="image-caption">On top of Puy Mary</span>
+
+The perfect reward for climbing the Puy Mary is a big meal at the restaurant that is right at its foot on the northern side. I can highly recommend the **Truffade**, a delicious mix of potatoes and melted cheeses.
+
+![Watching paragliders on our ascend](./images/03-watching-paragliders.jpg)
+<span class="image-caption">Watching paragliders on our ascend</span>
 
 After a long rest at the restaurant we walked the remaining 12km of the day down into Le Falgoux on a very slight descending slope. We could all feel the exhaustion of the last days in our muscles and bones so we took our time and just enjoyed the view.
-Watching the paragliders
-Resting in the shadow of this giant rock
-Nope, we're definitely not lost
-This way...I think
 
-Those three intense days of hiking in the mountains, sleeping only in the wild and struggling to find water sources prove to be the hardest hike that we’d all ever done. I definitely underestimated the strenuous slopes of the mountains. But now I know how to plan better for the next adventures and we’re all looking forward to our next hiking trip.
+![No, we are not lost! ...or are we?](./images/03-no-were-not-lost-or-are-we.jpg)
+<span class="image-caption">No, we are not lost! ...or are we?</span>
+
+![Right down there...probably](./images/03-right-down-there.jpg)
+<span class="image-caption">Right down there...probably</span>
+
+Those where three intense days of hiking in the mountains. We were sleeping on top of mountains and always struggling to find water sources. It prove to be the hardest hike that we’d all ever done to that day. I definitely underestimated the strenuous slopes of the mountains. But now I know how to plan better for the next adventures and we’re all looking forward to our next hiking trip.
 
 ## Research & Navigation
 
-Most hike descriptions were written in French though and described how to hike the GR400 in its entirety but 133km through the mountains sounded too much. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on [hikideas.com][].
+Most hike descriptions that I found online were written in French and described how to hike the GR400 in its entirety. 133km through the mountains sounded too much for us that summer. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on [hikideas.com][].
 
 Instead of the full 133km of the GR400, this path only stretched over 51km which sounded much more doable to me at that point. The description contained a lot of information about how to get to the starting point (in a tiny village), what to do with your car (park it on the church’s parking lot) and tips & tricks for finding places to pitch your tent (since wild camping is still technically illegal in France).
 
-For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into maps.me on my phone. I use this app for all hikes because it has detailed maps for hiking with trails and water sources. It is as easy to use as Google Maps and you can download and use it for free.
+For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into [maps.me][] on my phone. I use this app for all hikes because it has detailed maps with lots or marked trails and water sources. It is as easy to use as Google Maps and you can download all the maps for free.
 
 [gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
 [au bout du monde]: https://google.com
+[maps.me]: https://maps.me
