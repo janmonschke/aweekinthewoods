@@ -6,13 +6,11 @@ cover: "./cover.jpg"
 
 ![View onto the Isle of Arran Coastal Way](./cover.jpg)
 
-I had been eyeing another hike in Scotland for a long time and when I cam across the [Isle of Arran Coastal Way][] I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, wildlife, shores). The seven stages of this long-distance hike circle the entire island along its shores.
+I had been eyeing another hike in Scotland for a long time and when I cam across the [Isle of Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, wildlife, shores). The seven stages of this long-distance hike circle the entire island along its shores.
 
 <!-- more -->
 
 Since some of the stages require a lot of road-walking, I decided to re-route us through the mountains for two of the stages. That way we avoided the roads and had a couple relaxed slack-packing hikes. The island features a regular bus service which came in very handy on our alternative stages and when we wanted to restock our supplies.
-
-[isle of arran coastal way]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
 
 ## Itinerary
 
@@ -34,7 +32,7 @@ The weather was quite...well...Scottish. It was overcast, windy, with slight rai
 
 The higher we got up to Goatfell, the weather started to get more and more rugged. Dark clouds were forming around the peak and the wind got very intense. When we reached the saddle of Goatfell we left our backpacks in a secluded spot and started our ascent. That was when the wind picked up even more and we could barely see 2m far. After 15min we decided it would be too dangerous to try to all the way up. The wind was so strong you could lean your full weight into it and you would still tip you over.
 
-As soon as we hiked down from the saddle, the weather cleared up and the sun came out. Instead of regretting to not have gone further up, we enjoyed the lush landscape and the smooth descent back to the coast. When we reached the shore we were greeted by rainbows and and easy walk on the road to a picknick site after Sannox Bay with plenty of space for all our tents.
+As soon as we hiked down from the saddle, the weather cleared up and the sun came out. Instead of regretting to not have gone further up, we enjoyed the lush landscape and the smooth descent back to the coast. When we reached the shore we were greeted by rainbows and and easy walk on the road to a picknick site after **Sannox Bay** with plenty of space for all our tents.
 
 ### <a name="section2"></a>Day 2: Sannox Bay to Lochranza (14km)
 
@@ -47,3 +45,24 @@ As soon as we hiked down from the saddle, the weather cleared up and the sun cam
 ### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash (17km)
 
 ### <a name="section7"></a>Day 7: Whiting Bay to Brodick (11km)
+
+## Research
+
+Since I knew that we did not want to follow the Arran Coastal Way all the time because some of the sections were mainly road-walking, I had to do some further research to find hikes on the island. If you're not interested in the research. I used all these sources for planning the hike around Arran:
+
+[walkhighlands.co.uk]: Still the best resource for all long-distance hikes in Scotland. You can find detailed text descriptions, images and GPX files for all sections of the hike along with recommendations on where to stock up on groceries and where to find accommodation. In addition to that they also have a great community forum with plenty of people eager to help you plan your hike.
+
+[Walking on Arran] by Paddy Dillon: After reading about the road walking sections on the hike I bought this book that helped in finding alternative sections all over the island. Paddy provides in-depth descriptions of hikes with detailed custom maps that make it easy to navigate. Still, it would have been great to get the GPX files for the hikes from the website.
+
+[komoot]: A great tool to plan hike paths in detail and to get inspired by hikes that other users submitted. I used it to plan every section on this hike and to re-route on the go when we decided for taking a detour or a shorter path. With the newest version it also lets you plan paths that don't follow official hiking paths which comes in handy when you want to go for an off-road expedition on the numerous hills.
+
+[maps.me]: I exported the hikes to KML and used maps.me for the navigation as it provides free offline maps for pretty much everywhere in the world.
+
+[Google Maps]: Since we did not have campsites to our availability at all sections, I used Google Maps to find possible wild camping spots and it worked out great!
+
+[isle of arran coastal way]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
+[walkhighlands.co.uk]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
+[walking on arran]: https://www.cicerone.co.uk/walking-on-arran-third
+[komoot]: https://www.komoot.com/user/214500264344
+[maps.me]: https://maps.me
+[google maps]: https://maps.google.com

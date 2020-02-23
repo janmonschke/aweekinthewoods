@@ -10,7 +10,7 @@ This hike I wanted to be different than all previous. For the first time, I want
 
 <!-- more -->
 
-The Auvergne region in France seemed like the perfect beginner region to start mountaineering. These dormant volcanoes in the center of France are covered in beautiful green pastures and are quite easy to walk on. They are also easily accessible through the public footpaths of the [GR400 - Tour des Volcans du Cantal][].
+The Auvergne region in France seemed like the perfect beginner region to start mountaineering. These dormant volcanoes in the center of France are covered in beautiful green pastures and are quite easy to walk on. They are also easily accessible through the public footpaths of the [GR400 - Tour des Volcans du Cantal].
 
 In total the GR400 is 133km long of which we hiked 52km in three days. It makes for a great combination of a shorter hike and vacation in the countryside in France.
 
@@ -85,7 +85,7 @@ The second day started with a long descent into the village of **Mandailles**. T
 ![The valley of Mandailles](./images/02-the-valley.jpg)
 <span class="image-caption">The valley of Mandailles</span>
 
-In Maindailles we found a sweet little Restaurant ([Au Bout du Monde][]) with great local food. We got introduced to the hearty **Aligot** which is a mixture of potato mash, butter, cream and local cheeses. A perfect energy refill after that long hike down into the valley. They also offered steak platters made from the meat of the typical red cows of the region that you would see everywhere along the hike.
+In Maindailles we found a sweet little Restaurant ([Au Bout du Monde]) with great local food. We got introduced to the hearty **Aligot** which is a mixture of potato mash, butter, cream and local cheeses. A perfect energy refill after that long hike down into the valley. They also offered steak platters made from the meat of the typical red cows of the region that you would see everywhere along the hike.
 
 ![Auberge - Au Bout Du Monde](./images/02-restaurant.jpg)
 <span class="image-caption">Auberge - Au Bout Du Monde</span>
@@ -166,11 +166,11 @@ Those where three intense days of hiking in the mountains. We were sleeping on t
 
 ## Research & Navigation
 
-Most hike descriptions that I found online were written in French and described how to hike the GR400 in its entirety. 133km through the mountains sounded too much for us that summer. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on [hikideas.com][].
+Most hike descriptions that I found online were written in French and described how to hike the GR400 in its entirety. 133km through the mountains sounded too much for us that summer. I sincerely wanted to make this hike a bit more beginner friendly so I kept searching and stumbled over a hike description on [hikideas.com].
 
 Instead of the full 133km of the GR400, this path only stretched over 51km which sounded much more doable to me at that point. The description contained a lot of information about how to get to the starting point (in a tiny village), what to do with your car (park it on the church’s parking lot) and tips & tricks for finding places to pitch your tent (since wild camping is still technically illegal in France).
 
-For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into [maps.me][] on my phone. I use this app for all hikes because it has detailed maps with lots or marked trails and water sources. It is as easy to use as Google Maps and you can download all the maps for free.
+For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into [maps.me] on my phone. I use this app for all hikes because it has detailed maps with lots or marked trails and water sources. It is as easy to use as Google Maps and you can download all the maps for free.
 
 [gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
