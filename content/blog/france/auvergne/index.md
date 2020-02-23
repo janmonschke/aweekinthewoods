@@ -1,5 +1,5 @@
 ---
-title: "Mountain hiking in the Auvergne"
+title: "Mountain hiking in the Auvergne (GR400)"
 date: "2018-03-02"
 cover: "./cover.jpg"
 ---
@@ -108,8 +108,8 @@ It is crazy to think that we actually managed to meet our friend on top of a mou
 ![Sun rays breaking through the clouds](./images/02-sun-rays-breaking-through-the-clouds.jpg)
 <span class="image-caption">Sun rays breaking through the clouds</span>
 
-![Finally we were back in the mountains](./images/02-back-in-the-mountains-again.jpg)
-<span class="image-caption">Finally we were back in the mountains</span>
+![We were finally back in the mountains](./images/02-back-in-the-mountains-again.jpg)
+<span class="image-caption">We were finally back in the mountains</span>
 
 Speaking of mountains, we still had to climb 100m at that point but we were finally surrounded with great views again and it cooled down a bit more. We hiked close to **Le Lioran** which, is a famous ski area and we could see the ski lifts. It’s hard to imagine a place covered in snow when you see it in summer at 30°C.
 
