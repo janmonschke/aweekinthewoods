@@ -8,6 +8,8 @@ cover: "./cover.jpg"
 
 This hike I wanted to be different. I wanted to go into the mountains walking all day under the sun. I also wanted it to be less strenuous than the other multi day hikes before. Little did I know when planning this trip how much more exhausting it is to climb mountains, especially when it’s 30°C all day long.
 
+<!-- more -->
+
 The Auvergne in France seemed like the perfect beginner region to start mountaineering since the dormant volcanoes in the middle of France are covered in beautiful green pastures and therefore are quite easy to walk and they are easily accessible through public footpaths of the GR400.
 Research
 

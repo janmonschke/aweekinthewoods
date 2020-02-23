@@ -8,6 +8,8 @@ cover: "./cover.jpg"
 
 The West Highland Way is a long-distance hike that leads you over 154km (96mi) through the west highlands in Scotland. It's a quite famous hike as it offers a variety of landscapes and is very beginner friendly due it's many places to stock up your food supplies and the many hotels along the way. We, however, decided to pack tent and stove and go all in on this hike.
 
+<!-- more -->
+
 The West Highland Way (WHW) was my first ever long-distance hike. Before, I only went on day hikes or camping by bike or car but I never hiked with a big backpack carrying a tent, food and water. And, as it turned out quickly, I did not prepare well enough and made pretty much all the rocky mistakes there are. This long-distance hike report is from the summer of 2014.
 
 ## Itinerary
