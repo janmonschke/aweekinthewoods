@@ -35,8 +35,8 @@ After the arrival in Brodick we started right away on the path along the coast. 
 ![Beginning of the hike at the Brodick beach](./images/01-start-at-brodick-beach.jpg)
 <span class="image-caption">Beginning of the hike at the Brodick beach</span>
 
-![Looking back onto Brodick](./images/01-looking-back-onto-brodick.jpg)
-<span class="image-caption">Looking back onto Brodick</span>
+![Looking back towards Brodick](./images/01-looking-back-towards-brodick.jpg)
+<span class="image-caption">Looking back towards Brodick</span>
 
 The weather was quite...well...Scottish. It was overcast, windy, with slight rain drizzle and the sun peaking out through the clouds from time to time. It was exactly what we signed up for and we enjoyed it. The first kilometers of the hike guide you along the coast over sandy paths, then a golf course and then into the forest that marks the start of the ascent to Goatfell.
 
