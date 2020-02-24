@@ -66,20 +66,28 @@ When we reached the shore we were greeted by rainbows and and easy walk on the r
 
 ### <a name="section2"></a>Day 2: Sannox Bay to Lochranza (14km)
 
+On day two we continued along the flat coastal path for most of the day. The weather cleared up a bit, it was not raining anymore but still pretty overcast. Joined by two more friends that arrived on the island that morning and came to Sannox by bus, we headed onto this more relaxed section of the hike.
+
 ![Plenty of walking along the coast on day two](./images/02-walking-along-the-coast.jpg)
 <span class="image-caption">Plenty of walking along the coast on day two</span>
 
 ![So green, and so close to the sea ♥️](./images/02-so-green-so-close-to-the-sea.jpg)
 <span class="image-caption">So green, and so close to the sea ♥️</span>
 
-![The path got pretty rocky from time to time](./images/02-rocky-path.jpg)
-<span class="image-caption">The path got pretty rocky from time to time</span>
+It felt magical walking right next to the coastal line. The sound of the waves, the salty smell, walking on sand and stone beaches. In contrast to the strenous hike the day before, this section felt a lot more relaxed and our legs could recover. The beauty of the landscape already exceeded our expectations and it was only day two.
 
 ![Plenty of beautiful rock formations along the path](./images/02-rock-formations-along-the-path.jpg)
 <span class="image-caption">Plenty of beautiful rock formations along the path</span>
 
+![The path got pretty rocky from time to time](./images/02-rocky-path.jpg)
+<span class="image-caption">The path got pretty rocky from time to time</span>
+
+At times the path got very rocky which slowed us down quite a bit. But it all just added to the beauty of this stretch of the path. It felt like we were children playing at the beach, jumping from rock to rock and exploring the caves along the way.
+
 ![First of many caves on the Arran Coastal Way](./images/02-first-of-many-caves.jpg)
 <span class="image-caption">First of many caves on the Arran Coastal Way</span>
+
+There was not a lot of wildlife to see that day apart from sheep when we were arriving at **Lochranza Bay**. A sweet small village with a small port, castle ruins, and an excellent **whiskey distillery**.
 
 ![Sheep grazing at the shore](./images/02-sheep-at-the-shore.jpg)
 <span class="image-caption">Sheep grazing at the shore</span>
@@ -87,12 +95,18 @@ When we reached the shore we were greeted by rainbows and and easy walk on the r
 ![Arriving at Lochranza Bay](./images/02-arriving-at-lochranza-bay.jpg)
 <span class="image-caption">Arriving at Lochranza Bay</span>
 
+We set up camp for the next two nights at the **Lochranza Campsite**. The next two official sections on the Arran Coastal Way required a lot of road walking which I wanted to avoid as much as possible. So I planned two alternative day hikes from Lochranza into the mountains and back to the campsite. This not only allowed us to skip the road-walking but we were now also able to experience the beatiful Arran mountains.
+
 ![Lochranza Campsite](./images/02-lochranza-campsite.jpg)
 <span class="image-caption">Lochranza Campsite</span>
 
 ### <a name="section3"></a>Day 3: Loch na Davie Glen loop (17km)
 
+Midge dinner
+
 ### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh (9km)
+
+Resupply by bus
 
 ### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg (13km)
 
