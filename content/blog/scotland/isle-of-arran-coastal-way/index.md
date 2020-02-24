@@ -6,7 +6,7 @@ cover: "./cover.jpg"
 
 ![View onto the Isle of Arran Coastal Way](./cover.jpg)
 
-I had been eyeing another hike in Scotland for a long time and when I cam across the [Isle of Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, wildlife, shores). The seven stages of this long-distance hike circle the entire island along its shores.
+I had been eyeing another hike in Scotland for a long time and when I cam across the [Isle of Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.
 
 <!-- more -->
 
@@ -65,6 +65,30 @@ When we reached the shore we were greeted by rainbows and and easy walk on the r
 <span class="image-caption">Warming up at the campfire</span>
 
 ### <a name="section2"></a>Day 2: Sannox Bay to Lochranza (14km)
+
+![Plenty of walking along the coast on day two](./images/02-walking-along-the-coast.jpg)
+<span class="image-caption">Plenty of walking along the coast on day two</span>
+
+![So green, and so close to the sea ♥️](./images/02-so-green-so-close-to-the-sea.jpg)
+<span class="image-caption">So green, and so close to the sea ♥️</span>
+
+![The path got pretty rocky from time to time](./images/02-rocky-path.jpg)
+<span class="image-caption">The path got pretty rocky from time to time</span>
+
+![Plenty of beautiful rock formations along the path](./images/02-rock-formations-along-the-path.jpg)
+<span class="image-caption">Plenty of beautiful rock formations along the path</span>
+
+![First of many caves on the Arran Coastal Way](./images/02-first-of-many-caves.jpg)
+<span class="image-caption">First of many caves on the Arran Coastal Way</span>
+
+![Sheep grazing at the shore](./images/02-sheep-at-the-shore.jpg)
+<span class="image-caption">Sheep grazing at the shore</span>
+
+![Arriving at Lochranza Bay](./images/02-arriving-at-lochranza-bay.jpg)
+<span class="image-caption">Arriving at Lochranza Bay</span>
+
+![Lochranza Campsite](./images/02-lochranza-campsite.jpg)
+<span class="image-caption">Lochranza Campsite</span>
 
 ### <a name="section3"></a>Day 3: Loch na Davie Glen loop (17km)
 
