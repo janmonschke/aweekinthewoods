@@ -32,11 +32,37 @@ We started our journey early in the morning in **Glasgow** by hopping on a train
 
 After the arrival in Brodick we started right away on the path along the coast. It's easy to spot as there are plenty of markers and signs. The first section of the hike gives you two options: A relaxed path along the coast that has several parts that require road-walking, or a path that leads you up Goatfell and then back to the coast with minial road-walking. We opted for the more strenous route up Goatfell.
 
+![Beginning of the hike at the Brodick beach](./images/01-start-at-brodick-beach.jpg)
+<span class="image-caption">Beginning of the hike at the Brodick beach</span>
+
+![Looking back onto Brodick](./images/01-looking-back-onto-brodick.jpg)
+<span class="image-caption">Looking back onto Brodick</span>
+
 The weather was quite...well...Scottish. It was overcast, windy, with slight rain drizzle and the sun peaking out through the clouds from time to time. It was exactly what we signed up for and we enjoyed it. The first kilometers of the hike guide you along the coast over sandy paths, then a golf course and then into the forest that marks the start of the ascent to Goatfell.
+
+![Clouds forming around Goatfell](./images/01-clouds-forming-on-goatfell.jpg)
+<span class="image-caption">Clouds forming around Goatfell</span>
 
 The higher we got up to Goatfell, the weather started to get more and more rugged. Dark clouds were forming around the peak and the wind got very intense. When we reached the saddle of Goatfell we left our backpacks in a secluded spot and started our ascent. That was when the wind picked up even more and we could barely see 2m far. After 15min we decided it would be too dangerous to try to all the way up. The wind was so strong you could lean your full weight into it and you would still tip you over.
 
-As soon as we hiked down from the saddle, the weather cleared up and the sun came out. Instead of regretting to not have gone further up, we enjoyed the lush landscape and the smooth descent back to the coast. When we reached the shore we were greeted by rainbows and and easy walk on the road to a picknick site after **Sannox Bay** with plenty of space for all our tents.
+![Bad view on Goatfell](./images/01-bad-view-on-goatfell.jpg)
+<span class="image-caption">Bad view on Goatfell</span>
+
+![Walking down the slippery slabs towards Sannox](./images/01-down-the-slippery-stones.jpg)
+<span class="image-caption">Walking down the slippery slabs towards Sannox</span>
+
+As soon as we hiked down from the saddle, the weather cleared up and the sun came out. Instead of regretting to not have gone further up, we enjoyed the lush landscape and the smooth descent back to the coast.
+
+![Easy path along the coast](./images/01-easy-path-along-the-coast.jpg)
+<span class="image-caption">Easy path along the coast</span>
+
+![Is this Scottish beach weather? 😅](./images/01-bench-at-the-beach.jpg)
+<span class="image-caption">Is this Scottish beach weather? 😅</span>
+
+When we reached the shore we were greeted by rainbows and and easy walk on the road to a picknick site after **Sannox Bay** with plenty of space for all our tents.
+
+![Warming up at the campfire](./images/01-warming-up-at-the-fire.jpg)
+<span class="image-caption">Warming up at the campfire</span>
 
 ### <a name="section2"></a>Day 2: Sannox Bay to Lochranza (14km)
 
