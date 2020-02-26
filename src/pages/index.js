@@ -74,7 +74,7 @@ export const pageQuery = graphql`
             title
             cover {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 1200, quality: 95) {
                   ...GatsbyImageSharpFluid
                 }
               }
