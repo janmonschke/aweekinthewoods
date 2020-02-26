@@ -35,13 +35,6 @@ module.exports = {
               quality: 95,
             },
           },
-          // {
-          //   resolve: `gatsby-remark-responsive-iframe`,
-          //   options: {
-          //     wrapperStyle: `margin-bottom: 1.0725rem`,
-          //   },
-          // },
-          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -60,7 +53,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        short_name: `A week in the woods`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -75,8 +68,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

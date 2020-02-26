@@ -1,5 +1,4 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
 import FairyGates from "typography-theme-fairy-gates"
 
 const noUnderline = {
@@ -12,8 +11,6 @@ FairyGates.overrideThemeStyles = () => ({
   "h2 a": noUnderline,
   "h3 a": noUnderline,
 })
-
-delete Wordpress2016.googleFonts
 
 const typography = new Typography(FairyGates)
 
