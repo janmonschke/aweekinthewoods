@@ -95,18 +95,61 @@ There was not a lot of wildlife to see that day apart from sheep when we were ar
 ![Arriving at Lochranza Bay](./images/02-arriving-at-lochranza-bay.jpg)
 <span class="image-caption">Arriving at Lochranza Bay</span>
 
-We set up camp for the next two nights at the **Lochranza Campsite**. The next two official sections on the Arran Coastal Way required a lot of road walking which I wanted to avoid as much as possible. So I planned two alternative day hikes from Lochranza into the mountains and back to the campsite. This not only allowed us to skip the road-walking but we were now also able to experience the beatiful Arran mountains.
+We set up camp for the next two nights at the **Lochranza Campsite**. The next two official sections on the Arran Coastal Way required a lot of road walking which I wanted to avoid as much as possible. So I planned two alternative day hikes from Lochranza into the mountains and back to the campsite. This not only allowed us to skip the road-walking but we were now also able to experience the beautiful Arran mountains.
 
 ![Lochranza Campsite](./images/02-lochranza-campsite.jpg)
 <span class="image-caption">Lochranza Campsite</span>
 
 ### <a name="section3"></a>Day 3: Loch na Davie Glen loop (17km)
 
-Midge dinner
+The nice thing about staying at Lochranza campsite for two nights is that we were able to pack a light backpack with only the essentials. There is no point in carrying your tent, stove and other equipment through the mountains when you walk in a loop. So we headed out slackpack-style with enough water and food for the day but nothing else. Seeing how light the packs had become all of a sudden, gave us a good impression of how much we would usually carry on our backs.
+
+![First views into the Glen shortly after the start in Lochranza](./images/03-the-start-from-lochranza.jpg)
+<span class="image-caption">First views into the Glen shortly after the start in Lochranza</span>
+
+Just south of the whiksey distillery in Lochranza we found an entrance into the Loch na Davie Glen. It's a short ascent into the Glen on a smooth trail. While the weather looked like rain in the morning, it cleared up once we went into the Glen but we could still see the rain clouds looming over the mountains in the distance. We reached **Loch na Davie** after a couple of easy water crossings. It was a slot smaller than we had expected and we almost missed it. It did definitely make for a great location for a snack break.
+
+![View of the mountains from the Glen](./images/03-view-of-the-mountains.jpg)
+<span class="image-caption">View of the mountains from the Glen</span>
+
+![Optional climbing opportunities in the Glen](./images/03-optional-climbing.jpg)
+<span class="image-caption">Optional climbing opportunities in the Glen</span>
+
+![No path but typical Scottish mountain vegetation](./images/03-no-actual-path.jpg)
+<span class="image-caption">No path but typical Scottish mountain vegetation</span>
+
+From Loch na Davie we headed deeper into the Glen where we lost the path, or where there was no clear path to continue on. It did not matter to us. We were in an epxploration mode with all the great views and the beautiful typical Scottish mountain vegetation. Which, unless wet, is very pleasant to walk on. Speaking of wet, the rain of the previous days created some very boggy patches on our way to the valley.
+
+![Boggy patches in the valley](./images/03-wet-and-boggy-valley.jpg)
+<span class="image-caption">Boggy patches in the valley</span>
+
+![Impressive views all the way to the coast of Catacol](./images/03-through-the-valley-to-catacol.jpg)
+<span class="image-caption">Impressive views all the way to the coast of Catacol</span>
+
+The view did get even more spectacular when we turned into the next valley that would bring us to **Catacol**. The mild downwards slope allowed us to see all the way to the shore. At the same time, all clouds disappeared and the strong midday sun came out, making the landscape even more enjoyable. Luckily we came prepared with hats and sunscreen.
+
+The descend into Catacol was very pleasant and we were hiking along a smaller river for most of the time. A couple of bigger slabs in the water formed a waterfall and the lush and soft meadow righ next to it was the perfect place to rest. A great opportunity to refill water and to soak in the sun.
+
+![Plants at the shore in Catacol](./images/03-catacol-plants.jpg)
+<span class="image-caption">Plants at the shore in Catacol.</span>
+
+After a short break in Catacol, we could decide to either take the bus back to Lochranza or to opt for the old postman's path that also goes from Catacol back to Lochranza through the forest. The lighter packs definitely made this an easy choice. We still had plenty of energy and time. Plus, the weather was just perfect for an extra couple of hours hiking.
+
+![View back onto Catacol from the postman's path](./images/03-looking-back-at-catacol-from-postman-path.jpg)
+<span class="image-caption">View back onto Catacol from the postman's path</span>
+
+For the first two kilometers we kind of regretted to have opted for the more strenous option because the ascent into the forst was definitely not a small one and we had already hiked for 12 km through the mountains. Once we made it all the way, that feeling of regret turned into feeling of accomplishment. Also, the forest protected us well from the intense sun.
+
+![Castle ruins in Lochranza](./images/03-castle-ruins-lochranza.jpg)
+<span class="image-caption">Castle ruins in Lochranza</span>
+
+It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsire to prepare a big dinner.
+
+Midge dinner, Resupply by bus
 
 ### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh (9km)
 
-Resupply by bus
+, golf at the campsite, whiskey distillery
 
 ### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg (13km)
 
