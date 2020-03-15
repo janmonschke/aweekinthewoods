@@ -143,13 +143,44 @@ For the first two kilometers we kind of regretted to have opted for the more str
 ![Castle ruins in Lochranza](./images/03-castle-ruins-lochranza.jpg)
 <span class="image-caption">Castle ruins in Lochranza</span>
 
-It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsire to prepare a big dinner.
-
-Midge dinner, Resupply by bus
+It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsire to prepare a big dinner surround by swarns of midges. We also took the time to resupply a bit. It's pretty straight forward to get by bus from Lochranza to the supermarket in Brodick and back.
 
 ### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh (9km)
 
-, golf at the campsite, whiskey distillery
+We got to the start of this section by **bus from Lochranza campsite** to **Thundergay**. Since the group was up for a more relaxed tour that day, I created a short trip into the mountains along some lochs and a river. The weather could not have been better that day with the sun shining bright from the early morning on.
+
+![Starting from Thundergay with the sea in our backs](./images/04-start-from-thundergay.jpg)
+<span class="image-caption">Starting from Thundergay with the sea in our backs</span>
+
+![Taking a break at Coire Fhionn Lochan](./images/04-taking-a-break-at-the-loch.jpg)
+<span class="image-caption">Taking a break at Coire Fhionn Lochan</span>
+
+![Loch in front of Meall nan Damh](./images/04-small-loch-in-front-of-meall-nan-damh.jpg)
+<span class="image-caption">Loch in front of Meall nan Damh</span>
+
+![Half way up Meall nan Damh, enjoying the view](./images/04-taking-in-those-views.jpg)
+<span class="image-caption">Half way up Meall nan Damh, enjoying the view</span>
+
+![The higher we got, the greater the view of the mountains](./images/04-mountains-in-the-back.jpg)
+<span class="image-caption">The higher we got, the greater the view of the mountains</span>
+
+![Stretching on top of the mountain after a strenous ascend](./images/04-stretching-on-top-of-the-mountain.jpg)
+<span class="image-caption">Stretching on top of the mountain after a strenous ascend</span>
+
+![Mountain spotting](./images/04-mountain-spotting.jpg)
+<span class="image-caption">Mountain spotting</span>
+
+![Starting the long descend down into Catacol Bay](./images/04-descending.jpg)
+<span class="image-caption">Starting the long descend down into Catacol Bay</span>
+
+![Taking one last look at Meall nan Damh before hopping on the bus](./images/04-looking-back.jpg)
+<span class="image-caption">Taking one last look at Meall nan Damh before hopping on the bus</span>
+
+![Arran Distillery offers a great, almost hands-on tour in Lochranza](./images/04-arran-distillery-tour.jpg)
+<span class="image-caption">Arran Distillery offers a great, almost hands-on tour in Lochranza</span>
+
+![Relaxing with some golf at Lochranza campsite](./images/04-golfing-in-lochranza.jpg)
+<span class="image-caption">Relaxing with some golf at Lochranza campsite</span>
 
 ### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg (13km)
 
