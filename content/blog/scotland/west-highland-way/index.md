@@ -101,7 +101,7 @@ Colin was already gone when we woke up the next day. He was much more of a morni
 ![Gloomy weather before arriving at Kingshouse](./images/04-gloomy-weather-kingshouse.jpg)
 <span class="image-caption">Gloomy weather before arriving at Kingshouse</span>
 
-We expected bad weather on this section from what we heard from other hikers but apart from some drops of rain and fog on the hills we were actually fine. The last bit that day was a long descend into the valley of **Kingshouse**. Kingshouse is a hotel in the middle of nowhere, literally the middle of nowhere. There is a small road in the valley but there are no other houses in sight for several kilometres. After what seemed like an eternity descending into the valley, we finally arrived at the **Kingshouse campsite** (free!). There, we were greeted by a very happy Colin who arrived there an hour before us.
+We expected bad weather on this section from what we heard from other hikers but apart from some drops of rain and fog on the hills we were actually fine. The last bit that day was a long descent into the valley of **Kingshouse**. Kingshouse is a hotel in the middle of nowhere, literally the middle of nowhere. There is a small road in the valley but there are no other houses in sight for several kilometres. After what seemed like an eternity descending into the valley, we finally arrived at the **Kingshouse campsite** (free!). There, we were greeted by a very happy Colin who arrived there an hour before us.
 
 ![The campsite at Kingshouse, right next to a creek](./images/04-kingshouse-campsite.jpg)
 <span class="image-caption">The campsite at Kingshouse, right next to a creek</span>

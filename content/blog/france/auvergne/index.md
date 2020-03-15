@@ -154,7 +154,7 @@ The perfect reward for climbing the Puy Mary is a big meal at the restaurant tha
 ![Watching paragliders on our ascent](./images/03-watching-paragliders.jpg)
 <span class="image-caption">Watching paragliders on our ascent</span>
 
-After a long rest at the restaurant we walked the remaining 12km of the day down into Le Falgoux on a very slight descending slope. We could all feel the exhaustion of the last days in our muscles and bones so we took our time and just enjoyed the view.
+After a long rest at the restaurant we walked the remaining 12km of the day down into Le Falgoux on a slightly descending slope. We could all feel the exhaustion of the last days in our muscles and bones so we took our time and just enjoyed the view.
 
 ![No, we are not lost! ...or are we?](./images/03-no-were-not-lost-or-are-we.jpg)
 <span class="image-caption">No, we are not lost! ...or are we?</span>
