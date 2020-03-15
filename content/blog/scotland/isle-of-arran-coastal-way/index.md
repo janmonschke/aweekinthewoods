@@ -1,6 +1,6 @@
 ---
 title: Isle of Arran Coastal Way
-date: "2018-09-10"
+date: "2020-03-20"
 cover: "./cover.jpg"
 ---
 
@@ -128,7 +128,7 @@ From Loch na Davie we headed deeper into the Glen where we lost the path, or whe
 
 The view did get even more spectacular when we turned into the next valley that would bring us to **Catacol**. The mild downwards slope allowed us to see all the way to the shore. At the same time, all clouds disappeared and the strong midday sun came out, making the landscape even more enjoyable. Luckily we came prepared with hats and sunscreen.
 
-The descend into Catacol was very pleasant and we were hiking along a smaller river for most of the time. A couple of bigger slabs in the water formed a waterfall and the lush and soft meadow righ next to it was the perfect place to rest. A great opportunity to refill water and to soak in the sun.
+The descent into Catacol was very pleasant and we were hiking along a smaller river for most of the time. A couple of bigger slabs in the water formed a waterfall and the lush and soft meadow righ next to it was the perfect place to rest. A great opportunity to refill water and to soak in the sun.
 
 ![Plants at the shore in Catacol](./images/03-catacol-plants.jpg)
 <span class="image-caption">Plants at the shore in Catacol.</span>
@@ -152,32 +152,52 @@ We got to the start of this section by **bus from Lochranza campsite** to **Thun
 ![Starting from Thundergay with the sea in our backs](./images/04-start-from-thundergay.jpg)
 <span class="image-caption">Starting from Thundergay with the sea in our backs</span>
 
+It's a nice hike up **Coire Fhionn Lochan**. After walking through a small settlement, you start the ascent on a gentle slope. It does get a bit rocky at times and you have to walk up a couple of stone stairs which can be slippery when wet. We however, did not think about rain at all. We were happy that the path was winding along a small burn so we could fill up our bottles with fresh water. The sun was burning hard onto us.
+
 ![Taking a break at Coire Fhionn Lochan](./images/04-taking-a-break-at-the-loch.jpg)
 <span class="image-caption">Taking a break at Coire Fhionn Lochan</span>
+
+At the far end of the loch we found a small pebble beach and we took our first snack rest. One of our friends actually carried his very own camping chair all the way up which did make us quite jealous while we sat there, but we also knew that he had to carry that chair for the rest of the entire trip. My trusty Therm-A-Rest Z seat prove to be sifficient as always. 😊
 
 ![Loch in front of Meall nan Damh](./images/04-small-loch-in-front-of-meall-nan-damh.jpg)
 <span class="image-caption">Loch in front of Meall nan Damh</span>
 
-![Half way up Meall nan Damh, enjoying the view](./images/04-taking-in-those-views.jpg)
-<span class="image-caption">Half way up Meall nan Damh, enjoying the view</span>
+After the break we continued further up the mountains, our ultimate goal being an ascent of **Meall nan Damh**. At that point there was no actual path anymore and we walked in sometimes knee-deep bushes. The slope was not too much of a problem but the ground made it rather complex to get up.
 
-![The higher we got, the greater the view of the mountains](./images/04-mountains-in-the-back.jpg)
-<span class="image-caption">The higher we got, the greater the view of the mountains</span>
+![The higher we walked, the better was the view of mountains](./images/04-mountains-in-the-back.jpg)
+<span class="image-caption">The higher we walked, the better was the view of mountains</span>
 
-![Stretching on top of the mountain after a strenous ascend](./images/04-stretching-on-top-of-the-mountain.jpg)
-<span class="image-caption">Stretching on top of the mountain after a strenous ascend</span>
+Closer to the top, the vegetation was less dense and we walked up bigger slabs of rock. Occassionally turning around to enjoy the view of the sea and the mountains in the far distance.
+
+![Enjoying the view from Meall nan Damh](./images/04-taking-in-those-views.jpg)
+<span class="image-caption">Enjoying the view from Meall nan Damh</span>
+
+![Stretching on top of the mountain after a strenous ascent](./images/04-stretching-on-top-of-the-mountain.jpg)
+<span class="image-caption">Stretching on top of the mountain after a strenous ascent</span>
 
 ![Mountain spotting](./images/04-mountain-spotting.jpg)
 <span class="image-caption">Mountain spotting</span>
 
-![Starting the long descend down into Catacol Bay](./images/04-descending.jpg)
-<span class="image-caption">Starting the long descend down into Catacol Bay</span>
+The views on the top were amazing and 100% worth the effort to get up. You can see the bigger mountains of the island, you can observe boats in the sea and get a feeling of the gigantic valleys just below. We found it made for the perfect lunch spot before we would start the descent back to **Catacol Bay**.
+
+![Starting the long descent down into Catacol Bay](./images/04-descending.jpg)
+<span class="image-caption">Starting the long descent down into Catacol Bay</span>
+
+The descent proved to be even more awkward than the ascent with more dense vegetation and the slipperiness of it made it hard to stay on course. We were also not sure what the best path would be, since there were obviously no markings. After some semi-scientific discusissions on how to read elevation maps and looking at the rather deep slope we agreed on a very direct path and made it back down through a small forest that ended at a small river, right next to the street.
+
+Midway we had to fix up a friend who slipped and ripped open her skin on some thorns. Luckily we brought our iodine tincture and enough plasters. This was definitely a good reminder to always think of taking the basic first aid items with you.
 
 ![Taking one last look at Meall nan Damh before hopping on the bus](./images/04-looking-back.jpg)
 <span class="image-caption">Taking one last look at Meall nan Damh before hopping on the bus</span>
 
+Did I already mention, that the bus system in the island is amazing? The buses are very modern, where always on time for us and they are super convenient since the drivers will let you out at pretty much any spot along their route (and they might pick you up from there as well, we haven't tried it though).
+
 ![Arran Distillery offers a great, almost hands-on tour in Lochranza](./images/04-arran-distillery-tour.jpg)
 <span class="image-caption">Arran Distillery offers a great, almost hands-on tour in Lochranza</span>
+
+We had a lot of time for the rest fo the afternoon so we got onto the tour at the **Arran Distillery**. It was the best distillery tour that we had ever taken. The tour felt very intimate, the guide was happy to answer all questions and they gave a great insight in the entire process (including opening the tanks at different stages of the process).
+
+With the lightness of a couple drams of Arran whiskey in our bodies, we opted to play a couple of relaxed rounds of golf at the Lochranza campsite. We performed pretty well on all holes which is very unusual for us but we quickly agreed it was all due to the whiskey doping 😉
 
 ![Relaxing with some golf at Lochranza campsite](./images/04-golfing-in-lochranza.jpg)
 <span class="image-caption">Relaxing with some golf at Lochranza campsite</span>
