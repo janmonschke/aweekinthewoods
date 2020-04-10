@@ -248,16 +248,27 @@ relaxed morning because waiting for low tide
 ![Best place to wait for the bus to Whiting Bay](./images/06-waiting-for-the-bus.jpg)
 <span class="image-caption">Best place to wait for the bus to Whiting Bay</span>
 
-![Walking through the forest again](./images/06-forrest-walking.jpg)
+![Walking through the forest again](./images/06-forest-walking.jpg)
 <span class="image-caption">Walking through the forest again</span>
 
 ![Holy Isle](./images/06-views-of-holy-isle.jpg)
 <span class="image-caption">Holy Isle</span>
 
 Ailsa Craig - island
-Cave
+
+Black Cave
+
+Coffee pot
+
+forest with waterfalls
+
+midge-infested grassy patch before Whiting Bay
 
 ### <a name="section7"></a>Day 7: Whiting Bay to Brodick (11km)
+
+easy walk along the shore
+
+buy some local beers and whiskeys
 
 ![Walking along the shore with Goatfell in the back](./images/07-walking-along-the-shore-goatfell-in-back.jpg)
 <span class="image-caption">Walking along the shore with Goatfell in the back</span>
