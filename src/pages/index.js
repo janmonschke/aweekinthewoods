@@ -44,7 +44,7 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(0.4),
                 }}
               />
-              <Link to={articleLink}>Continue reading</Link>
+              <Link to={articleLink}>Read more</Link>
             </section>
           </article>
         )
