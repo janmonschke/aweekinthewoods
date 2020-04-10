@@ -157,7 +157,7 @@ It's a nice hike up **Coire Fhionn Lochan**. After walking through a small settl
 ![Taking a break at Coire Fhionn Lochan](./images/04-taking-a-break-at-the-loch.jpg)
 <span class="image-caption">Taking a break at Coire Fhionn Lochan</span>
 
-At the far end of the loch we found a small pebble beach and we took our first snack rest. One of our friends actually carried his very own camping chair all the way up which did make us quite jealous while we sat there, but we also knew that he had to carry that chair for the rest of the entire trip. My trusty Therm-A-Rest Z seat prove to be sifficient as always. 😊
+At the far end of the loch we found a small pebble beach and we took our first snack rest. One of our friends actually carried his very own camping chair all the way up which did make us quite jealous while we sat there, but we also knew that he had to carry that chair for the rest of the entire trip. My trusty Therm-A-Rest Z seat prove to be sufficient as always. 😊
 
 ![Loch in front of Meall nan Damh](./images/04-small-loch-in-front-of-meall-nan-damh.jpg)
 <span class="image-caption">Loch in front of Meall nan Damh</span>
@@ -204,7 +204,35 @@ With the lightness of a couple drams of Arran whiskey in our bodies, we opted to
 
 ### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg (13km)
 
+After two days off the actual coastal way, it was time for us to get back on track. We hopped on an early morning bus from Lochranza to **Blackwaterfoot** which is the start of the regular 5th section of this hike. The path starts close to the shore on soft and sandy grass that quickly turns more rocky and bouldery. While it did slow us down more than we wanted, it was a great opportunity to enjoy the breezy coastal winds and to observe the wildlife.
+
+![Rocky path along the shore after Blackwaterfoot](./images/05-rocky-path.jpg)
+<span class="image-caption">Rocky path along the shore after Blackwaterfoot</span>
+
+Halfway, the rocky path turns into a proper beach walk and we could observe plenty of seals that were bathing in the sun not far from the shore. The hot weather made this section quite challenging because we had a hard time finding water sources. The streams we found looked like they were coming from farmland and are therefore not save to drink from. Definitely something to pay attention to when walking this section.
+
+![Walking along the beach](./images/05-sand-beaches-with-seals.jpg)
+<span class="image-caption">Walking along the beach</span>
+
+![Seals chilling in the sun not far from the shore](./images/05-seals.jpg)
+<span class="image-caption">Seals chilling in the sun not far from the shore</span>
+
+The beach part of this section is optional and I think not actually part of the Arran Coastal Way. The official path turns inland before the beach part starts and you would continue along the road. As for the secions before, we opted to take the path without road walking. That definitely made this section more strenous than it is supposed to be but you are rewarded with walking on a beach next to the seals.
+
+For the last couple of kilometers we left the beach to make it to the **Lagg Hotel** where the owners allowed us to refill our water bottles. We took a longer break there, sitting in the sun, tasting some of the local beers (can recommend the Arran blonde). From there it was just a short walk back to the shore where we were scouting for campsites next to the water.
+
+![Scouting for a campsite (Ailsa Craig in the background)](./images/05-finding-a-campsite.jpg)
+<span class="image-caption">Scouting for a campsite (Ailsa Craig in the background)</span>
+
+We pitched our tents on the grass just before the beach after talking to the owners and getting their permission. It's hard to put into words how magical it was to stay right next to the shore, enjoy a long dinner on the stone beach and talking until very late into the night <3
+
+![Preparing dinner at the beach](./images/05-dinner-at-the-beach.jpg)
+<span class="image-caption">Preparing dinner at the beach</span>
+
 ### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash (17km)
+
+Ailsa Craig - island
+Cave
 
 ### <a name="section7"></a>Day 7: Whiting Bay to Brodick (11km)
 
