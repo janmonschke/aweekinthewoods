@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import icon from "../../content/assets/icon.svg"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -15,7 +16,7 @@ const Layout = ({ location, title, className, children }) => {
         style={{
           ...scale(1.5),
           marginBottom: rhythm(1.5),
-          marginTop: 0,
+          marginTop: rhythm(1),
           textAlign: "center",
         }}
       >
@@ -24,9 +25,20 @@ const Layout = ({ location, title, className, children }) => {
             boxShadow: `none`,
             textDecoration: `none`,
             color: `inherit`,
+            position: "relative",
           }}
           to={`/`}
         >
+          <img
+            alt=""
+            src={icon}
+            style={{
+              width: "4rem",
+              height: "4rem",
+              position: "absolute",
+              margin: "-0.25rem 0 0 -4.5rem",
+            }}
+          />
           {title}
         </Link>
       </h1>
@@ -39,9 +51,22 @@ const Layout = ({ location, title, className, children }) => {
             boxShadow: `none`,
             textDecoration: `none`,
             color: `inherit`,
+            position: "relative",
           }}
           to={`/`}
         >
+          <img
+            alt=""
+            src={icon}
+            style={{
+              width: "2rem",
+              height: "2rem",
+              position: "absolute",
+              margin: 0,
+              marginLeft: "-2.5rem",
+              marginTop: "-0.25rem",
+            }}
+          />
           {title}
         </Link>
       </h3>
