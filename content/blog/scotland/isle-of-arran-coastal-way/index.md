@@ -226,15 +226,25 @@ For the last couple of kilometers we left the beach to make it to the **Lagg Hot
 
 We pitched our tents on the grass just before the beach after talking to the owners and getting their permission. It's hard to put into words how magical it was to stay right next to the shore, enjoy a long dinner on the stone beach and talking until very late into the night <3
 
-![Preparing dinner at the beach (more sneaky Alisa Craig in the back)](./images/05-dinner-at-the-beach.jpg)
-<span class="image-caption">Preparing dinner at the beach (more sneaky Alisa Craig in the back)</span>
+![Preparing dinner at the beach (more sneaky Ailsa Craig in the back)](./images/05-dinner-at-the-beach.jpg)
+<span class="image-caption">Preparing dinner at the beach (more sneaky Ailsa Craig in the back)</span>
 
 ### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash (17km)
 
-relaxed morning because waiting for low tide
+The morning of the 6th day we could take it super easy because we had to time the rest of the day to the tides. We opted for the route along the coast to get to seee **Black Cave** which is only accessible at low tide. A long breakfast of porridge with banana and dark chocolate later, we headed out to hike along the beautiful beaches.
 
 ![Walking on sand beach](./images/06-walking-on-sand-beach.jpg)
 <span class="image-caption">Walking on sand beach</span>
+
+Ailsa Craig - island
+
+Black Cave
+
+Coffee pot
+
+forest with waterfalls
+
+midge-infested grassy patch before Whiting Bay
 
 ![Walking on rocks with backpacks](./images/06-rocky-section-before-the-cave.jpg)
 <span class="image-caption">Walking on rocks with backpacks</span>
@@ -253,16 +263,6 @@ relaxed morning because waiting for low tide
 
 ![Holy Isle](./images/06-views-of-holy-isle.jpg)
 <span class="image-caption">Holy Isle</span>
-
-Ailsa Craig - island
-
-Black Cave
-
-Coffee pot
-
-forest with waterfalls
-
-midge-infested grassy patch before Whiting Bay
 
 ### <a name="section7"></a>Day 7: Whiting Bay to Brodick (11km)
 
