@@ -11,3 +11,7 @@ Since I knew that we did not want to follow the Arran Coastal Way all the time b
 [maps.me]: I exported the hikes to KML and used maps.me for the navigation as it provides free offline maps for pretty much everywhere in the world.
 
 [Google Maps]: Since we did not have campsites to our availability at all sections, I used Google Maps to find possible wild camping spots and it worked out great!
+
+[komoot]: https://www.komoot.com/user/214500264344
+[maps.me]: https://maps.me
+[google maps]: https://maps.google.com

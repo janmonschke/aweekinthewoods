@@ -24,7 +24,7 @@ Since some of the stages require a lot of road-walking, I decided to re-route us
 1. [Coire Fhionn Lochan to Catacol over Meall nan Damh](#section4) (9km)
 1. [Blackwaterfoot to Lagg](#section5) (13km)
 1. [Lagg to Kildonan 🚌 Whiting Bay to Lamlash](#section6) (17km)
-1. [Whiting Bay to Brodick](#section7) (11km)
+1. [Lamlash to Brodick](#section7) (11km)
 
 ### <a name='section1'></a>Day 1: Brodick to Sannox Bay (17km)
 
@@ -222,7 +222,7 @@ The beach part of this section is optional and I think not actually part of the 
 For the last couple of kilometers we left the beach to make it to the **Lagg Hotel** where the owners allowed us to refill our water bottles. We took a longer break there, sitting in the sun, tasting some of the local beers (can recommend the Arran blonde). From there it was just a short walk back to the shore where we were scouting for campsites next to the water.
 
 ![Scouting for a campsite (Ailsa Craig in the background)](./images/05-finding-a-campsite.jpg)
-<span class="image-caption">Scouting for a campsite (Ailsa Craig in the background)</span>
+<span class="image-caption">Scouting for a campsite (**Ailsa Craig** in the background)</span>
 
 We pitched our tents on the grass just before the beach after talking to the owners and getting their permission. It's hard to put into words how magical it was to stay right next to the shore, enjoy a long dinner on the stone beach and talking until very late into the night <3
 
@@ -231,23 +231,17 @@ We pitched our tents on the grass just before the beach after talking to the own
 
 ### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash (17km)
 
-The morning of the 6th day we could take it super easy because we had to time the rest of the day to the tides. We opted for the route along the coast to get to seee **Black Cave** which is only accessible at low tide. A long breakfast of porridge with banana and dark chocolate later, we headed out to hike along the beautiful beaches.
+The morning of the 6th day we could take it super easy because we had to time the rest of the day to the tides. We opted for the route along the coast to get to see **Black Cave** which is only accessible at low tide. A long breakfast of porridge with banana and dark chocolate later, we headed out to hike along the beautiful beaches.
 
 ![Walking on sand beach](./images/06-walking-on-sand-beach.jpg)
-<span class="image-caption">Walking on sand beach</span>
+<span class="image-caption">Beautiful walk on sand beach in the morning</span>
 
-Ailsa Craig - island
-
-Black Cave
-
-Coffee pot
-
-forest with waterfalls
-
-midge-infested grassy patch before Whiting Bay
+This section is described as the most challenging one of the entire hike and it did live up to its expectations. It starts off with long walks on sand which is quite exhausting by itself. Then the path turns into a sea of boulders that we had to wal on for the next couple of kilometers. If you don't feel like taking this route, you can opt for a route more inland along the street.
 
 ![Walking on rocks with backpacks](./images/06-rocky-section-before-the-cave.jpg)
 <span class="image-caption">Walking on rocks with backpacks</span>
+
+It is impossible to miss Black Cave along the way. Its massive opening and the rock formations inside make for an impressive sight. We took the opportunity to explore the cave a bit, rest on the stones in front, observe the seals and bask in the sun ourselves. We knew we had to continue on those awkward boulders for quite a bit longer so we made sure to take a long enough rest.
 
 ![View from inside of Black Cave](./images/06-view-from-inside-black-cave.jpg)
 <span class="image-caption">View from inside of Black Cave</span>
@@ -255,23 +249,31 @@ midge-infested grassy patch before Whiting Bay
 ![These rocks are only accessible when it's low tide](./images/06-only-rocks-low-tide.jpg)
 <span class="image-caption">These rocks are only accessible when it's low tide</span>
 
+Up until **Kildonan** the path consists pretty much only of large boulders and it got harder and harder to walk on them with our big backpacks. We were quite happy when we could see the village in the far and the path became easier to walk on. The sun was very intense again and we were too exhausted already so we decided to cut a bit of the coastal walking and take the bus to **Whiting Bay** from Kildonan. That also gave us the chance to rest a bit and enjoy the sea. It's a vacation after all ☀️.
+
 ![Best place to wait for the bus to Whiting Bay](./images/06-waiting-for-the-bus.jpg)
 <span class="image-caption">Best place to wait for the bus to Whiting Bay</span>
+
+In Whiting Bay we got some water from the amazing staff at the **Coffee Pot**, a beautiful tiny café next to the shore. They have plenty of delicious little snacks and I highly recommend stopping there. Whiting Bay was not our final destination for the day and we continued along the inland route towards **Lamlash**. The inland route to Lamlash is one of the two options at this point. The other one is the costal path. We went with the inland route because it promised views of waterfalls in deep forests.
 
 ![Walking through the forest again](./images/06-forest-walking.jpg)
 <span class="image-caption">Walking through the forest again</span>
 
+The forest route was definitely the better choice that day as it protected us from the very intense sun (around 30°C that day) and there were plenty of sources for very refreshing water. After a short but intense ascend along the waterfalls the path got more easy and the elevation opened up great views onto **Holy Isle**.
+
 ![Holy Isle](./images/06-views-of-holy-isle.jpg)
 <span class="image-caption">Holy Isle</span>
 
-### <a name="section7"></a>Day 7: Whiting Bay to Brodick (11km)
+The slow descend into Lamlash felt like the perfect relaxing final stretch for the day and we found a perfect green patch to pitch all our tents just before Lamlash. The ground was nice and soft and there was still plenty of sun in the evening. Once the sun was gone however, the midges came out in hordes but we had already started prearing dinner so it was too late to escape into a potentially less-infested spot.
+
+### <a name="section7"></a>Day 7: Lamlash to Brodick (11km)
 
 We rose early and quietly so we would not wake up the darn midges in the morning and enjoyed our breakfast at a nearby road in peace. 🙅‍♂️🦟 This section is only 11km of mostly easy walks next to the shore and through some fields before reaching the Brodick ferry terminal.
 
 ![Walking along the shore with Goatfell in the back](./images/07-walking-along-the-shore-goatfell-in-back.jpg)
 <span class="image-caption">Walking along the shore with Goatfell in the back</span>
 
-After making our way through Whiting Bay we reached the shore again and had an even better view of Holy Island than the day before. The day started off quite a bit colder than the previous days and the breeze from the sea did not feel as refreshing either. A couple kilometers in, the sun made it through the clouds again as if it wanted to have one last amazing day of walking on the island.
+After making our way through Lamlash we reached the shore again and had an even better view of Holy Island than the day before. The day started off quite a bit colder than the previous days and the breeze from the sea did not feel as refreshing either. A couple kilometers in, the sun made it through the clouds again as if it wanted to have one last amazing day of walking on the island.
 
 ![More easy grass walking](./images/07-walking-through-lush-grass.jpg)
 <span class="image-caption">More easy grass walking</span>
@@ -283,7 +285,4 @@ Back in Brodick we obviously had to go back to the local co-op market to get som
 
 [isle of arran coastal way]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
 [walkhighlands.co.uk]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
-[walking on arran]: https://www.cicerone.co.uk/walking-on-arran-third
-[komoot]: https://www.komoot.com/user/214500264344
-[maps.me]: https://maps.me
-[google maps]: https://maps.google.com
+[walking on arran]: https://www.cicerone.co.uk/walking-on-arran-thirdote
