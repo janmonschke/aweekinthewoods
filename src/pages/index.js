@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
                   style={{
                     marginBottom: rhythm(1),
                     textAlign: "center",
-                    ...scale(1.2),
+                    ...scale(0.7),
                   }}
                 >
                   {displayTitle}

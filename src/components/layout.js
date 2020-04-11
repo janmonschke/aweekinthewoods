@@ -14,9 +14,9 @@ const Layout = ({ location, title, className, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: rhythm(1),
+          ...scale(0.9),
+          marginBottom: rhythm(1),
+          marginTop: rhythm(1.2),
           textAlign: "center",
         }}
       >
@@ -25,7 +25,6 @@ const Layout = ({ location, title, className, children }) => {
             boxShadow: `none`,
             textDecoration: `none`,
             color: `inherit`,
-            position: "relative",
           }}
           to={`/`}
         >
@@ -33,10 +32,10 @@ const Layout = ({ location, title, className, children }) => {
             alt=""
             src={icon}
             style={{
-              width: "4rem",
-              height: "4rem",
-              position: "absolute",
-              margin: "-0.25rem 0 0 -4.5rem",
+              width: "3rem",
+              height: "3rem",
+              margin: "0.5rem auto",
+              display: "block",
             }}
           />
           {title}
@@ -61,10 +60,8 @@ const Layout = ({ location, title, className, children }) => {
             style={{
               width: "2rem",
               height: "2rem",
-              position: "absolute",
-              margin: 0,
-              marginLeft: "-2.5rem",
-              marginTop: "-0.25rem",
+              margin: "0.5rem auto",
+              display: "block",
             }}
           />
           {title}
