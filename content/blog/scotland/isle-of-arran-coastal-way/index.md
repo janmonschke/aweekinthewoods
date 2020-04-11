@@ -143,7 +143,7 @@ For the first two kilometers we kind of regretted to have opted for the more str
 ![Castle ruins in Lochranza](./images/03-castle-ruins-lochranza.jpg)
 <span class="image-caption">Castle ruins in Lochranza</span>
 
-It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsire to prepare a big dinner surround by swarns of midges. We also took the time to resupply a bit. It's pretty straight forward to get by bus from Lochranza to the supermarket in Brodick and back.
+It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsite to prepare a big dinner surround by swarns of midges. We also took the time to resupply a bit. It's pretty straight forward to get by bus from Lochranza to the supermarket in Brodick and back.
 
 ### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh (9km)
 
