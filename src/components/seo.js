@@ -28,7 +28,7 @@ const SEO = ({ description, lang, meta, title, coverSrc }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const imageUrl = `${site.siteMetadata.siteUrl}${
-    coverSrc ? coverSrc : "/assets/default-cover.jpg"
+    coverSrc ? coverSrc : "/default-cover.jpg"
   }`
 
   return (
