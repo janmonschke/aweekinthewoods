@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `A week in the woods`,
     author: `Jan Monschke`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://friendly-stonebraker-86d468.netlify.com`,
+    description: `A long-distance hiking blog`,
+    siteUrl: `https://aweekinthewoods.com`,
     social: {
       twitter: `janmonschke`,
     },
@@ -56,9 +56,9 @@ module.exports = {
         short_name: `A week in the woods`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#ffffff`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

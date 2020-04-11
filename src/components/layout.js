@@ -51,7 +51,11 @@ const Layout = ({ location, title, className, children }) => {
     <div className={`layout ${className}`}>
       <header>{header}</header>
       <main>{children}</main>
-      <footer>{` `}</footer>
+      <footer>
+        <p>
+          <small>Icon by Made by Made from the Noun Project</small>
+        </p>
+      </footer>
     </div>
   )
 }
