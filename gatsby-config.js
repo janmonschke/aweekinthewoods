@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `A week in the woods`,
+    site_name: "A week in the woods - Hiking Blog",
     author: `Jan Monschke`,
     description: `A long-distance hiking blog`,
     siteUrl: `https://aweekinthewoods.com`,

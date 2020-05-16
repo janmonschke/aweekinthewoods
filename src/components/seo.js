@@ -48,6 +48,10 @@ const SEO = ({ description, lang, meta, title, coverSrc }) => {
           content: title,
         },
         {
+          property: `og:site_name`,
+          content: data.site.siteMetadata.site_name,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
