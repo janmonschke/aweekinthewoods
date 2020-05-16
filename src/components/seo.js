@@ -16,6 +16,7 @@ const SEO = ({ description, lang, meta, title, coverSrc }) => {
       query {
         site {
           siteMetadata {
+            site_name
             title
             description
             author
@@ -49,7 +50,7 @@ const SEO = ({ description, lang, meta, title, coverSrc }) => {
         },
         {
           property: `og:site_name`,
-          content: data.site.siteMetadata.site_name,
+          content: site.siteMetadata.site_name,
         },
         {
           property: `og:description`,
