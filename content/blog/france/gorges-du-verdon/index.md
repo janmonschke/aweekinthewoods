@@ -16,19 +16,25 @@ The Verdon river is one of the most beautiful places to stay and hike in the sou
 
 ## Sections
 
-1. [Saint-Vallier-de-Thiey to Cascade du ray (??km)](#section1)
-1. [Cascade du ray to La Roque Esclapon (??km)](#section2)
+1. [Saint-Vallier-de-Thiey to Escragnolles (??km)](#section1)
+1. [Escragnolles to La Roque Esclapon (??km)](#section2)
 1. [Roundtrip to Château Sabran de Pontèves from Camping Notre Dame (??km)](#section3)
 1. [Roundtrip to Trigance from Camping Verdon Carajuan (??km)](#section4)
 1. [Le Point Sublime to Chalet de la Maline along the Verdon (??km)](#section5)
 1. [Chalet de la Maline to Lac de Sainte-Croix (??km)](#section6)
 
-### <a name='section1'></a>Day 1: Saint-Vallier-de-Thiey to Cascade du ray (??km)
+### <a name='section1'></a>Day 1: Saint-Vallier-de-Thiey to Escragnolles (??km)
 
-Nice -> Grasse -> LER 31 -> Saint-Vallier-de-Thiey
+After a rainy but relaxed evening in **Grasse** (which is very easy to reach via **Nice**), we took the earliest **[LER 31](https://services-zou.maregionsud.fr/fr/horaires/Zou-LER/Bus/ligne/LER-31/direction/OUTWARD/919)** bus towards **Saint-Vallier-de-Thiey** which marked the beginning of the hike. While the bus slowly made its way up the mountain, we enjoyed the stunning all the way to the ocean.
+
+From the city center we followed a small pedestrian path into a dense and still slightly humid birch forest. The ground was still soft from the rain of the previous night which made it easier for us to walk with our very heavy backpacks. They were extra heavy on this trip because we knew we did not have many options to resupply along the trail so we carried almost all food for all six days from the beginning.
 
 ![Forest in Saint-Vallier-de-Thiey](./images/01-forest.jpg)
 <span class="image-caption">Forest in Saint-Vallier-de-Thiey</span>
+
+After the forest opened up, we reached our first valley views and the next couple of kilometers we went up and down small hills alongside the valley. In the forest we noticed that a dog was following us. It did have a harness but no tag and it looked pretty weak. We gave it some water and from that moment on it became very attached to us. We tried several times to tell it to go back to its owner but it did not listen and it stubbornly followed us.
+
+We could see that the weather was getting worse and we luckily walked through forest again when it started to rain so it did not hit us as much.
 
 ![Valley walk with the dog](./images/01-valley-with-the-dog.jpg)
 <span class="image-caption">Valley walk with the dog</span>
@@ -36,16 +42,22 @@ Nice -> Grasse -> LER 31 -> Saint-Vallier-de-Thiey
 ![Valley views](./images/01-valley.jpg)
 <span class="image-caption">Valley views</span>
 
+When the rain stopped, we started our biggest ascend for that day on the **ancienne route Napoléon**, an old trading route with great views of the valley. We followed it all the way up to **La Colette** right before **Escragnolles** where we took a small break and managed to communicate to some locals that they call the animal shelter to take care of the dog.
+
+We did not mind the dog but when we arrived at the road, it started to chase cars and almost got itself killed, so we thought it would be best to get it into the hands of professionals.
+
 ![Ancienne Route Napoléon](./images/01-ancienne-route-napoleon.jpg)
 <span class="image-caption">Ancienne Route Napoléon</span>
 
 ![Church on the Ancienne Route Napoléon](./images/01-church-on-ancienne-route-napoleon.jpg)
 <span class="image-caption">Church on the Ancienne Route Napoléon</span>
 
+From La Colette we walked down to and through Escragnolles on the lookout for a hidden campsite. Just outside of Escragnolles, half way to the **Cascade du ray** waterfall we found a small forest that fit our tents perfectly. It was far away from the village and nobody could spot us from any of the surrounding streets.
+
 ![Found a campsite in a small forest](./images/01-campsite.jpg)
 <span class="image-caption">Found a campsite in a small forest</span>
 
-### <a name='section2'></a>Day 2: Cascade du ray to La Roque Esclapon (??km)
+### <a name='section2'></a>Day 2: Escragnolles to La Roque Esclapon (??km)
 
 ![Catching the morning sun](./images/02-catching-the-morning-sun.jpg)
 <span class="image-caption">Catching the morning sun</span>
