@@ -62,11 +62,17 @@ From La Colette we walked down to and through Escragnolles on the lookout for a 
 ![Catching the morning sun](./images/02-catching-the-morning-sun.jpg)
 <span class="image-caption">Catching the morning sun</span>
 
+The sun was shining on us all morning and we were able to dry all our clothes and the tents. Without the clouds we now also had a great view of the valley that we slept in. After a big, long breakfast we started to hike towards the rushing waterfall that we heard in the distance all morning.
+
 ![Just before the cascade du ray waterfall](./images/02-before-cascade-du-ray.jpg)
 <span class="image-caption">Just before the cascade du ray waterfall</span>
 
 ![Refilling the water bottlels with fresh water from the waterfall](./images/02-fresh-water-from-the-waterfall.jpg)
 <span class="image-caption">Refilling the water bottlels with fresh water from the waterfall</span>
+
+After just a couple hundred meters we arrived at **cascade du ray**. I don't actually know how high it was because it was hard to find onformation on it in the first place. It was just a mere accident that I saw it on the maps and routed the hike this way on a hunch that this would provide a great view early in the morning which it definitely did.
+
+With our water bottles full of fresh water, we then started the ascent onto the plains close to the source of the waterfall. There was again very few info on how complicated this section would be and I think I would have not routed us this way if I had known that we had to go on a proper vertical ascent with our full backpacks. But in the end I'm happy we did. Even though it was sketchy at times, the feeling of achievement and the great views were totally worth it.
 
 ![Rock climbing with backpacks on](./images/02-rock-climbing-with-backpacks.jpg)
 <span class="image-caption">Rock climbing with backpacks on</span>
@@ -74,11 +80,15 @@ From La Colette we walked down to and through Escragnolles on the lookout for a 
 ![More climbing](./images/02-more-climbing.jpg)
 <span class="image-caption">More climbing</span>
 
+The plains proved to be rather boring but also quite easy so we made good progress quickly. We still had to meet up with a friend who wanted to join us in the second half of the day and it looked like we could actually make it to the meeting point in time. These meetings in the middle of hikes are kind of a tradition for us by now and we have become quite good at it. We agreed to meet around a certain GPS position at specific time but communicating prove quite complicated so we had to hope for the best. When we started to hike up the hill with the meeting point it started to rain heavily and had to take cover in the bushes. It was then when we heard our friend walking down the main path, singing his hiking jingles, enjoying his little walk under the rain by himself. We made it again, we managed to meet in the middle of nowhere with no way to communicate.
+
 ![Storm ahead](./images/02-storm-ahead.jpg)
 <span class="image-caption">Storm ahead</span>
 
 ![Arrival in La Roque Esclapon](./images/02-arrival-in-la-roque-esclapon.jpg)
 <span class="image-caption">Arrival in La Roque Esclapon</span>
+
+The rain continued for the descend down that hill and only stopped when we arrived in the village of **La Roque Esclapon**. We got quite cold and in the end decided to rent a three room tent with a small kitchen and a small heater. This simple tent felt almost lavish for us and it did well to our mood. We had a hearty dinner, played some games and just enjoyed each other's company.
 
 ![Warming up at the campsite](./images/02-warming-up-ath-the-campsite.jpg)
 <span class="image-caption">Warming up at the campsite</span>
@@ -88,8 +98,12 @@ From La Colette we walked down to and through Escragnolles on the lookout for a 
 ![The weather looks a lot more promising in La Bastide](./images/03-the-weather-looks-a-lot-more-promising.jpg)
 <span class="image-caption">The weather looks a lot more promising in La Bastide</span>
 
-![Enhoying pastries in a boulangerie in La Batisde](./images/03-enjoying-the-pastries-from-the-local-boulangerie.jpg)
-<span class="image-caption">Enhoying pastries in a boulangerie in La Batisde</span>
+Since the previous day was so exhausting with a couple of hills to climb in the cold rain, we decided to take it easy this day. With only snacks in our backpacks we went on a round-trip hike to a former castle (**Château Sabran de Pontèves**) in **Bargème**. The first stop however was the village of **La Bastide** where we found a cute boulangerie with amazing pastries.
+
+![Enjoying pastries in a boulangerie in La Bastide](./images/03-enjoying-the-pastries-from-the-local-boulangerie.jpg)
+<span class="image-caption">Enjoying pastries in a boulangerie in La Bastide</span>
+
+From there we hiked up the mountains over several farmer's pastures onto the path to the old castle. It was easy walking from there on and we took long brakes on the side of the path. We could see the castle in the distance the entire time and we were looking forward to stop there for a relaxed lunch.
 
 ![Slack-packing to the Chateau](./images/03-slack-packing-with-views-of-the-chateau.jpg)
 <span class="image-caption">Slack-packing to the Chateau</span>
@@ -100,11 +114,15 @@ From La Colette we walked down to and through Escragnolles on the lookout for a 
 ![We seem to attract dogs everywhere we go](./images/03-we-seem-to-attract-dogs-everywhere.jpg)
 <span class="image-caption">We seem to attract dogs everywhere we go</span>
 
+The village of Bargème was even smaller than we expected. It's just a couple houses, an old church, the old castle and a cute restaurant. If we had not had our own lunch with us, we would have definitely checked out the restaurant. The views we had from the castle back into the valley were stunning and we took our time relaxing there for quite some time.
+
 ![Made it to Château Sabran de Pontèves](./images/03-arrived-at-the-castle.jpg)
 <span class="image-caption">Made it to Château Sabran de Pontèves</span>
 
 ![Mingling with more horses on the way back](./images/03-mingling-with-more-horses.jpg)
 <span class="image-caption">Mingling with more horses on the way back</span>
+
+On the way back we could see rain clouds in the far distance coming our way so we hurried up a bit but made it back just in time for the rain to start. In the well protected tent we had another lovely dinner and our final hot shower at that nice campsite. The owners were super lovely, answering all out questions and just generally nice to talk to. They even offered to drive us to the next campsite on our trip because we would have to walk on the street for a long time which we dreaded a lot. And who are we to not take them up on that offer?
 
 ### <a name='section4'></a>Roundtrip to Trigance from Camping Verdon Carajuan (??km)
 
