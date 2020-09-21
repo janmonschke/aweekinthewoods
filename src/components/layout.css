@@ -13,8 +13,8 @@
 .layout .gatsby-resp-image-wrapper,
 .layout section .gatsby-image-wrapper,
 .layout.blog-index .gatsby-image-wrapper {
-  margin-left: -200px !important;
-  margin-right: -200px !important;
+  margin-left: -100px !important;
+  margin-right: -100px !important;
 }
 
 .layout iframe {
