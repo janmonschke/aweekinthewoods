@@ -158,8 +158,8 @@ On the way back we could see rain clouds in the far distance coming our way so w
 ![The beginning of the Gorge du Verdon](./images/05-the-beginning-of-the-gorge.jpg)
 <span class="image-caption">The beginning of the Gorge du Verdon</span>
 
-![Climbing on stones nezt to the verdon](./images/05-climbing-stones-right-next-to-the-verdon.jpg)
-<span class="image-caption">Climbing on stones nezt to the verdon</span>
+![Climbing on stones next to the verdon](./images/05-climbing-stones-right-next-to-the-verdon.jpg)
+<span class="image-caption">Climbing on stones next to the verdon</span>
 
 ![Entering the tunnel](./images/05-entering-the-tunnel.jpg)
 <span class="image-caption">Entering the tunnel</span>
