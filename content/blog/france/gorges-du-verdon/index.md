@@ -185,8 +185,8 @@ On the way back we could see rain clouds in the far distance coming our way so w
 ![Refilling the water from the verdon](./images/05-refilling-the-water-from-the-verdon.jpg)
 <span class="image-caption">Refilling the water from the verdon</span>
 
-![Enjoying the views from a viewpoint close to Chalet de la Maline](./images/
-<span class="image-caption">Enjoying the views from a viewpoint close to Chalet de la Maline</span>05-enjoying-the-views-from-a-viewpoint-close-to-the-chalet.jpg)
+![Enjoying the views from a viewpoint close to Chalet de la Maline](./images/05-enjoying-the-views-from-a-viewpoint-close-to-the-chalet.jpg)
+<span class="image-caption">Enjoying the views from a viewpoint close to Chalet de la Maline</span>
 
 ![Happy to have arrived at Chalet de la Maline](./images/05-happy-to-have-arrived-at-chalet-de-la-maline.jpg)
 <span class="image-caption">Happy to have arrived at Chalet de la Maline</span>
@@ -226,8 +226,8 @@ On the way back we could see rain clouds in the far distance coming our way so w
 ![Almost at the top of the hill](./images/06-almost-at-the-top-of-the-hill.jpg)
 <span class="image-caption">Almost at the top of the hill</span>
 
-![The top of the hill with views of Lac de Sainte-Croix](./images/06-the-top-of-the-hill-with-views-on-lac-de-ste-coix.
-<span class="image-caption">The top of the hill with views of Lac de Sainte-Croix</span>jpg)
+![The top of the hill with views of Lac de Sainte-Croix](./images/06-the-top-of-the-hill-with-views-on-lac-de-ste-coix.jpg)
+<span class="image-caption">The top of the hill with views of Lac de Sainte-Croix</span>
 
 ![Beautiful views on Lac de Sainte-Croix](./images/06-beautiful-views-on-lac-de-ste-croix.jpg)
 <span class="image-caption">Beautiful views on Lac de Sainte-Croix</span>

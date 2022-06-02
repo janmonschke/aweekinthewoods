@@ -1,23 +1,23 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import { rhythm, scale } from "../utils/typography";
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={siteTitle} className="blog-index">
-      <SEO title="All hiking reports" />
+      <Seo title="All hiking reports" />
       {posts.map(({ node }) => {
-        const { title, cover } = node.frontmatter
-        const displayTitle = title || node.fields.slug
-        const articleLink = node.fields.slug
-        const coverImg = cover && cover.childImageSharp.fluid
+        const { title, cover } = node.frontmatter;
+        const displayTitle = title || node.fields.slug;
+        const articleLink = node.fields.slug;
+        const coverImg = cover && cover.childImageSharp.gatsbyImageData;
 
         return (
           <article key={node.fields.slug} style={{ marginBottom: rhythm(2.4) }}>
@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
                 >
                   {displayTitle}
                 </h2>
-                <Image fluid={coverImg} />
+                <GatsbyImage image={coverImg} alt="" />
               </Link>
             </header>
             <section>
@@ -47,13 +47,13 @@ const BlogIndex = ({ data, location }) => {
               <Link to={articleLink}>Read more</Link>
             </section>
           </article>
-        )
+        );
       })}
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -74,9 +74,7 @@ export const pageQuery = graphql`
             title
             cover {
               childImageSharp {
-                fluid(maxWidth: 1200, quality: 95) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 1200, quality: 95)
               }
             }
           }
@@ -84,4 +82,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,26 +1,23 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import BlogPostFooter from "../components/blogpost-footer"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import BlogPostFooter from "../components/blogpost-footer";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import { rhythm } from "../utils/typography";
 
-import "./blog-post.css"
+import "./blog-post.css";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
-  const { cover, title, date } = post.frontmatter
-  const coverImg = cover && cover.childImageSharp.fixed
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata.title;
+  const { previous, next } = pageContext;
+  const { cover, title, date } = post.frontmatter;
+  const coverImg =
+    cover?.childImageSharp?.gatsbyImageData?.images?.fallback?.src;
   return (
     <Layout location={location} title={siteTitle} className="blogPost">
-      <SEO
-        title={title}
-        description={post.excerpt}
-        coverSrc={coverImg && coverImg.src}
-      />
+      <Seo title={title} description={post.excerpt} coverSrc={coverImg} />
       <article>
         <header style={{ textAlign: "center" }}>
           <h1
@@ -68,13 +65,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String) {
     site {
       siteMetadata {
         title
@@ -89,12 +86,10 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         cover {
           childImageSharp {
-            fixed {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }
     }
   }
-`
+`;
