@@ -63,18 +63,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `A week in the woods`,
-        short_name: `A week in the woods`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
-        display: `minimal-ui`,
-        icon: `content/assets/icon.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
