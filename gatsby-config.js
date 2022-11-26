@@ -25,7 +25,6 @@ module.exports = {
               maxWidth: 1000,
               quality: 80,
               withWebp: { quality: 80 },
-              withAvif: { quality: 80 },
               showCaptions: true,
             },
           },
