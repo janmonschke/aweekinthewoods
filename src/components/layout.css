@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.image-caption {
+.gatsby-resp-image-figcaption {
   margin-top: 0.5em;
   text-align: center;
   display: block;
