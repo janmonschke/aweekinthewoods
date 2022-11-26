@@ -10,6 +10,7 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-preact",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -87,8 +88,8 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                });
-              });
+                })
+              })
             },
             query: `
               {
@@ -116,4 +117,4 @@ module.exports = {
       },
     },
   ],
-};
+}
