@@ -90,13 +90,14 @@ module.exports = {
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { type: { ne: "info" } } }
+                  sort: { order: DESC, fields: [frontmatter___date] }
                 ) {
                   nodes {
                     excerpt
@@ -119,4 +120,4 @@ module.exports = {
       },
     },
   ],
-}
+};

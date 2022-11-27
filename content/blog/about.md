@@ -1,3 +1,7 @@
+---
+type: info
+---
+
 ## About
 
 (TBD)
