@@ -1,85 +1,103 @@
-import React from "react"
-import { Link } from "gatsby"
-import icon from "../../content/assets/icon.svg"
+import React, { useState, useCallback } from "react";
+import { Link } from "gatsby";
+import icon from "../../content/assets/icon.svg";
+import hamburger from "../../content/assets/hamburger.svg";
+import close from "../../content/assets/close.svg";
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from "../utils/typography";
 
-import "./layout.css"
+import "./layout.css";
 
 const Layout = ({ location, title, className, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuLabel = menuOpen ? "Open menu" : "Close menu";
+  const isRoot = location.pathname === `${__PATH_PREFIX__}/`;
 
-  if (location.pathname === rootPath) {
-    header = (
-      <h1
-        style={{
-          ...scale(0.9),
-          marginBottom: rhythm(1),
-          marginTop: rhythm(1.2),
-          textAlign: "center",
-        }}
+  const toggleMenu = useCallback((event) => {
+    event.preventDefault();
+    setMenuOpen((open) => !open);
+  }, []);
+
+  let header = (
+    <>
+      <Link
+        to="/"
+        className={["layout__headerLink", isRoot ? "is-root" : ""].join(" ")}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
+        <img alt="" src={icon} className="layout__hikingIcon" />
+        <button
+          className="layout__menuBtn"
+          aria-label={menuLabel}
+          onClick={toggleMenu}
         >
           <img
             alt=""
-            src={icon}
-            style={{
-              width: "3rem",
-              height: "3rem",
-              margin: "0.5rem auto",
-              display: "block",
-            }}
+            aria-hidden={true}
+            src={menuOpen ? close : hamburger}
+            className="layout__menuBtnIcon"
           />
-          {title}
-        </Link>
-      </h1>
-    )
-  } else {
-    header = (
-      <h3 style={{ textAlign: "center" }}>
-        <Link
+        </button>
+        <h1
           style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-            position: "relative",
+            ...(isRoot ? scale(0.9) : scale(0.4)),
+            marginBottom: isRoot ? rhythm(1) : 0,
+            marginTop: isRoot ? rhythm(0.2) : 0,
+            textAlign: "center",
           }}
-          to={`/`}
         >
-          <img
-            alt=""
-            src={icon}
-            style={{
-              width: "2rem",
-              height: "2rem",
-              margin: "0.5rem auto",
-              display: "block",
-            }}
-          />
           {title}
+        </h1>
+      </Link>
+      <nav
+        className={["layout__menu", menuOpen ? "is-open" : ""].join(" ")}
+        aria-expanded={menuOpen}
+      >
+        <h3>Menu</h3>
+        <Link to="/about">About</Link>
+        <h5>France</h5>
+        <Link to="/france/auvergne">Auvergne</Link>
+        <Link to="/france/gorges-du-verdon">Gorges du Verdon</Link>
+        <h5>Scotland</h5>
+        <Link to="/scotland/isle-of-arran-coastal-way">
+          Isle of Arran Coastal Way
         </Link>
-      </h3>
-    )
-  }
+        <Link to="/scotland/west-highland-way">West Highland Way</Link>
+      </nav>
+    </>
+  );
   return (
     <div className={`layout ${className}`}>
       <header>{header}</header>
       <main>{children}</main>
       <footer>
         <p>
-          <small>Icon by Made by Made from the Noun Project</small>
+          <small>
+            <a
+              href="https://thenounproject.com/icon/hiking-2018469/"
+              rel="noreferrer noopener"
+            >
+              Hiking icon
+            </a>{" "}
+            created by Made by Made,{" "}
+            <a
+              href="https://thenounproject.com/icon/hamburger-2235852/"
+              rel="noreferrer noopener"
+            >
+              Hamburger icon
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://thenounproject.com/icon/hamburger-2235852/"
+              rel="noreferrer noopener"
+            >
+              Close icon
+            </a>{" "}
+            created by Marie Van den Broeck.
+          </small>
         </p>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
