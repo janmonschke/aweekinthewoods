@@ -50,15 +50,17 @@ const BlogPostFooter = ({ date }) => {
       <p style={{ marginBottom: 0 }}>
         Written by <strong>{author}</strong>, an avid hiker living in Berlin,
         which is way too far away from the mountains.
-        <p
-          style={{
-            ...scale(-1 / 10),
-            marginBottom: 0,
-            marginTop: rhythm(0.5),
-          }}
-        >
-          Published on: {date}
-        </p>
+        {date && (
+          <p
+            style={{
+              ...scale(-1 / 10),
+              marginBottom: 0,
+              marginTop: rhythm(0.5),
+            }}
+          >
+            Published on: {date}
+          </p>
+        )}
       </p>
     </div>
   );

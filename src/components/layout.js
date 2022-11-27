@@ -72,6 +72,7 @@ const Layout = ({ location, title, className, children }) => {
       <footer>
         <p>
           <small>
+            Licenses:{" "}
             <a
               href="https://thenounproject.com/icon/hiking-2018469/"
               rel="noreferrer noopener"
