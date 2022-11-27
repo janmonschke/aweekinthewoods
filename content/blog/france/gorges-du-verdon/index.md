@@ -1,6 +1,6 @@
 ---
 title: "Hiking into the Gorges du Verdon"
-date: "2020-05-17"
+date: "2022-11-30"
 cover: "./cover.jpg"
 ---
 
@@ -16,14 +16,15 @@ The Verdon river is one of the most beautiful places to stay and hike in the sou
 
 ## Sections
 
-1. [Saint-Vallier-de-Thiey to Escragnolles (??km)](#section1)
-1. [Escragnolles to La Roque Esclapon (??km)](#section2)
-1. [Roundtrip to Château Sabran de Pontèves from Camping Notre Dame (??km)](#section3)
-1. [Roundtrip to Trigance from Camping Verdon Carajuan (??km)](#section4)
-1. [Le Point Sublime to Chalet de la Maline along the Verdon (??km)](#section5)
-1. [Chalet de la Maline to Lac de Sainte-Croix (??km)](#section6)
+1. [Saint-Vallier-de-Thiey to Escragnolles (19km)](#section1)
+1. [Escragnolles to La Roque Esclapon (17km)](#section2)
+1. [Roundtrip to Château Sabran de Pontèves from Camping Notre Dame (15km)](#section3)
+1. [Roundtrip to Trigance from Camping Verdon Carajuan (11km)](#section4)
+1. [Le Point Sublime to Chalet de la Maline along the Verdon (15km)](#section5)
+1. [Chalet de la Maline to Lac de Sainte-Croix (21km)](#section6)
 
-### <a name='section1'></a>Day 1: Saint-Vallier-de-Thiey to Escragnolles (??km)
+### <a name='section1'></a>Day 1: Saint-Vallier-de-Thiey to Escragnolles
+(19km, 9h30, [komoot](https://www.komoot.com/tour/69515519))
 
 After a rainy but relaxed evening in **Grasse** (which is very easy to reach via **Nice**), we took the earliest **[LER 31](https://services-zou.maregionsud.fr/fr/horaires/Zou-LER/Bus/ligne/LER-31/direction/OUTWARD/919)** bus towards **Saint-Vallier-de-Thiey** which marked the beginning of the hike. While the bus slowly made its way up the mountain, we enjoyed the stunning all the way to the ocean.
 
@@ -51,7 +52,8 @@ From La Colette we walked down to and through Escragnolles on the lookout for a 
 
 ![Found a campsite in a small forest](./images/01-campsite.jpg)
 
-### <a name='section2'></a>Day 2: Escragnolles to La Roque Esclapon (??km)
+### <a name='section2'></a>Day 2: Escragnolles to La Roque Esclapon
+(17km, 7h45, [komoot](https://www.komoot.com/tour/69519813))
 
 ![Catching the morning sun](./images/02-catching-the-morning-sun.jpg)
 
@@ -81,7 +83,8 @@ The rain continued for the descend down the hill and only stopped when we arrive
 
 ![Warming up at the campsite](./images/02-warming-up-ath-the-campsite.jpg)
 
-### <a name='section3'></a>Roundtrip to Château Sabran de Pontèves from Camping Notre Dame (??km)
+### <a name='section3'></a>Roundtrip to Château Sabran de Pontèves from Camping Notre Dame
+(15km, 6h, [komoot](https://www.komoot.com/tour/69522371))
 
 ![The weather looks a lot more promising in La Bastide](./images/03-the-weather-looks-a-lot-more-promising.jpg)
 
@@ -105,7 +108,8 @@ The village of Bargème was even smaller than we expected. It's just a couple ho
 
 On the way back we could see rain clouds coming our way so we hurried up but made it back just in time before it started to rain. We had another lovely dinner in out well-protected tent and our final hot shower at that nice campsite. The owners were super lovely, answering all our questions and were always up for a chat. They even offered to drive us to the next campsite on our trip because we would otherwise have to walk on the street for a long time. And who are we to not take them up on that offer?
 
-### <a name='section4'></a>Roundtrip to Trigance from Camping Verdon Carajuan (??km)
+### <a name='section4'></a>Roundtrip to Trigance from Camping Verdon Carajuan
+(11km, 5h, [komoot](https://www.komoot.com/tour/69523556))
 
 Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, we set up our tents there and decided again to go on a roundtrip hike. The medival village of **Trigance** promised to be a nice destination with an old castle, lovely small streets and a couple shops selling local goods and foods. It was at that campsite that we also saw the Verdon river for the first time. The river that would be at our side for the final two stages on this hike.
 
@@ -123,7 +127,8 @@ Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, w
 
 ![Dinner at the campsite](./images/04-dinner-at-the-campsite.jpg)
 
-### <a name='section5'></a>Le Point Sublime to Chalet de la Maline along the Verdon (??km)
+### <a name='section5'></a>Le Point Sublime to Chalet de la Maline along the Verdon
+(15km, 8h50, [komoot](https://www.komoot.com/tour/69525965))
 
 ![Point Sublime in the fog](./images/05-point-sublime-in-the-fog.jpg)
 
@@ -155,7 +160,8 @@ Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, w
 
 ![Vegetarian dinner prepared by Chalet de la Maline](./images/05-vegetarian-dinner-prepared-by-the-chalet.jpg)
 
-### <a name='section6'></a>Chalet de la Maline to Lac de Sainte-Croix (??km)
+### <a name='section6'></a>Chalet de la Maline to Lac de Sainte-Croix
+(21km, 11h40, [komoot](https://www.komoot.com/tour/69530357))
 
 ![The canyon covered in morning mist](./images/06-the-canyon-covered-in-morning-mist.jpg)
 

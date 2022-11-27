@@ -26,7 +26,8 @@ Since some of the stages require a lot of road-walking, I decided to re-route us
 1. [Lagg to Kildonan 🚌 Whiting Bay to Lamlash](#section6) (17km)
 1. [Lamlash to Brodick](#section7) (11km)
 
-### <a name='section1'></a>Day 1: Brodick to Sannox Bay (17km)
+### <a name='section1'></a>Day 1: Brodick to Sannox Bay
+(17km, 4h30, [komoot](https://www.komoot.com/tour/32841362))
 
 We started our journey early in the morning in **Glasgow** by hopping on a train to the **Ardrossan Ferry Terminal**. From there we took the ferry to **Brodick**. The entire trip took only 2h and was a scenic one already. Not soon after the ferry leaves the terminal, you can make out the peak of **Goatfell** on Arran. It felt great to stand on the ferry deck with a stiff breeze in our faces, slowly getting closer to the island.
 
@@ -56,7 +57,8 @@ When we reached the shore we were greeted by rainbows and and easy walk on the r
 
 ![Warming up at the campfire](./images/01-warming-up-at-the-fire.jpg)
 
-### <a name="section2"></a>Day 2: Sannox Bay to Lochranza (14km)
+### <a name="section2"></a>Day 2: Sannox Bay to Lochranza
+(14km, 4h, [komoot](https://www.komoot.com/tour/33092169))
 
 On day two we continued along the flat coastal path for most of the day. The weather cleared up a bit, it was not raining anymore but still pretty overcast. Joined by two more friends that arrived on the island that morning and came to Sannox by bus, we headed onto this more relaxed section of the hike.
 
@@ -84,7 +86,8 @@ We set up camp for the next two nights at the **Lochranza Campsite**. The next t
 
 ![Lochranza Campsite](./images/02-lochranza-campsite.jpg)
 
-### <a name="section3"></a>Day 3: Loch na Davie Glen loop (17km)
+### <a name="section3"></a>Day 3: Loch na Davie Glen loop
+(17km, 5h, [komoot](https://www.komoot.com/tour/33092254))
 
 The nice thing about staying at Lochranza campsite for two nights is that we were able to pack a light backpack with only the essentials. There is no point in carrying your tent, stove and other equipment through the mountains when you walk in a loop. So we headed out slackpack-style with enough water and food for the day but nothing else. Seeing how light the packs had become all of a sudden, gave us a good impression of how much we would usually carry on our backs.
 
@@ -120,7 +123,8 @@ For the first two kilometers we kind of regretted to have opted for the more str
 
 It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsite to prepare a big dinner surround by swarns of midges. We also took the time to resupply a bit. It's pretty straight forward to get by bus from Lochranza to the supermarket in Brodick and back.
 
-### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh (9km)
+### <a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh
+(9km, 2h45, [komoot](https://www.komoot.com/tour/33164860))
 
 We got to the start of this section by **bus from Lochranza campsite** to **Thundergay**. Since the group was up for a more relaxed tour that day, I created a short trip into the mountains along some lochs and a river. The weather could not have been better that day with the sun shining bright from the early morning on.
 
@@ -166,7 +170,8 @@ With the lightness of a couple drams of Arran whiskey in our bodies, we opted to
 
 ![Relaxing with some golf at Lochranza campsite](./images/04-golfing-in-lochranza.jpg)
 
-### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg (13km)
+### <a name="section5"></a>Day 5: Blackwaterfoot to Lagg
+(13km, 3h45, [komoot](https://www.komoot.com/tour/33275726))
 
 After two days off the actual coastal way, it was time for us to get back on track. We hopped on an early morning bus from Lochranza to **Blackwaterfoot** which is the start of the regular 5th section of this hike. The path starts close to the shore on soft and sandy grass that quickly turns more rocky and bouldery. While it did slow us down more than we wanted, it was a great opportunity to enjoy the breezy coastal winds and to observe the wildlife.
 
@@ -188,7 +193,8 @@ We pitched our tents on the grass just before the beach after talking to the own
 
 ![Preparing dinner at the beach (more sneaky Ailsa Craig in the back)](./images/05-dinner-at-the-beach.jpg)
 
-### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash (17km)
+### <a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash
+(17km, 4h, [komoot #1](https://www.komoot.com/tour/33339809) [komoot #2](https://www.komoot.com/tour/33374295))
 
 The morning of the 6th day we could take it super easy because we had to time the rest of the day to the tides. We opted for the route along the coast to get to see **Black Cave** which is only accessible at low tide. A long breakfast of porridge with banana and dark chocolate later, we headed out to hike along the beautiful beaches.
 
@@ -218,7 +224,8 @@ The forest route was definitely the better choice that day as it protected us fr
 
 The slow descend into Lamlash felt like the perfect relaxing final stretch for the day and we found a perfect green patch to pitch all our tents just before Lamlash. The ground was nice and soft and there was still plenty of sun in the evening. Once the sun was gone however, the midges came out in hordes but we had already started prearing dinner so it was too late to escape into a potentially less-infested spot.
 
-### <a name="section7"></a>Day 7: Lamlash to Brodick (11km)
+### <a name="section7"></a>Day 7: Lamlash to Brodick
+(11km, 2h30, [komoot](https://www.komoot.com/tour/33447990))
 
 We rose early and quietly so we would not wake up the darn midges in the morning and enjoyed our breakfast at a nearby road in peace. 🙅‍♂️🦟 This section is only 11km of mostly easy walks next to the shore and through some fields before reaching the Brodick ferry terminal.
 

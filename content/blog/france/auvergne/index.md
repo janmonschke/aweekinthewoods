@@ -142,6 +142,8 @@ Instead of the full 133km of the GR400, this path only stretched over 51km which
 
 For navigation during the hike I prepared a kml file with Google Maps that contained the path of our hike and imported it into [maps.me] on my phone. I use this app for all hikes because it has detailed maps with lots or marked trails and water sources. It is as easy to use as Google Maps and you can download all the maps for free.
 
+Check out a full log of the hike [on komoot](https://www.komoot.com/tour/18376770).
+
 [gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
 [au bout du monde]: https://google.com
