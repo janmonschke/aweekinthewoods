@@ -63,6 +63,12 @@
   text-decoration: underline;
 }
 
+.layout__menuRssIcon {
+  width: 1em;
+  height: 1em;
+  margin: 0 0 -0.2em 0.3em;
+}
+
 .gatsby-resp-image-figcaption {
   margin-top: 0.5em;
   text-align: center;

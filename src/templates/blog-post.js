@@ -33,9 +33,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           style={{ marginBottom: rhythm(2) }}
         />
-        <footer style={{ marginBottom: rhythm(2) }}>
+        <div style={{ marginBottom: rhythm(2) }}>
           <BlogPostFooter date={date} />
-        </footer>
+        </div>
       </article>
 
       <nav>

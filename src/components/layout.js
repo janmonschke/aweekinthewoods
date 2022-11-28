@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import icon from "../../content/assets/icon.svg";
 import hamburger from "../../content/assets/hamburger.svg";
 import close from "../../content/assets/close.svg";
+import rss from "../../content/assets/rss.svg";
 
 import { rhythm, scale } from "../utils/typography";
 
@@ -50,10 +51,8 @@ const Layout = ({ location, title, className, children }) => {
       </Link>
       <nav
         className={["layout__menu", menuOpen ? "is-open" : ""].join(" ")}
-        aria-expanded={menuOpen}
+        aria-label="main"
       >
-        <h3>Menu</h3>
-        <Link to="/about">About</Link>
         <h5>France</h5>
         <Link to="/france/auvergne">Auvergne</Link>
         <Link to="/france/gorges-du-verdon">Gorges du Verdon</Link>
@@ -62,6 +61,20 @@ const Layout = ({ location, title, className, children }) => {
           Isle of Arran Coastal Way
         </Link>
         <Link to="/scotland/west-highland-way">West Highland Way</Link>
+        <Link to="/about" style={{ marginTop: "1em" }}>
+          About
+        </Link>
+        <Link to="/rss.xml">
+          RSS
+          <i>
+            <img
+              alt=""
+              aria-hidden={true}
+              src={rss}
+              className="layout__menuRssIcon"
+            />
+          </i>
+        </Link>
       </nav>
     </>
   );
@@ -74,22 +87,33 @@ const Layout = ({ location, title, className, children }) => {
           <small>
             Licenses:{" "}
             <a
+              href="https://thenounproject.com/icon/rss-2146954/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              RSS icon
+            </a>{" "}
+            created by Adrien Coquet,{" "}
+            <a
               href="https://thenounproject.com/icon/hiking-2018469/"
-              rel="noreferrer noopener"
+              rel="noreferrer"
+              target="_blank"
             >
               Hiking icon
             </a>{" "}
             created by Made by Made,{" "}
             <a
               href="https://thenounproject.com/icon/hamburger-2235852/"
-              rel="noreferrer noopener"
+              rel="noreferrer"
+              target="_blank"
             >
               Hamburger icon
             </a>{" "}
             and{" "}
             <a
               href="https://thenounproject.com/icon/hamburger-2235852/"
-              rel="noreferrer noopener"
+              rel="noreferrer"
+              target="_blank"
             >
               Close icon
             </a>{" "}
