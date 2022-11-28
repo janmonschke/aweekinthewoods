@@ -14,5 +14,5 @@ That first trip then started a tradition among our group of friends to go on a w
 
 ![Top of the mountains Auvergne](./images/top-of-the-mountains-auvergne.jpg)
 
-We hope you enjoy reading our reports and if you do, feel free to reach out to us at the contact details below 💌.
+We hope you enjoy reading our reports and if you do, feel free to reach out to us at the contact details below 💌
 
