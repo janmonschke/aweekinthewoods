@@ -11,13 +11,18 @@ import "./blog-post.css";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
+  const { previous, next, iso_date } = pageContext;
   const { cover, title, date } = post.frontmatter;
   const coverImg =
     cover?.childImageSharp?.gatsbyImageData?.images?.fallback?.src;
   return (
     <Layout location={location} title={siteTitle} className="blogPost">
-      <Seo title={title} description={post.excerpt} coverSrc={coverImg} />
+      <Seo
+        title={title}
+        description={post.excerpt}
+        coverSrc={coverImg}
+        published_time={iso_date}
+      />
       <article>
         <header style={{ textAlign: "center" }}>
           <h1
