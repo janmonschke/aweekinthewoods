@@ -53,14 +53,14 @@ const BlogPostFooter = ({ date }) => {
           Written by <strong>{author}</strong>, an avid hiker living in Berlin,
           which is way too far away from the mountains. You can find his
           personal blog at{" "}
-          <a href="https://janmonschke.com" target="_blank" rel="noreferrer">
+          <a href="https://janmonschke.com" target="_blank">
             janmonschke.com
           </a>{" "}
           and follow him on{" "}
           <a
             href="https://indieweb.social/@thedeftone"
             target="_blank"
-            rel="noreferrer"
+            rel="me"
           >
             🐘 Mastodon
           </a>{" "}

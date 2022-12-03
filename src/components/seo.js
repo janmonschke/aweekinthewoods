@@ -39,6 +39,7 @@ const SEO = ({ description, lang, title, coverSrc, published_time }) => {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[{ rel: "me", href: "https://indieweb.social/@thedeftone" }]}
       meta={[
         {
           name: `description`,
