@@ -79,7 +79,7 @@ These meetings in the middle of hikes are kind of a tradition for us by now and 
 
 ![Arrival in La Roque Esclapon](./images/02-arrival-in-la-roque-esclapon.jpg)
 
-The rain continued for the descend down the hill and only stopped when we arrived in the village of **La Roque Esclapon**. We got quite cold and in the end decided to rent a "three room tent" with a small kitchen and a small heater. This simple tent felt almost lavish for us and it did well to lift up our mood. We had a hearty dinner, played some games and just enjoyed each other's company.
+The rain continued for the descend down the hill and only stopped when we arrived in the village of **La Roque Esclapon**. We got quite cold and in the end decided to rent a "three room tent" with a small kitchen and a small heater. This simple tent felt lavish to us and it did well to lift up our mood. We had a hearty dinner, played some games and just enjoyed each other's company. Finding sleep was not a problem that night.
 
 ![Warming up at the campsite](./images/02-warming-up-ath-the-campsite.jpg)
 
@@ -111,7 +111,7 @@ On the way back we could see rain clouds coming our way so we hurried up but mad
 ### <a name='section4'></a>Roundtrip to Trigance from Camping Verdon Carajuan
 (11km, 5h, [komoot](https://www.komoot.com/tour/69523556))
 
-Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, we set up our tents there and decided again to go on a roundtrip hike. The medival village of **Trigance** promised to be a nice destination with an old castle, lovely small streets and a couple shops selling local goods and foods. It was at that campsite that we also saw the Verdon river for the first time. The river that would be at our side for the final two stages on this hike.
+Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, we set up our tents there and again decided to go on a roundtrip hike. The medival village of **Trigance** promised to be a nice destination with an old castle, lovely small streets and a couple shops selling local goods and foods. It was at that campsite that we also saw the Verdon river for the first time. The river that would be at our side for the next two stages on this hike.
 
 ![A first glimpse of the Verdon river](./images/04-a-first-glimpse-of-the-verdon.jpg)
 
@@ -119,11 +119,17 @@ Our lovely hosts dropped us off at **Camping Verdon Carajuan** in the morning, w
 
 ![Looking back to the mountains](./images/04-looking-back-to-the-mountains.jpg)
 
+To Trigance it's an easy walk along the river. There are several opportunities to cool down your feet in the mysteriously blue-green river. The slope is gentle and the higher up you get, you're rewarded with views of the mountains around and the village in front. We only packed water and snacks, knowing we would be able to grab some local food in town.
+
 ![Arriving in Trigance](./images/04-arriving-in-trigance.jpg)
 
 ![Checking out the local bakeries](./images/04-checking-out-the-local-bakery.jpg)
 
+Wandering through the cute tiny streets, we found fresh bread, local cider and ice cream which made for the perfect indulging lunch. There's not much to do in the village itself but it is cute to look at. The castle, which is slightly higher up the mountain, was closed that day but we managed to get onto a viewing platform from where we saw an upcoming storm. Naturally, we started to slowly walk back to the campsite.
+
 ![Climbing the stairs to the castle](./images/04-clmbing-the-stairs-to-the-castle.jpg)
+
+When we arrived back at the campsite, the storm had cleared and the sun had come out again. We took it easy, took long showers and prepared dinner on the barbecue. After a short round of card games, we went to bed early, knowing well that we had to get up early and in time for the bus in the morning.
 
 ![Dinner at the campsite](./images/04-dinner-at-the-campsite.jpg)
 
