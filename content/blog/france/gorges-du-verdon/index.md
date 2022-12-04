@@ -136,17 +136,27 @@ When we arrived back at the campsite, the storm had cleared and the sun had come
 ### <a name='section5'></a>Le Point Sublime to Chalet de la Maline along the Verdon
 (15km, 8h50, [komoot](https://www.komoot.com/tour/69525965))
 
+The bus from the campsite to **Le Point Sublime** takes only a short while. You could potentially hike there, but it's along the windy mountain road. I wouldn't recommend it since there is no dedicated foot path and walking on the road seemed quite unsafe to be fair.
+
 ![Point Sublime in the fog](./images/05-point-sublime-in-the-fog.jpg)
 
 ![Colorful rock formations at Point Sublime](./images/05-colorful-rock-formations-at-point-sublime.jpg)
 
 ![The beginning of the Gorge du Verdon](./images/05-the-beginning-of-the-gorge.jpg)
 
+From Point Sublime we made our way down the path along the rock face, though light vegetation. The valley was still covered in fog, the stone was humid and the weather looked like it would become a rainy day again. At the foot of the mountain, we had a great view onto the baby blue Verdon.
+
 ![Climbing on stones next to the verdon](./images/05-climbing-stones-right-next-to-the-verdon.jpg)
+
+The water is super clear here. The river bed full of stones. There are warning signs everywhere warning you from sudden rising water levels when it rains and when a nearby water reservoir is opening its valves. It's better not to set up camp on those stones, might become a wet endeavor.
 
 ![Entering the tunnel](./images/05-entering-the-tunnel.jpg)
 
 ![Beautiful views of the verdon](./images/05-beautiful-views-of-the-verdon.jpg)
+
+Shortly after reaching the river, we walked through the first tunnel. The tunnels are pitch black and bringing your own lamp is advised. The ground is also pretty wet and full of puddles that are deeper than they seem. I don't really remember how long the longest tunnel was, but I think it was around one kilometer.
+
+Every now and then, there are lookouts in the tunnel and you can see the beautiful river valley from the top.
 
 ![Looking into the canyon after the tunnel](./images/05-looking-into-the-canyon.jpg)
 
@@ -154,17 +164,29 @@ When we arrived back at the campsite, the storm had cleared and the sun had come
 
 ![Lunch in the canyon](./images/05-lunch-in-the-canyon.jpg)
 
+The weather also took a turn and started to get really sunny at that point. Which made for much better views ☀️. A lunch on heated rocks, in the midday sun was the perfect time off from a strenous morning walk.
+
 ![Climbing along rails in the canyon](./images/05-climbing-along-rails-in-the-canyon.jpg)
 
 ![Lots of climbing up and down on rails](./images/05-lots-of-climbing-on-rails-up-and-down.jpg)
 
+The path winds around many corners, goes up and down a lot. Some parts of the path are bare rock and you need to hold tight onto the railings. Verdon is peaking through the bushes from time to time. With heavy backpacks, this path can be quite demanding. Luckily we already ate most of our food, so the packs were substantially lighter.
+
+We still had to carry our tents, sleeping- and cooking equipment though. We later found out that there would've been the option to ask a local taxi company to bring the packs to the Chalet or the next campsite. An option we might take, next time we're in the area.
+
 ![Refilling the water from the verdon](./images/05-refilling-the-water-from-the-verdon.jpg)
 
+Once we made it down the valley again, we could refill our watter bottles in the Verdon. The heat was very intense at that point so we took a longer break. Cooling down our feet in the ice cold water was the greatest thing on earth for us. We knew we had to rest up a bit, because the final stretch that day was all the way up the edge of the valley again to **Chalet de la Maline**.
+
 ![Enjoying the views from a viewpoint close to Chalet de la Maline](./images/05-enjoying-the-views-from-a-viewpoint-close-to-the-chalet.jpg)
+
+The last hours felt long and morale took a little hit again. Our packs felt heavy and the propsect of only walking uphill for the last bit was a challenge. We were motivated knowing that at the end of the day we will sleep in proper beds and we won't have to cook dinner ourselves, haha. Also, the views from up there, made up for it 100%.
 
 ![Happy to have arrived at Chalet de la Maline](./images/05-happy-to-have-arrived-at-chalet-de-la-maline.jpg)
 
 ![Vegetarian dinner prepared by Chalet de la Maline](./images/05-vegetarian-dinner-prepared-by-the-chalet.jpg)
+
+Resting on the chalet's patio, overlooking the valley felt amazing. We felt accomplished. Physically exhausted, but mentally stronger. We made it all the way here. Down and up and down and up the valley. We were greeted by the nice host, chatted with other hikers and enjoyed a multi-course dinner made from heaven. They were even so nice to prepare a vegetarian version for our crew. The evening was spent haring stories with the host over the one or the other glass of wine. The morale was up again 🤩.
 
 ### <a name='section6'></a>Chalet de la Maline to Lac de Sainte-Croix
 (21km, 11h40, [komoot](https://www.komoot.com/tour/69530357))
