@@ -186,7 +186,9 @@ The last hours felt long and morale took a little hit again. Our packs felt heav
 
 ![Vegetarian dinner prepared by Chalet de la Maline](./images/05-vegetarian-dinner-prepared-by-the-chalet.jpg)
 
-Resting on the chalet's patio, overlooking the valley felt amazing. We felt accomplished. Physically exhausted, but mentally stronger. We made it all the way here. Down and up and down and up the valley. We were greeted by the nice host, chatted with other hikers and enjoyed a multi-course dinner made from heaven. They were even so nice to prepare a vegetarian version for our crew. The evening was spent haring stories with the host over the one or the other glass of wine. The morale was up again 🤩.
+Resting on the chalet's patio, overlooking the valley felt amazing. We felt accomplished. Physically exhausted, but mentally stronger. We made it all the way here. Down and up and down and up the valley.
+
+We were greeted by the nice host, chatted with other hikers and enjoyed a multi-course dinner made from heaven. They were even so nice to prepare a vegetarian version for our crew. The evening was spent haring stories with the host over the one or the other glass of wine. The morale was up again 🤩.
 
 ### <a name='section6'></a>Chalet de la Maline to Lac de Sainte-Croix
 (21km, 11h40, [komoot](https://www.komoot.com/tour/69530357))
