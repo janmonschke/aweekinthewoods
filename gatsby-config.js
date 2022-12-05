@@ -1,3 +1,5 @@
+const cheerio = require("cheerio");
+
 module.exports = {
   siteMetadata: {
     title: `A week in the woods`,
@@ -97,11 +99,21 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.nodes.map((node) => {
                 return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
+                  description: replaceBlurryImages(
+                    node.frontmatter.title,
+                    node.excerpt
+                  ),
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [
+                    {
+                      "content:encoded": replaceBlurryImages(
+                        node.frontmatter.title,
+                        node.html
+                      ),
+                    },
+                  ],
                 });
               });
             },
@@ -133,3 +145,15 @@ module.exports = {
     },
   ],
 };
+
+function replaceBlurryImages(title, htmlWithImages) {
+  const $ = cheerio.load(htmlWithImages);
+  const imageWrappers = $(".gatsby-resp-image-wrapper");
+  console.log("replacing images", title, imageWrappers.length);
+  imageWrappers.each((_, wrapper) => {
+    const actualImage = $(".gatsby-resp-image-image", wrapper);
+    $(wrapper).replaceWith(actualImage);
+  });
+
+  return $.html();
+}
