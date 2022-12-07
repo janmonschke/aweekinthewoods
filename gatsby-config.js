@@ -153,7 +153,14 @@ function replaceBlurryImages(title, htmlWithImages) {
   console.log("replacing images", title, imageWrappers.length);
   imageWrappers.each((_, wrapper) => {
     const actualImage = $(".gatsby-resp-image-image", wrapper);
-    actualImage.attr("src", `${url}${actualImage.attr("src")}`);
+    actualImage.attr(
+      "src",
+      actualImage.attr("src").replaceAll("/static", `${url}/static`)
+    );
+    actualImage.attr(
+      "srcset",
+      actualImage.attr("srcset").replaceAll("/static", `${url}/static`)
+    );
     actualImage.attr("srcset", "");
     actualImage.attr("sizes", "");
     actualImage.attr("style", "max-width: 100%");
