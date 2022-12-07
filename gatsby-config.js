@@ -157,11 +157,10 @@ function replaceBlurryImages(title, htmlWithImages) {
       "src",
       actualImage.attr("src").replaceAll("/static", `${url}/static`)
     );
-    actualImage.attr(
-      "srcset",
-      actualImage.attr("srcset").replaceAll("/static", `${url}/static`)
-    );
-    actualImage.attr("srcset", "");
+    const srcset = actualImage.attr("srcset");
+    if (srcset) {
+      actualImage.attr("srcset", srcset.replaceAll("/static", `${url}/static`));
+    }
     actualImage.attr("sizes", "");
     actualImage.attr("style", "max-width: 100%");
     $(wrapper).replaceWith(actualImage);
