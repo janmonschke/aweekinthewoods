@@ -195,21 +195,43 @@ We were greeted by the nice host, chatted with other hikers and enjoyed a multi-
 
 ![The canyon covered in morning mist](./images/06-the-canyon-covered-in-morning-mist.jpg)
 
+An early morning start on the final day of the trip. The valley was still covered in mist when we started the descent back into the valley. It cleared off quickly and the views became better. This section of the trip we expected to have the most spectacular scenes and we were not disappointed.
+
 ![Making our way down to the verdon again](./images/06-making-our-way-down-to-the-verdon.jpg)
 
 ![Stunning views into the gorge](./images/06-stunning-views-into-the-gorge.jpg)
+
+We hiked along the left-hand side of the river. The sun was very intense early in the morning but we were lucky to find protection in the shade of trees. The cool breeze next to the Verdon cooled us down as well.
+
+The path was rather wild at this stage but the scenery made up for it. We could see far ahead into the gorge. The blue water, green trees and bare rock faces made for such a nice combination.
 
 ![And the rail climbing continues](./images/06-and-the-rail-climbing-continues.jpg)
 
 ![Relaxing after a climbing section](./images/06-relaxing-after-a-climbing-section.jpg)
 
+After two or three hours, the path became more rocky. The rock was dry so it wasn't very slippery but some of it was crumbling under our feet. Holding onto the railing tight was priotity number one at this point. At no point did it feel unsafe though. We knew it would get a bit more wild and were ready for the challenge.
+
 ![Near vertical ascend at Le Styx](./images/06-near-vertical-ascend-at-le-styx.jpg)
 
 ![More vertical climbing](./images/06-more-vertical-climbing.jpg)
 
+We took a longer break when we arrived at the bottom of **Le Styx**. It's a near vertical ascent from there to the top of the valley. Even without backpacks this would prove a challenge to a lot of people and we could see hikers coming down the "path" because it felt too unsafe for them.
+
+The pictures don't do the challenge justice. The track was bare rock, very uneven "steps", crumbling stones and a vertical fall right next to you. Every once in a while we would reach a small forest that we used for small breaks. The last part was a near vertical ascend on forest ground without railings. At some point we had to walk on all fours in order not to slide. We understood why some hikers turned around at this point.
+
 ![We made it to the top of Le Styx](./images/06-we-made-it-to-the-top.jpg)
 
+We pretty much collapsed right after making it up Le Styx. The views and a hearty lunch made up for it. This was the most intense climb that our group had to face so far. Though we were exhausted, we definitely felt accomplished.
+
+Far in the distance we could already spot the end of the Verdon canyon which marks the beginning of **Lac de Sainte-Croix** where we would set up camp that night. It would still be a long hike all the way there though. And it would be a longer hike than it should have been.
+
+The maps for this section were a bit thin. I decided for a path close to the canyon's cliff. I thought it would make for a more scenic route than the option along a street without a view of the canyon. On paper it was the right decision. In reality though it turned out that the "path" was not maintained at all. It was overgrown, had several sketchy scramble sections, crushed rock crossings and hardly good views into the canyon (because of all that foliage 🌱).
+
+There are very few pictures of that section, even though it was by far the longest that day. The morale was going down whenever we noticed how slowly we were progressing. On top of that we were running out of water and there were no options to refill. Still, looking back at it, it was quite the experience to remember.
+
 ![Spotting hikers on the other side of the canyon](./images/06-spotting-hikers-on-the-other-side-of-the-canyon.jpg)
+
+![Searching for alternative routes but we're stuck with this one](./images/06-found-mobile-reception.jpg)
 
 ![Almost at the top of the hill](./images/06-almost-at-the-top-of-the-hill.jpg)
 
@@ -217,6 +239,14 @@ We were greeted by the nice host, chatted with other hikers and enjoyed a multi-
 
 ![Beautiful views on Lac de Sainte-Croix](./images/06-beautiful-views-on-lac-de-ste-croix.jpg)
 
+The end of that stretch marked a hill climb that gave us great views onto the lake (**Belvédère du col d'illoire**). We would have hung out there longer if it wouldn't have been for rain clouds in the distance and the lack of water. In hindsight we should've stayed there longer because the views were so nice. If you ever happen to be in the area, make sure to check out this spot. It's also easy to reach by car.
+
 ![Descendind towards the campsite by Lac de Sainte-Croix](./images/06-descending-to-the-campsite-by-the-lake.jpg)
 
 ![Camping with lake views](./images/06-camping-with-a-view.jpg)
+
+The path to the our campsite (**Camping le Galetas**) was an easy one. A gentle downward slope, easy terrain and very nice people on the way that filled up all our water bottles. Moods started to lift and we already started to talk about our highlights of the trip. The nice campsites, the views, the canyon, local food, the great company.
+
+We were super exhausted but still managed to cook a big leftover dinner. We pitched our tents at an elevated patch of grass with direct view onto the lake. After a hot shower we all fell asleep immediately.
+
+The next day we used buses that brought us all the way back to Nice. They took the canyon street that we could see from the other side for so long. After a meager half an hour the bus left the canyon. A distance that took us two days by foot 😅
