@@ -2,6 +2,8 @@
 title: "Mountain hiking in the Auvergne (GR400)"
 date: "2018-03-02"
 cover: "./cover.jpg"
+totalDistance: 52
+totalDays: 3
 ---
 
 ![Mountain hiking in the Auvergne](./cover.jpg)

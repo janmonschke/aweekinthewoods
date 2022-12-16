@@ -2,6 +2,8 @@
 title: West Highland Way
 date: "2017-09-19"
 cover: "./cover.jpg"
+totalDistance: 151
+totalDays: 6
 ---
 
 ![West Highland Way](./cover.jpg)

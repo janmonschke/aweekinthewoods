@@ -14,7 +14,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle} className="blog-index">
       <Seo title="All hikes" />
       {posts.map(({ node }) => {
-        const { title, cover } = node.frontmatter;
+        const { title, cover, totalDays, totalDistance } = node.frontmatter;
         const displayTitle = title || node.fields.slug;
         const articleLink = node.fields.slug;
         const coverImg = cover && cover.childImageSharp.gatsbyImageData;
@@ -44,7 +44,9 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(0.4),
                 }}
               />
-              <Link to={articleLink}>Read more</Link>
+              <Link to={articleLink}>Read the full report</Link> (
+              {totalDistance}
+              km, {totalDays} days)
             </section>
           </article>
         );
@@ -75,6 +77,8 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            totalDistance
+            totalDays
             cover {
               childImageSharp {
                 gatsbyImageData(width: 1200, quality: 95)

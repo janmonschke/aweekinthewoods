@@ -2,6 +2,8 @@
 title: Isle of Arran Coastal Way
 date: "2020-04-12"
 cover: "./cover.jpg"
+totalDistance: 98
+totalDays: 7
 ---
 
 ![View onto the Isle of Arran Coastal Way](./cover.jpg)

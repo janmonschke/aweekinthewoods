@@ -2,6 +2,8 @@
 title: "Hiking into the Gorges du Verdon"
 date: "2022-11-30"
 cover: "./cover.jpg"
+totalDistance: 98
+totalDays: 5
 ---
 
 ![Hiking into the Gorges du Verdon](./cover.jpg)
