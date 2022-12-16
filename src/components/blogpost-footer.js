@@ -63,14 +63,6 @@ const BlogPostFooter = ({ date }) => {
             rel="me"
           >
             🐘 Mastodon
-          </a>{" "}
-          or{" "}
-          <a
-            href="https://twitter.com/thedeftone"
-            target="_blank"
-            rel="noreferrer"
-          >
-            🐦 Twitter
           </a>
           .
         </p>
