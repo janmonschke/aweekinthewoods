@@ -57,11 +57,7 @@ const BlogPostFooter = ({ date }) => {
             janmonschke.com
           </a>{" "}
           and follow him on{" "}
-          <a
-            href="https://indieweb.social/@thedeftone"
-            target="_blank"
-            rel="me"
-          >
+          <a href="https://social.lol/@janmon" target="_blank" rel="me">
             🐘 Mastodon
           </a>
           .
