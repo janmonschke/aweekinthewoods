@@ -39,7 +39,10 @@ const SEO = ({ description, lang, title, coverSrc, published_time }) => {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      link={[{ rel: "me", href: "https://social.lol/@janmon" }]}
+      link={[
+        { rel: "me", href: "https://social.lol/@janmon" },
+        { rel: "me", href: "https://github.com/janmonschke" },
+      ]}
       meta={[
         {
           name: `description`,
