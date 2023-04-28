@@ -1,0 +1,60 @@
+.hikingPicture__wrapper {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.hikingPicture__bgSpanner {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  display: block;
+}
+
+.hikingPicture {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  vertical-align: middle;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.hikingPicture__caption {
+  display: block;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .hikingPicture__wrapper {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hikingPicture__wrapper {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hikingPicture__wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hikingPictureWrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}

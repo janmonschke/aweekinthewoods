@@ -1,0 +1,16 @@
+<article>
+  <header>
+    <a :href="url">
+      <h2 @text="post.title"></h2>
+      <img :src="post.cover" alt="" />
+    </Link>
+  </header>
+  <section>
+    <p
+      @html="post.page.excerpt"
+    />
+
+    <a :href="url">Read the full report</a>
+    (<span @text="post.totalDistance"></span> km, <span @text="post.totalDays"></span> days)
+  </section>
+</article>

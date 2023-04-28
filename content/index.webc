@@ -1,0 +1,45 @@
+---
+title: Long-distance hike reports
+layout: layouts/base.webc
+---
+
+<ul class="index__blogPostList">
+  <li class="index__blogPostItem" webc:for="post of collections.blogPosts">
+    <article>
+      <header class="index__blogPostItemHeader">
+        <a :href="post.url">
+          <h2 class="index__blogPostTitle" @text="post.data.title"></h2>
+          <img @raw="post.data.coverImageHtml" alt="" webc:nokeep />
+        </a>
+      </header>
+      <section>
+        <p @html="post.page.excerpt"></p>
+        <a :href="post.url">Read the full report</a>
+        (<span @text="post.data.totalDistance"></span> km,
+        <span @text="post.data.totalDays"></span> days)
+      </section>
+    </article>
+  </li>
+</ul>
+<style>
+  .index__blogPostList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .index__blogPostItem {
+    margin-bottom: 3.5rem;
+  }
+
+  .index__blogPostItemHeader {
+    margin-bottom: 2rem;
+  }
+
+  .index__blogPostTitle {
+    margin-bottom: 1.45rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+</style>

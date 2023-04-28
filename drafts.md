@@ -8,10 +8,10 @@ Since I knew that we did not want to follow the Arran Coastal Way all the time b
 
 [komoot]: A great tool to plan hike paths in detail and to get inspired by hikes that other users submitted. I used it to plan every section on this hike and to re-route on the go when we decided for taking a detour or a shorter path. With the newest version it also lets you plan paths that don't follow official hiking paths which comes in handy when you want to go for an off-road expedition on the numerous hills.
 
-[maps.me]: I exported the hikes to KML and used maps.me for the navigation as it provides free offline maps for pretty much everywhere in the world.
+[Organic Maps]: I exported the hikes to KML and used Organic Maps for the navigation as it provides free offline maps for pretty much everywhere in the world.
 
 [Google Maps]: Since we did not have campsites to our availability at all sections, I used Google Maps to find possible wild camping spots and it worked out great!
 
 [komoot]: https://www.komoot.com/user/214500264344
-[maps.me]: https://maps.me
+[organic maps]: https://organicmaps.app/
 [google maps]: https://maps.google.com
