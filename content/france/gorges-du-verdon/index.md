@@ -46,7 +46,6 @@ When the rain stopped, we started our biggest ascend for that day on the **ancie
 
 We did not mind the dog but when we arrived at the road, it started to chase cars and almost got itself killed, so we thought it would be best to get it into the hands of professionals.
 
-<!--
 ![Ancienne Route Napoléon](./images/01-ancienne-route-napoleon.jpg)
 
 ![Church on the Ancienne Route Napoléon](./images/01-church-on-ancienne-route-napoleon.jpg)
@@ -257,4 +256,4 @@ The path to the our campsite (**Camping le Galetas**) was an easy one. A gentle 
 
 We were super exhausted but still managed to cook a big leftover dinner. We pitched our tents at an elevated patch of grass with direct view onto the lake. After a hot shower we all fell asleep immediately.
 
-The next day we used buses that brought us all the way back to Nice. They took the canyon street that we could see from the other side for so long. After a meager half an hour the bus left the canyon. A distance that took us two days by foot 😅 -->
+The next day we used buses that brought us all the way back to Nice. They took the canyon street that we could see from the other side for so long. After a meager half an hour the bus left the canyon. A distance that took us two days by foot 😅
