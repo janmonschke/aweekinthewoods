@@ -12,6 +12,7 @@
   left: 0px;
   background-size: cover;
   display: block;
+  background: linear-gradient(#cbe6fd, #fff);
 }
 
 .hikingPicture {
@@ -23,6 +24,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
+  color: #000;
 }
 
 .hikingPicture__caption {
