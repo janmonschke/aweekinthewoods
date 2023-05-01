@@ -30,7 +30,7 @@ The Verdon river is one of the most beautiful places to stay and hike in the sou
 
 (19km, 9h30, [komoot](https://www.komoot.com/tour/69515519))
 
-After a rainy but relaxed evening in **Grasse** (which is very easy to reach via **Nice**), we took the earliest **[LER 31](https://services-zou.maregionsud.fr/fr/horaires/Zou-LER/Bus/ligne/LER-31/direction/OUTWARD/919)** bus towards **Saint-Vallier-de-Thiey** which marked the beginning of the hike. While the bus slowly made its way up the mountain, we enjoyed the stunning all the way to the ocean.
+After a rainy but relaxed evening in **Grasse** (which is very easy to reach via **Nice**), we took the earliest **[LER 31](https://services-zou.maregionsud.fr/fr/horaires/Zou-LER/Bus/ligne/LER-31/direction/OUTWARD/919)** bus towards **Saint-Vallier-de-Thiey** which marked the beginning of the hike. While the bus slowly made its way up the mountain, we enjoyed the stunning views all the way to the ocean.
 
 From the city center we followed a small pedestrian path into a dense and still slightly humid birch forest. The ground was still soft from the rain of the previous night which made it easier for us to walk with our very heavy backpacks. They were extra heavy on this trip because we knew we did not have many options to resupply along the trail so we carried almost all food for all six days from the beginning.
 
