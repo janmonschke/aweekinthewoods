@@ -1,0 +1,169 @@
+<template webc:root>
+  <link
+    rel="stylesheet"
+    href="/assets/css/leaflet-1.9.3.css"
+    async
+    defer
+    webc:keep
+  />
+  <script src="/assets/js/leaflet-1.9.3.js" webc:keep></script>
+  <div class="hikeMap__mapContainer"></div>
+</template>
+<style>
+  .hikeMap__mapContainer {
+    height: 400px;
+  }
+
+  .leaflet-container a {
+    background-image: none;
+  }
+
+  .leaflet-popup-content h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+</style>
+<script>
+  /**
+   * @typedef {Object} Coordinate
+   * @property {number} lat
+   * @property {number} lng
+   */
+
+  /**
+   * @param {string} textContent
+   * @return {Coordinate[]}
+   */
+  function parseCoordinates(textContent) {
+    return textContent.split("\n").reduce((coordinates, coordPairText) => {
+      coordPairText = coordPairText.trim();
+
+      if (coordPairText) {
+        const [lng, lat] = coordPairText.split(",");
+        coordinates.push({ lat, lng });
+      }
+      return coordinates;
+    }, []);
+  }
+
+  /**
+   * @typedef {Object} PlaceMark
+   * @property {string} name
+   * @property {string?} description
+   * @property {Coordinate[]} coordinates
+   */
+
+  /**
+   * @param {Element} element
+   * @return PlaceMark
+   */
+  function parsePlaceMark(element) {
+    const point = element.querySelector("Point");
+    const LineString = element.querySelector("LineString");
+    const name = element.querySelector("name").textContent;
+    const description = element.querySelector("description");
+    const coordinates = point
+      ? point.querySelector("coordinates").textContent
+      : LineString.querySelector("coordinates").textContent;
+
+    return {
+      name,
+      description: description ? description.textContent : null,
+      coordinates: parseCoordinates(coordinates),
+    };
+  }
+
+  /**
+   * @typedef {Object} Folder
+   * @property {string} name
+   * @property {PlaceMark[]} placemarks
+   */
+
+  /**
+   * @typedef {Object} ParsedKml
+   * @property {Folder[]} folders
+   */
+
+  /**
+   * @param {Document} doc
+   * @return {{ name: string, placemarks: PlaceMark[]}[]}
+   */
+  function parseKMLDoc(doc) {
+    let folders = [];
+    for (let folder of doc.querySelectorAll("Folder")) {
+      const name = folder.querySelector("name").textContent;
+      const placemarks = Array.from(folder.querySelectorAll("Placemark")).map(
+        parsePlaceMark
+      );
+      folders.push({
+        name,
+        placemarks,
+      });
+    }
+
+    return { folders };
+  }
+
+  /**
+   * @param {ParsedKml} parsedKml
+   */
+  function addKmlToMap(parsedKml, map) {
+    const bounds = L.latLngBounds();
+    parsedKml.folders.forEach((folder) => {
+      console.log(folder.name);
+      folder.placemarks.forEach((placemark) => {
+        console.log(placemark.name);
+        if (placemark.coordinates.length > 1) {
+          const line = L.polyline(placemark.coordinates, {
+            color: "royalblue",
+          })
+            .addTo(map)
+            .bindPopup(
+              "<h2>" + placemark.name + "</h2>" + placemark.description
+            );
+          bounds.extend(line.getBounds());
+        } else {
+          L.marker(placemark.coordinates[0])
+            .addTo(map)
+            .bindPopup("<h2>" + placemark.name + "</h2>");
+        }
+      });
+    });
+    map.fitBounds(bounds);
+  }
+
+  window.customElements.define(
+    "hike-map",
+    class extends HTMLElement {
+      connectedCallback() {
+        delete L.Icon.Default.prototype._getIconUrl;
+        L.Icon.Default.mergeOptions({
+          iconRetinaUrl: "/assets/marker-icon-2x.png",
+          iconUrl: "/assets/marker-icon.png",
+          shadowUrl: "/assets/marker-shadow.png",
+        });
+        const leafletScript = this.querySelector("script");
+        const hikeMapContainer = this.querySelector(".hikeMap__mapContainer");
+
+        const map = L.map(hikeMapContainer);
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        fetch("map.kml")
+          .then((res) => res.text())
+          .then((kmltext) => {
+            // Create new kml overlay
+            const parser = new DOMParser();
+            const kml = parser.parseFromString(kmltext, "text/xml");
+
+            const parsedKml = parseKMLDoc(kml);
+            addKmlToMap(parsedKml, map);
+          })
+          .catch((e) => console.error(e));
+      }
+    }
+  );
+</script>

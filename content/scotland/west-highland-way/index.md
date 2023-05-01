@@ -15,7 +15,9 @@ The West Highland Way (WHW) was my first ever long-distance hike. Before, I only
 
 ## Map
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1gXGDClJ1598Wz-I2wyujKGGvC28" title="interactive map of the hike" loading="lazy"></iframe>
+{% renderTemplate "webc" %}
+<hike-map></hike-map>
+{% endrenderTemplate %}
 (I marked all our campsites on the map with blue markers)
 
 ## Sections

@@ -17,7 +17,9 @@ In total the GR400 is 133km long of which we hiked 52km in three days. It makes 
 
 ## Map
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=18Hp-H3HSlLKOjw-Og2gOW_VNqrQ" title="interactive map of the hike" loading="lazy"></iframe>
+{% renderTemplate "webc" %}
+<hike-map></hike-map>
+{% endrenderTemplate %}
 
 The red markers show the places where we pitched out tents and the blue markers are water sources. There were very few ones which was a problem on the first day (which I will get to in just a second).
 
@@ -148,4 +150,4 @@ Check out a full log of the hike [on komoot](https://www.komoot.com/tour/1837677
 [gr400 - tour des volcans du cantal]: http://www.gr-infos.com/en/gr400.htm
 [hikideas.com]: https://www.hikideas.com/walk-tour-of-the-puy-mary-gr400/
 [au bout du monde]: https://google.com
-[Organic Maps]: https://organicmaps.app/
+[organic maps]: https://organicmaps.app/

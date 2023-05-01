@@ -15,7 +15,9 @@ Since some of the stages require a lot of road-walking, I decided to re-route us
 
 ## Map
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1gHXmJeUnjF6K9LHgLwCTWnFeT_yVLbbZ" title="interactive map of the hike" loading="lazy"></iframe>
+{% renderTemplate "webc" %}
+<hike-map></hike-map>
+{% endrenderTemplate %}
 
 ## Sections
 

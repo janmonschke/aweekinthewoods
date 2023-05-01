@@ -12,6 +12,7 @@ const { CONTENT_DIR } = require("./utils/constants");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("content/**/*.kml");
 
   eleventyConfig.addGlobalData("typographyStyles", typography.toString());
 

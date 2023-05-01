@@ -164,6 +164,7 @@
     </div>
     <style @raw="getBundle('css', 'defer')" webc:keep></style>
     <script @raw="getBundle('js', 'defer')" webc:keep></script>
+    <script type="module" @raw="getBundle('js')" webc:keep></script>
   </body>
 </html>
 <style @raw="typographyStyles"></style>
