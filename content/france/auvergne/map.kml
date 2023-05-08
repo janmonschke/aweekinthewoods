@@ -3,188 +3,10 @@
   <Document>
     <name>Tour of the Puy Mary</name>
     <description/>
-    <Style id="icon-1603-006064-nodesc-normal">
-      <IconStyle>
-        <color>ff646000</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1603-006064-nodesc-highlight">
-      <IconStyle>
-        <color>ff646000</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1603-006064-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1603-006064-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1603-006064-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-0288D1-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1899-0288D1">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-E65100-normal">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1899-E65100-highlight">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1899-E65100">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-E65100-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-E65100-nodesc-normal">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1899-E65100-nodesc-highlight">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1899-E65100-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-E65100-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-E65100-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-FF0014-4000-normal">
-      <LineStyle>
-        <color>ff1400ff</color>
-        <width>4</width>
-      </LineStyle>
-    </Style>
-    <Style id="line-FF0014-4000-highlight">
-      <LineStyle>
-        <color>ff1400ff</color>
-        <width>6</width>
-      </LineStyle>
-    </Style>
-    <StyleMap id="line-FF0014-4000">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-FF0014-4000-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-FF0014-4000-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Folder>
       <name>Tracks</name>
       <Placemark>
         <name>Tour of the Puy Mary - GR400</name>
-        <description>Track no. 1</description>
-        <styleUrl>#line-FF0014-4000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -868,8 +690,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Start</name>
-        <styleUrl>#icon-1603-006064-nodesc</styleUrl>
+        <name>Start / Finish</name>
         <Point>
           <coordinates>
             2.6223636,45.1547077,0
@@ -878,14 +699,11 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>POI</name>
-    </Folder>
-    <Folder>
-      <name>Randonnée Auvergne</name>
+      <name>Camp spots</name>
+      <iconColor>red</iconColor>
       <Placemark>
         <name>End of day 1</name>
-        <description>Relatively flat, easy to pith thents, some cows awalking about</description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
+        <description>Relatively flat, easy to pitch thents, some cows awalking about</description>
         <Point>
           <coordinates>
             2.62347190000003,45.0771065,0
@@ -894,29 +712,19 @@
       </Placemark>
       <Placemark>
         <name>End of day 2</name>
-        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
         <Point>
           <coordinates>
             2.716184,45.103483,0
           </coordinates>
         </Point>
       </Placemark>
-      <Placemark>
-        <name>Meeting Malde</name>
-        <styleUrl>#icon-1899-E65100-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            2.696966,45.068913,0
-          </coordinates>
-        </Point>
-      </Placemark>
     </Folder>
     <Folder>
-      <name>Water + food</name>
+      <name>POI</name>
+      <iconColor>yellow</iconColor>
       <Placemark>
-        <name>Restaurant + water source</name>
+        <name>Restaurant with water source</name>
         <description>Great local snacks and super friendly staff</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
             2.67195,45.114166,0
@@ -924,9 +732,29 @@
         </Point>
       </Placemark>
       <Placemark>
+        <name>Meeting Malte</name>
+        <Point>
+          <coordinates>
+            2.696966,45.068913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Restaurant</name>
+        <description>Local specialties, free wifi</description>
+        <Point>
+          <coordinates>
+            2.6575944,45.0701015,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Water sources</name>
+      <iconColor>blue</iconColor>
+      <Placemark>
         <name>Water source</name>
         <description>Faucets in and outside of a public bathroom</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
             2.657208,45.06987,0
@@ -936,7 +764,6 @@
       <Placemark>
         <name>Water source</name>
         <description>Water faucet in front of ski lift</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
             2.717171,45.090925,0
@@ -946,7 +773,6 @@
       <Placemark>
         <name>Water source</name>
         <description>River that seemed clean enough to drink from, nobody got sick</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
             2.59706,45.068988,0
@@ -956,20 +782,9 @@
       <Placemark>
         <name>Water source</name>
         <description>Hard to reach because you have to go down a steep meadow with no path and the source is hard to find</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
         <Point>
           <coordinates>
             2.650668,45.101684,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Restaurant</name>
-        <description>Local specialties, free wifi</description>
-        <styleUrl>#icon-1899-0288D1</styleUrl>
-        <Point>
-          <coordinates>
-            2.6575944,45.0701015,0
           </coordinates>
         </Point>
       </Placemark>

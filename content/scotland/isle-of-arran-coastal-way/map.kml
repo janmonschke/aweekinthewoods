@@ -3,274 +3,11 @@
   <Document>
     <name>Isle of Arran Coastal Way</name>
     <description/>
-    <Style id="icon-1517-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1517-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1517-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1517-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1517-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1534-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1534-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1534-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1534-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1534-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1569-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1569-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1569-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1569-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1569-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1685-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1685-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1685-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1685-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1685-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1765-E65100-nodesc-normal">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1765-E65100-nodesc-highlight">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1765-E65100-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1765-E65100-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1765-E65100-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1879-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1879-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1879-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1879-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1879-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-0288D1-5000-normal">
-      <LineStyle>
-        <color>ffd18802</color>
-        <width>5</width>
-      </LineStyle>
-    </Style>
-    <Style id="line-0288D1-5000-highlight">
-      <LineStyle>
-        <color>ffd18802</color>
-        <width>7.5</width>
-      </LineStyle>
-    </Style>
-    <StyleMap id="line-0288D1-5000">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-0288D1-5000-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-0288D1-5000-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Folder>
       <name>Brodick to Sannox via Goatfell</name>
       <Placemark>
         <name>Brodick to Sannox via Goatfell</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Sunday, May 20, 2018 11:15 AM BST<br>Distance: 10.6 miles<br>Duration: 6 hours, 34 minutes, and 7 seconds<br>Average Speed: 1.6 mph<br>Minimum Elevation: 178 feet<br>Maximum Elevation: 2429 feet<br>Total climb: 2282 feet<br>Total descent: 2263 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1802,7 +1539,6 @@
       <Placemark>
         <name>Sannox to Lochranza</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Monday, May 21, 2018 10:36 AM BST<br>Distance: 8.7 miles<br>Duration: 5 hours, 21 minutes, and 31 seconds<br>Average Speed: 1.6 mph<br>Minimum Elevation: 186 feet<br>Maximum Elevation: 225 feet<br>Total climb: 133 feet<br>Total descent: 128 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -3087,7 +2823,6 @@
       <Placemark>
         <name>Loch na Davie Glen tour</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Tuesday, May 22, 2018 9:48 AM BST<br>Distance: 10.5 miles<br>Duration: 8 hours, 1 minutes, and 21 seconds<br>Average Speed: 1.3 mph<br>Minimum Elevation: 182 feet<br>Maximum Elevation: 1513 feet<br>Total climb: 1625 feet<br>Total descent: 1624 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -4675,7 +4410,6 @@
       <Placemark>
         <name>Coire Fhionn Lochan to Catacol over Meall nan Damh</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Wednesday, May 23, 2018 9:01 AM BST<br>Distance: 5.3 miles<br>Duration: 6 hours, 19 minutes, and 36 seconds<br>Average Speed: 0.8 mph<br>Minimum Elevation: 191 feet<br>Maximum Elevation: 1999 feet<br>Total climb: 1805 feet<br>Total descent: 1848 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -5502,7 +5236,6 @@
       <Placemark>
         <name>Blackwaterfoot to Lagg via the coast</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Thursday, May 24, 2018 9:57 AM BST<br>Distance: 7.9 miles<br>Duration: 8 hours, 5 minutes, and 59 seconds<br>Average Speed: 1.0 mph<br>Minimum Elevation: 179 feet<br>Maximum Elevation: 339 feet<br>Total climb: 207 feet<br>Total descent: 183 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -6668,7 +6401,6 @@
       <Placemark>
         <name>Lagg to Kildonan along with Black Cave</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Friday, May 25, 2018 11:02 AM BST<br>Distance: 4.9 miles<br>Duration: 2 hours, 38 minutes, and 38 seconds<br>Average Speed: 1.8 mph<br>Minimum Elevation: 167 feet<br>Maximum Elevation: 205 feet<br>Total climb: 83 feet<br>Total descent: 77 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -7415,7 +7147,6 @@
       <Placemark>
         <name>Whiting Bay to Lamlash</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Friday, May 25, 2018 3:15 PM BST<br>Distance: 5.6 miles<br>Duration: 3 hours, 25 minutes, and 56 seconds<br>Average Speed: 1.6 mph<br>Minimum Elevation: 205 feet<br>Maximum Elevation: 745 feet<br>Total climb: 715 feet<br>Total descent: 623 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -8272,7 +8003,6 @@
       <Placemark>
         <name>Lamlash to Brodick</name>
         <description><![CDATA[Statistics computed from imported data<br><br>Saturday, May 26, 2018 9:08 AM BST<br>Distance: 6.8 miles<br>Duration: 3 hours, 23 minutes, and 19 seconds<br>Average Speed: 2.0 mph<br>Minimum Elevation: 186 feet<br>Maximum Elevation: 472 feet<br>Total climb: 324 feet<br>Total descent: 358 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -9306,11 +9036,11 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>POI</name>
+      <name>Camp sites</name>
+      <iconColor>green</iconColor>
       <Placemark>
         <name>Camping after Sannox
 </name>
-        <styleUrl>#icon-1765-E65100-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.159007,55.6718678,0
@@ -9320,7 +9050,6 @@
       <Placemark>
         <name>Lochranza Campsite
 </name>
-        <styleUrl>#icon-1765-E65100-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.27673100000004,55.699688,0
@@ -9330,7 +9059,6 @@
       <Placemark>
         <name>Camping at the beach
 </name>
-        <styleUrl>#icon-1765-E65100-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.234524,55.438507,0
@@ -9340,16 +9068,30 @@
       <Placemark>
         <name>Camping
 </name>
-        <styleUrl>#icon-1765-E65100-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.1476521,55.5217938,0
           </coordinates>
         </Point>
       </Placemark>
+    </Folder>
+    <Folder>
+      <name>Start / Finish</name>
+      <iconColor>black</iconColor>
+      <Placemark>
+        <name>Start / Finish</name>
+        <Point>
+          <coordinates>
+            -5.142214,55.576897,58.88727
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>POI</name>
+      <iconColor>yellow</iconColor>
       <Placemark>
         <name>Brodick Isle of Arran Ferry Terminal</name>
-        <styleUrl>#icon-1569-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.13888199999997,55.577133,0
@@ -9358,7 +9100,6 @@
       </Placemark>
       <Placemark>
         <name>Co-op Food - Brodick</name>
-        <styleUrl>#icon-1685-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.14235689999998,55.5762066,0
@@ -9367,7 +9108,6 @@
       </Placemark>
       <Placemark>
         <name>Lochranza Distillery</name>
-        <styleUrl>#icon-1517-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.2753884,55.6976971,0
@@ -9376,7 +9116,6 @@
       </Placemark>
       <Placemark>
         <name>The Lagg Hotel</name>
-        <styleUrl>#icon-1879-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.23377060000007,55.4458256,0
@@ -9385,7 +9124,6 @@
       </Placemark>
       <Placemark>
         <name>The Coffee Pot</name>
-        <styleUrl>#icon-1534-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
             -5.09405330000004,55.4849693,0

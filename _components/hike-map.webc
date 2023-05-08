@@ -8,6 +8,7 @@
   />
   <script src="/assets/js/leaflet-1.9.3.js" webc:keep></script>
   <div class="hikeMap__mapContainer"></div>
+  <div class="hikeMap__legend"></div>
 </template>
 <style>
   .hikeMap__mapContainer {
@@ -22,8 +23,97 @@
     margin: 0;
     font-size: 1em;
   }
+
+  .hikeMap__legend {
+    margin: 0.6rem 0;
+  }
+
+  .hikeMap__legend summary {
+    display: list-item;
+  }
+
+  .hikeMap__legend ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: flex;
+  }
+
+  .hikeMap__legend li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem 0.3rem 0.1rem;
+    border-radius: 0.2rem;
+    margin-right: 0.4rem;
+  }
+  .hikeMap__legend li:last-child {
+    margin-right: 0;
+  }
+
+  .hikeMap__legend li:hover:not(.hidden) {
+    background-color: #eee;
+  }
+
+  .hikeMap__legend li.hidden {
+    opacity: 0.5;
+  }
+
+  .hikeMap__legend i {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 32px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+  }
+
+  .hikeMap__legend i.black {
+    background-image: url("/assets/gps-black.svg");
+  }
+  .hikeMap__legend i.blue {
+    background-image: url("/assets/gps-blue.svg");
+  }
+  .hikeMap__legend i.yellow {
+    background-image: url("/assets/gps-yellow.svg");
+  }
+  .hikeMap__legend i.green {
+    background-image: url("/assets/gps-green.svg");
+  }
+  .hikeMap__legend i.red {
+    background-image: url("/assets/gps-red.svg");
+  }
 </style>
 <script>
+  const iconSizes = {
+    iconSize: [48, 48],
+    iconAnchor: [24, 24],
+    popupAnchor: [0, -24],
+  };
+
+  const gpsIcons = {
+    blue: L.icon({
+      iconUrl: "/assets/gps-blue.svg",
+      ...iconSizes,
+    }),
+    black: L.icon({
+      iconUrl: "/assets/gps-black.svg",
+      ...iconSizes,
+    }),
+    red: L.icon({
+      iconUrl: "/assets/gps-red.svg",
+      ...iconSizes,
+    }),
+    green: L.icon({
+      iconUrl: "/assets/gps-green.svg",
+      ...iconSizes,
+    }),
+    yellow: L.icon({
+      iconUrl: "/assets/gps-yellow.svg",
+      ...iconSizes,
+    }),
+  };
+
   /**
    * @typedef {Object} Coordinate
    * @property {number} lat
@@ -68,7 +158,7 @@
 
     return {
       name,
-      description: description ? description.textContent : null,
+      description: description ? description.textContent : undefined,
       coordinates: parseCoordinates(coordinates),
     };
   }
@@ -76,6 +166,7 @@
   /**
    * @typedef {Object} Folder
    * @property {string} name
+   * @property {string?} iconColor
    * @property {PlaceMark[]} placemarks
    */
 
@@ -86,17 +177,19 @@
 
   /**
    * @param {Document} doc
-   * @return {{ name: string, placemarks: PlaceMark[]}[]}
+   * @return {ParsedKml}
    */
   function parseKMLDoc(doc) {
     let folders = [];
     for (let folder of doc.querySelectorAll("Folder")) {
       const name = folder.querySelector("name").textContent;
+      const iconColor = folder.querySelector("iconColor")?.textContent;
       const placemarks = Array.from(folder.querySelectorAll("Placemark")).map(
         parsePlaceMark
       );
       folders.push({
         name,
+        iconColor,
         placemarks,
       });
     }
@@ -109,41 +202,53 @@
    */
   function addKmlToMap(parsedKml, map) {
     const bounds = L.latLngBounds();
+    const markers = {};
     parsedKml.folders.forEach((folder) => {
-      console.log(folder.name);
       folder.placemarks.forEach((placemark) => {
-        console.log(placemark.name);
         if (placemark.coordinates.length > 1) {
           const line = L.polyline(placemark.coordinates, {
             color: "royalblue",
           })
             .addTo(map)
             .bindPopup(
-              "<h2>" + placemark.name + "</h2>" + placemark.description
+              "<h2>" + placemark.name + "</h2>" + (placemark.description || "")
             );
           bounds.extend(line.getBounds());
         } else {
-          L.marker(placemark.coordinates[0])
+          const iconColor = folder.iconColor || "black";
+          const icon = gpsIcons[iconColor];
+          const marker = L.marker(placemark.coordinates[0], { icon });
+          marker
             .addTo(map)
-            .bindPopup("<h2>" + placemark.name + "</h2>");
+            .bindPopup(
+              "<h2>" + placemark.name + "</h2>" + (placemark.description || "")
+            );
+
+          if (markers[iconColor]) {
+            markers[iconColor].push(marker);
+          } else {
+            markers[iconColor] = [marker];
+          }
         }
       });
     });
     map.fitBounds(bounds);
+    return markers;
   }
 
   window.customElements.define(
     "hike-map",
     class extends HTMLElement {
       connectedCallback() {
+        // Make sure to serve the correct icons
         delete L.Icon.Default.prototype._getIconUrl;
         L.Icon.Default.mergeOptions({
           iconRetinaUrl: "/assets/marker-icon-2x.png",
           iconUrl: "/assets/marker-icon.png",
           shadowUrl: "/assets/marker-shadow.png",
         });
-        const leafletScript = this.querySelector("script");
         const hikeMapContainer = this.querySelector(".hikeMap__mapContainer");
+        const legendContainer = this.querySelector(".hikeMap__legend");
 
         const map = L.map(hikeMapContainer);
 
@@ -160,7 +265,48 @@
             const kml = parser.parseFromString(kmltext, "text/xml");
 
             const parsedKml = parseKMLDoc(kml);
-            addKmlToMap(parsedKml, map);
+            const markers = addKmlToMap(parsedKml, map);
+            window.markers = markers;
+            window.map = map;
+
+            // add the legend
+            const legendDetails = document.createElement("details");
+
+            const legendSummary = document.createElement("summary");
+            legendSummary.textContent = "Legend";
+            legendDetails.appendChild(legendSummary);
+
+            const legendList = document.createElement("ul");
+
+            parsedKml.folders.forEach((folder) => {
+              if (!folder.iconColor) {
+                return;
+              }
+              const legendListItem = document.createElement("li");
+              legendListItem.setAttribute("role", "button");
+              const icon = document.createElement("i");
+              icon.classList.add("icon", folder.iconColor);
+              legendListItem.appendChild(icon);
+              legendListItem.append(folder.name);
+              legendList.appendChild(legendListItem);
+
+              legendListItem.addEventListener("click", () => {
+                if (legendListItem.classList.contains("hidden")) {
+                  markers[folder.iconColor].forEach((marker) => {
+                    marker.addTo(map);
+                  });
+                  legendListItem.classList.remove("hidden");
+                } else {
+                  markers[folder.iconColor].forEach((marker) => {
+                    marker.remove();
+                  });
+                  legendListItem.classList.add("hidden");
+                }
+              });
+            });
+            legendDetails.appendChild(legendList);
+
+            legendContainer.appendChild(legendDetails);
           })
           .catch((e) => console.error(e));
       }

@@ -3,159 +3,31 @@
   <Document>
     <name>Hiking to the Gorges du Verdon</name>
     <description/>
-    <Style id="icon-1899-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1899-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-FF5252-nodesc-normal">
-      <IconStyle>
-        <color>ff5252ff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1899-FF5252-nodesc-highlight">
-      <IconStyle>
-        <color>ff5252ff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1899-FF5252-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-FF5252-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-FF5252-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-FFD600-nodesc-normal">
-      <IconStyle>
-        <color>ff00d6ff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1899-FFD600-nodesc-highlight">
-      <IconStyle>
-        <color>ff00d6ff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>/assets/gps.svg</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1899-FFD600-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-FFD600-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-FFD600-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-0288D1-5000-normal">
-      <LineStyle>
-        <color>ffd18802</color>
-        <width>5</width>
-      </LineStyle>
-    </Style>
-    <Style id="line-0288D1-5000-highlight">
-      <LineStyle>
-        <color>ffd18802</color>
-        <width>7.5</width>
-      </LineStyle>
-    </Style>
-    <StyleMap id="line-0288D1-5000">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-0288D1-5000-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-0288D1-5000-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Folder>
-      <name>Accommodation</name>
+      <name>Start / End</name>
+      <iconColor>black</iconColor>
+      <Placemark>
+        <name>Start</name>
+        <Point>
+          <coordinates>
+            6.84868,43.699906,716.216463
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>End</name>
+        <Point>
+          <coordinates>
+            6.243098,43.796209,505.568683
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Camping / Accommodation</name>
+      <iconColor>green</iconColor>
       <Placemark>
         <name>🏕 Wild camp</name>
-        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.7594187,43.7379167,0
@@ -164,7 +36,6 @@
       </Placemark>
       <Placemark>
         <name>⛺️ Camping Notre Dame</name>
-        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.62611800000002,43.72268,0
@@ -173,7 +44,6 @@
       </Placemark>
       <Placemark>
         <name>⛺️ Camping Municipal - Camping Verdon Carajuan</name>
-        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.43749600000001,43.795335,0
@@ -182,7 +52,6 @@
       </Placemark>
       <Placemark>
         <name>🏨 Chalet de la Maline</name>
-        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.34593819999998,43.7470016,0
@@ -191,7 +60,6 @@
       </Placemark>
       <Placemark>
         <name>⛺️ Camping le Galetas</name>
-        <styleUrl>#icon-1899-FF5252-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.24301860000003,43.7962298,0
@@ -201,9 +69,9 @@
     </Folder>
     <Folder>
       <name>POI</name>
+      <iconColor>yellow</iconColor>
       <Placemark>
         <name>Natural Arche - Arche de Ponadieu</name>
-        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.79037589999996,43.7000926,0
@@ -212,7 +80,6 @@
       </Placemark>
       <Placemark>
         <name>Chapelle Notre-Dame des Sept Douleurs</name>
-        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.57061290000001,43.7307036,0
@@ -220,9 +87,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Meeting with Felix
-</name>
-        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
+        <name>Meeting with Felix</name>
         <Point>
           <coordinates>
             6.673379,43.745046,0
@@ -231,7 +96,6 @@
       </Placemark>
       <Placemark>
         <name>Cascade De Clars</name>
-        <styleUrl>#icon-1899-FFD600-nodesc</styleUrl>
         <Point>
           <coordinates>
             6.75270590000002,43.7410421,0
@@ -244,7 +108,6 @@
       <Placemark>
         <name>Saint Vallier de Thiey to Escragnolles via Ancienne Route de Napoléon</name>
         <description><![CDATA[<br>Distance: 11.5 miles<br>Duration: 9 hours, 29 minutes, and 27 seconds<br>Average Speed: 1.2 mph<br>Minimum Elevation: 1756 feet<br>Maximum Elevation: 3406 feet<br>Total climb: 1917 feet<br>Total descent: 1257 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -691,7 +554,6 @@
       <Placemark>
         <name>Escragnolles to La Roque Esclapon via Cascade du Ray</name>
         <description><![CDATA[<br>Distance: 10.4 miles<br>Duration: 7 hours, 45 minutes, and 2 seconds<br>Average Speed: 1.3 mph<br>Minimum Elevation: 3057 feet<br>Maximum Elevation: 4723 feet<br>Total climb: 2041 feet<br>Total descent: 1930 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1104,7 +966,6 @@
       <Placemark>
         <name>Round trip from La Roque Esclapon to Bargème</name>
         <description><![CDATA[<br>Distance: 9.1 miles<br>Duration: 5 hours, 59 minutes, and 46 seconds<br>Average Speed: 1.5 mph<br>Minimum Elevation: 3072 feet<br>Maximum Elevation: 3510 feet<br>Total climb: 799 feet<br>Total descent: 784 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1367,7 +1228,6 @@
       <Placemark>
         <name>Round Trip from Camping Verdon Carajuan to Trigance</name>
         <description><![CDATA[<br>Distance: 6.7 miles<br>Duration: 5 hours, 5 minutes, and 8 seconds<br>Average Speed: 1.3 mph<br>Minimum Elevation: 2069 feet<br>Maximum Elevation: 2645 feet<br>Total climb: 611 feet<br>Total descent: 617 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1561,7 +1421,6 @@
       <Placemark>
         <name>Point du Sublime to Chalet La Maline via Gorges du Verdon</name>
         <description><![CDATA[<br>Distance: 9.1 miles<br>Duration: 8 hours, 50 minutes, and 16 seconds<br>Average Speed: 1.0 mph<br>Minimum Elevation: 1825 feet<br>Maximum Elevation: 3028 feet<br>Total climb: 1930 feet<br>Total descent: 1604 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1913,7 +1772,6 @@
       <Placemark>
         <name>Chalet de la Maline To Lac de Ste. Croix via Sentier Vidal (Le Styx)</name>
         <description><![CDATA[<br>Distance: 12.7 miles<br>Duration: 11 hours, 39 minutes, and 19 seconds<br>Average Speed: 1.1 mph<br>Minimum Elevation: 1635 feet<br>Maximum Elevation: 3250 feet<br>Total climb: 2975 feet<br>Total descent: 4029 feet]]></description>
-        <styleUrl>#line-0288D1-5000</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>

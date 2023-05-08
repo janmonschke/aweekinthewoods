@@ -3,217 +3,11 @@
   <Document>
     <name>West Highland Way</name>
     <description/>
-    <Style id="icon-124-nodesc-normal">
-      <IconStyle>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/124-red.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-124-nodesc-highlight">
-      <IconStyle>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/124-red.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1.1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-124-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-124-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-124-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-503-DB4436-nodesc-normal">
-      <IconStyle>
-        <color>ff3644db</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-503-DB4436-nodesc-highlight">
-      <IconStyle>
-        <color>ff3644db</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1.1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-503-DB4436-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-503-DB4436-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-503-DB4436-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-962-9FC3FF-nodesc-normal">
-      <IconStyle>
-        <color>ffffc39f</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-962-9FC3FF-nodesc-highlight">
-      <IconStyle>
-        <color>ffffc39f</color>
-        <scale>1.1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/962-wht-diamond-blank.png</href>
-        </Icon>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1.1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-962-9FC3FF-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-962-9FC3FF-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-962-9FC3FF-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-1267FF-5000-nodesc-normal">
-      <LineStyle>
-        <color>ffff6712</color>
-        <width>5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-1267FF-5000-nodesc-highlight">
-      <LineStyle>
-        <color>ffff6712</color>
-        <width>7.5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-1267FF-5000-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-1267FF-5000-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-1267FF-5000-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-990000-5000-nodesc-normal">
-      <LineStyle>
-        <color>ff000099</color>
-        <width>5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-990000-5000-nodesc-highlight">
-      <LineStyle>
-        <color>ff000099</color>
-        <width>7.5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-990000-5000-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-990000-5000-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-990000-5000-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="line-CC0000-5000-nodesc-normal">
-      <LineStyle>
-        <color>ff0000cc</color>
-        <width>5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="line-CC0000-5000-nodesc-highlight">
-      <LineStyle>
-        <color>ff0000cc</color>
-        <width>7.5</width>
-      </LineStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="line-CC0000-5000-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#line-CC0000-5000-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#line-CC0000-5000-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Folder>
-      <name>West Highland Way</name>
+      <name>Start / End</name>
+      <iconColor>black</iconColor>
       <Placemark>
         <name>Milngavie (WHW Start)</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.317908,55.941485,0
@@ -221,8 +15,102 @@
         </Point>
       </Placemark>
       <Placemark>
+        <name>Fort William (WHW End)</name>
+        <Point>
+          <coordinates>
+            -5.11405,56.81634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Towns</name>
+      <iconColor>yellow</iconColor>
+      <Placemark>
+        <name>Drymen</name>
+        <Point>
+          <coordinates>
+            -4.452345,56.065279,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balmaha</name>
+        <Point>
+          <coordinates>
+            -4.539383,56.084343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rowardennan</name>
+        <Point>
+          <coordinates>
+            -4.640651,56.148741,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inversnaid</name>
+        <Point>
+          <coordinates>
+            -4.685223,56.243268,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inverarnan</name>
+        <Point>
+          <coordinates>
+            -4.722282,56.32953,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tyndrum</name>
+        <Point>
+          <coordinates>
+            -4.711375,56.436472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge of Orchy</name>
+        <Point>
+          <coordinates>
+            -4.76872,56.517769,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inveroran</name>
+        <Point>
+          <coordinates>
+            -4.807999,56.532838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kingshouse</name>
+        <Point>
+          <coordinates>
+            -4.840722,56.651131,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kinlochleven</name>
+        <Point>
+          <coordinates>
+            -4.963872,56.713211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>West Highland Way</name>
+      <Placemark>
         <name>Milngavie to Drymen  </name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -308,17 +196,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Drymen</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.452345,56.065279,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Drymen to Balmaha</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -407,17 +285,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Balmaha</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.539383,56.084343,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Balmaha to Rowardennan </name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -509,17 +377,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Rowardennan</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.640651,56.148741,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Rowardennan to Inversnaid</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -624,17 +482,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Inversnaid</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.685223,56.243268,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Inversnaid to Inverarnan</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -700,19 +548,9 @@
             -4.716181,56.330709,0
           </coordinates>
         </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Inverarnan</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.722282,56.32953,0
-          </coordinates>
-        </Point>
-      </Placemark>
+      </Placemark>   
       <Placemark>
         <name>Inverarnan to Crianlarich</name>
-        <styleUrl>#line-990000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -786,7 +624,6 @@
       </Placemark>
       <Placemark>
         <name> Crianlarich to Tyndrum</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -881,17 +718,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Tyndrum</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.711375,56.436472,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Tyndrum to Bridge of Orchy</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -961,17 +788,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Bridge of Orchy</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.76872,56.517769,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Bridge of Orchy to Inveroran</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1005,17 +822,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Inveroran</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.807999,56.532838,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Inveroran to Kingshouse</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1068,17 +875,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Kingshouse</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.840722,56.651131,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Kingshouse to Kinlochleven</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1333,17 +1130,7 @@
         </LineString>
       </Placemark>
       <Placemark>
-        <name>Kinlochleven</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -4.963872,56.713211,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Kinlochleven to Fort William</name>
-        <styleUrl>#line-CC0000-5000-nodesc</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
           <coordinates>
@@ -1452,30 +1239,12 @@
           </coordinates>
         </LineString>
       </Placemark>
-      <Placemark>
-        <name>Exit to Main Road </name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -5.077668,56.808233,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Fort William (WHW End)</name>
-        <styleUrl>#icon-124-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -5.11405,56.81634,0
-          </coordinates>
-        </Point>
-      </Placemark>
     </Folder>
     <Folder>
-      <name>Stops</name>
+      <name>Campsites</name>
+      <iconColor>blue</iconColor>
       <Placemark>
         <name>Stop 1: Milarrochy Bay Camping</name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.56151569999997,56.1000886,0
@@ -1484,7 +1253,6 @@
       </Placemark>
       <Placemark>
         <name>Stop 2: Inversnaid Bunkhouse</name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.67153889999997,56.246337,0
@@ -1493,7 +1261,6 @@
       </Placemark>
       <Placemark>
         <name>Stop 3: Just out of Tyndrum</name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.7118312,56.4407659,0
@@ -1502,7 +1269,6 @@
       </Placemark>
       <Placemark>
         <name>Stop 4: Kingshouse</name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.840078,56.651037,0
@@ -1511,19 +1277,9 @@
       </Placemark>
       <Placemark>
         <name><![CDATA[Stop 5: MacDonald Hotel & Cabins]]></name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
         <Point>
           <coordinates>
             -4.97177399999998,56.716462,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Stop 6: End of WHW</name>
-        <styleUrl>#icon-962-9FC3FF-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -5.113835,56.816431,0
           </coordinates>
         </Point>
       </Placemark>
