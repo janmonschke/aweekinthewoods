@@ -83,6 +83,12 @@
   .hikeMap__legend i.red {
     background-image: url("/assets/gps-red.svg");
   }
+
+  @media (max-width: 600px) {
+    .hikeMap__legend ul {
+      display: block;
+    }
+  }
 </style>
 <script>
   const iconSizes = {
