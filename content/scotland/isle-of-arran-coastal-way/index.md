@@ -16,7 +16,7 @@ Since some of the stages require a lot of road-walking, I decided to re-route us
 ## Map
 
 {% renderTemplate "webc" %}
-<hike-map></hike-map>
+<hike-map path="isle-of-arran-coastal-way.kml"></hike-map>
 {% endrenderTemplate %}
 
 ## Sections

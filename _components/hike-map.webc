@@ -8,7 +8,10 @@
   />
   <script src="/assets/js/leaflet-1.9.3.js" webc:keep></script>
   <div class="hikeMap__mapContainer"></div>
-  <div class="hikeMap__legend"></div>
+  <div class="hikeMap__footer">
+    <div class="hikeMap__legend"></div>
+    <a class="hikeMap__download" download :href="path">Download as KML</a>
+  </div>
 </template>
 <style>
   .hikeMap__mapContainer {
@@ -22,6 +25,12 @@
   .leaflet-popup-content h2 {
     margin: 0;
     font-size: 1em;
+  }
+
+  .hikeMap__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .hikeMap__legend {
@@ -255,6 +264,9 @@
         });
         const hikeMapContainer = this.querySelector(".hikeMap__mapContainer");
         const legendContainer = this.querySelector(".hikeMap__legend");
+        const downloadLink = this.querySelector(".hikeMap__download");
+
+        const mapPath = downloadLink.getAttribute("href");
 
         const map = L.map(hikeMapContainer);
 
@@ -263,7 +275,7 @@
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(map);
 
-        fetch("map.kml")
+        fetch(mapPath)
           .then((res) => res.text())
           .then((kmltext) => {
             // Create new kml overlay

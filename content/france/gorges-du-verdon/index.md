@@ -14,7 +14,7 @@ The Verdon river is one of the most beautiful places to stay and hike in the sou
 ## Map
 
 {% renderTemplate "webc" %}
-<hike-map></hike-map>
+<hike-map path="gorges-du-verdon.kml"></hike-map>
 {% endrenderTemplate %}
 
 ## Sections

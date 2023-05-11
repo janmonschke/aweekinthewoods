@@ -16,7 +16,7 @@ The West Highland Way (WHW) was my first ever long-distance hike. Before, I only
 ## Map
 
 {% renderTemplate "webc" %}
-<hike-map></hike-map>
+<hike-map path="west-highland-way.kml"></hike-map>
 {% endrenderTemplate %}
 
 ## Sections

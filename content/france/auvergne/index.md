@@ -18,7 +18,7 @@ In total the GR400 is 133km long of which we hiked 52km in three days. It makes 
 ## Map
 
 {% renderTemplate "webc" %}
-<hike-map></hike-map>
+<hike-map path="auvergne.kml"></hike-map>
 {% endrenderTemplate %}
 
 The red markers show the places where we pitched out tents and the blue markers are water sources. There were very few ones which was a problem on the first day (which I will get to in just a second).
