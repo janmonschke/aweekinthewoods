@@ -130,6 +130,7 @@ module.exports = function (eleventyConfig) {
           .replace('decoding="auto"', 'decoding="async"');
 
         let shareMetadata = await Image(coverImagePath, {
+          ...hikingImageOptions,
           widths: [600],
           formats: ["jpeg"],
         });
