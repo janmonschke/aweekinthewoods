@@ -4,12 +4,18 @@ layout: layouts/base.webc
 ---
 
 <ul class="index__blogPostList">
-  <li class="index__blogPostItem" webc:for="post of collections.blogPosts">
+  <li
+    class="index__blogPostItem"
+    webc:for="(post, index) of collections.blogPosts"
+  >
     <article>
       <header class="index__blogPostItemHeader">
         <a :href="post.url">
           <h2 class="index__blogPostTitle" @text="post.data.title"></h2>
-          <img @raw="post.data.coverImageHtml" alt="" webc:nokeep />
+          <img
+            @raw="index === 0 ? post.data.coverImageHtml : post.data.nonEagerCoverImageHtml"
+            webc:nokeep
+          />
         </a>
       </header>
       <section>

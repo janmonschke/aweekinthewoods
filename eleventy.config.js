@@ -118,10 +118,16 @@ module.exports = function (eleventyConfig) {
           src: coverImagePath,
           attributes: {
             alt: blogPost.data.title,
+            loading: "eager",
+            decoding: "auto",
           },
           includeCaption: false,
           linkToImage: false,
         });
+
+        blogPost.data.nonEagerCoverImageHtml = blogPost.data.coverImageHtml
+          .replace('loading="eager"', 'loading="lazy"')
+          .replace('decoding="auto"', 'decoding="async"');
 
         let shareMetadata = await Image(coverImagePath, {
           widths: [600],
