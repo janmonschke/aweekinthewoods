@@ -30,7 +30,7 @@
   .hikeMap__footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 
   .hikeMap__legend {
@@ -39,6 +39,7 @@
 
   .hikeMap__legend summary {
     display: list-item;
+    cursor: pointer;
   }
 
   .hikeMap__legend ul {
