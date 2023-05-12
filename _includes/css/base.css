@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.base {
+  max-width: 1040px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .base {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .base {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .base {
+    width: 100%;
+    padding: 0 20px;
+  }
+}

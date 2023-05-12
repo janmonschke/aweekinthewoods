@@ -1,0 +1,106 @@
+---
+layout: layouts/base.webc
+---
+
+<article>
+  <header class="blogPost__header">
+    <h1 class="blogPost__title" @text="title"></h1>
+  </header>
+  <div class="blogPost__coverImage" @html="coverImageHtml"></div>
+  <section class="blogPost__content" @raw="content"></section>
+</article>
+<footer>
+  <p webc:if="showDate">
+    Published on <span @text="page.date.toDateString()"></span>
+  </p>
+  <nav>
+    <h4>More hiking adventures:</h4>
+    <ul class="blogPost__navigation">
+      <li webc:if="nextPost">
+        <a :href="nextPost.url" rel="prev"
+          >← <span @text="nextPost.title"></span
+        ></a>
+      </li>
+      <li webc:if="prevPost">
+        <a :href="prevPost.url" rel="next"
+          ><span @text="prevPost.title"></span> →</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <div class="blogPost__footer">
+    <eleventy-image
+      src="assets/profile-pic.jpg"
+      alt="Jan Monschke"
+      :width="[80, 160]"
+      sizes="100vw"
+      class="blogPost__footerAuthorImage"
+    ></eleventy-image>
+    <p>
+      Written by <strong @text="metadata.author"></strong>, an avid hiker living
+      in Berlin, which is way too far away from the mountains. You can find his
+      personal blog at
+      <a href="https://janmonschke.com" target="_blank"> janmonschke.com </a>
+      and follow him on
+      <a href="https://social.lol/@janmon" target="_blank" rel="me">
+        🐘 Mastodon
+      </a>
+      .
+    </p>
+  </div>
+</footer>
+
+<style webc:bucket="blog-post-defer">
+  .blogPost__header {
+    text-align: center;
+  }
+
+  .blogPost__title {
+    margin-top: 1.45rem;
+    margin-bottom: 1.45rem;
+  }
+
+  .blogPost__coverImage {
+    margin-bottom: 1.45rem;
+  }
+
+  .blogPost__content iframe {
+    border: 0;
+    height: 400px;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+
+  .blogPost__footer {
+    display: flex;
+  }
+
+  .blogPost__footerText {
+    margin-bottom: 0.1em;
+  }
+
+  .blogPost__footerAuthorImage {
+    margin-right: 0.725em;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    max-width: initial;
+  }
+
+  .blogPost__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+  }
+
+  .blogPost__navigation li {
+    margin-bottom: 1rem;
+  }
+</style>
+<link
+  rel="stylesheet"
+  :href="getBundleFileUrl('css', 'blog-post-defer')"
+  webc:keep
+/>

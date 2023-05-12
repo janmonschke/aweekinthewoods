@@ -1,0 +1,168 @@
+<div :class="ismain ? 'js-header is-root' : 'js-header'">
+  <a href="/" class="header__headerLink">
+    <img alt="" aria-hidden src="/assets/icon.svg" class="header__hikingIcon" />
+    <button class="header__menuBtn js-menuBtn" aria-label="Open menu">
+      <img
+        alt=""
+        aria-hidden
+        src="/assets/hamburger.svg"
+        class="header__menuBtnIcon header__hamburgerIcon"
+      />
+      <img
+        alt=""
+        aria-hidden
+        src="/assets/close.svg"
+        class="header__menuBtnIcon hidden header__closeIcon"
+      />
+    </button>
+    <h1 class="header__headline" @text="title"></h1>
+  </a>
+  <nav class="header__menu" aria-label="main">
+    <h5>France</h5>
+    <a href="/france/auvergne">Auvergne</a>
+    <a href="/france/gorges-du-verdon">Gorges du Verdon</a>
+    <h5>Scotland</h5>
+    <a href="/scotland/isle-of-arran-coastal-way">
+      Isle of Arran Coastal Way
+    </a>
+    <a href="/scotland/west-highland-way">West Highland Way</a>
+    <a href="/about" style="margin-top: 1em"> About </a>
+    <a href="/rss.xml">
+      RSS
+      <i>
+        <img
+          alt=""
+          aria-hidden
+          src="/assets/rss.svg"
+          class="header__menuRssIcon"
+        />
+      </i>
+    </a>
+  </nav>
+</div>
+<style>
+  .header__headerLink {
+    box-shadow: none;
+    text-decoration: none;
+    background-image: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1.5em;
+  }
+
+  .is-root .header__hikingIcon,
+  .is-root .header__menuBtnIcon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem auto;
+  }
+
+  .header__hikingIcon,
+  .header__menuBtnIcon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem auto;
+  }
+
+  .header__menuBtn {
+    appearance: unset;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -123px;
+  }
+
+  .header__menuBtn:hover {
+    opacity: 0.5;
+  }
+
+  .header__headline {
+    font-size: 1.31951rem;
+    line-height: 2.175rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .is-root .header__headline {
+    font-size: 1.86607rem;
+    line-height: 2.175rem;
+    margin-bottom: 1.45rem;
+    margin-top: 0.29rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .js-menu-open .header__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__closeIcon {
+    display: none;
+  }
+
+  .header__hamburgerIcon {
+    display: block;
+  }
+
+  .js-menu-open .header__closeIcon {
+    display: block;
+  }
+
+  .js-menu-open .header__hamburgerIcon {
+    display: none;
+  }
+
+  .header__menu h5 {
+    margin: 0.5em 0;
+  }
+
+  .header__menu a {
+    background: none;
+  }
+
+  .header__menu a:hover {
+    text-decoration: underline;
+  }
+
+  .header__menuRssIcon {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 -0.2em 0.3em;
+  }
+
+  @media (max-width: 1070px) {
+    .header__menuBtn {
+      right: -82px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .header__menuBtn {
+      right: -20px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .header__menuBtn {
+      right: -12px;
+    }
+  }
+</style>
+<script type="javascript" webc:bucket="defer">
+  const headerEl = document.querySelector(".js-header");
+  const menuBtn = document.querySelector(".js-menuBtn");
+
+  menuBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const menuOpen = headerEl.classList.toggle('js-menu-open');
+    const menuLabel = menuOpen ? "Close menu" : "Open menu";
+    menuBtn.setAttribute("aria-label", menuLabel);
+  });
+</script>
