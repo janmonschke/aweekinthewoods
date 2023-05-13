@@ -165,7 +165,12 @@
     <style @raw="getBundle('css', 'defer')" webc:keep></style>
     <script @raw="getBundle('js', 'defer')" webc:keep></script>
     <script type="module" @raw="getBundle('js')" webc:keep></script>
-    <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+    <script
+      async
+      defer
+      src="https://scripts.withcabin.com/hello.js"
+      webc:keep
+    ></script>
   </body>
 </html>
 <style @raw="typographyStyles"></style>
