@@ -50,7 +50,7 @@ layout: layouts/base.webc
   </div>
 </footer>
 
-<style webc:bucket="blog-post-defer">
+<style>
   .blogPost__header {
     text-align: center;
   }
@@ -99,8 +99,3 @@ layout: layouts/base.webc
     margin-bottom: 1rem;
   }
 </style>
-<link
-  rel="stylesheet"
-  :href="getBundleFileUrl('css', 'blog-post-defer')"
-  webc:keep
-/>
