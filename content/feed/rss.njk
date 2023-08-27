@@ -14,7 +14,7 @@
   <author>
     <name>{{ metadata.author }}</name>
   </author>
-  {%- for post in collections.blogPosts | reverse %}
+  {%- for post in collections.blogPosts %}
   {%- set absolutePostUrl = post.url | absoluteUrl(metadata.url) %}
   {%- set content = post.data.coverImageHtml + post.templateContent %}
   <entry>
