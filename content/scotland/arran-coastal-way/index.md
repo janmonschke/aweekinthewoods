@@ -1,5 +1,5 @@
 ---
-title: Isle of Arran Coastal Way
+title: Arran Coastal Way
 date: 2020-04-12
 cover: ./cover.jpg
 totalDistance: 98
@@ -7,7 +7,7 @@ totalDays: 7
 tags: post
 ---
 
-I had been eyeing another hike in Scotland for a long time and when I came across the [Isle of Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.
+I had been eyeing another hike in Scotland for a long time and when I came across the [Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.
 
 <!-- more -->
 
@@ -249,6 +249,6 @@ After making our way through Lamlash we reached the shore again and had an even 
 
 Back in Brodick we obviously had to go back to the local co-op market to get some Arran Blonde and some Arran whiskey to bring back home. With the sun in our faces and our bellies filled with delicious locally made ice cream, we watched the ferry arrive slowly, looked back at Goatfell one last time and embarked on the boat trip back to mainland Scotland.
 
-[isle of arran coastal way]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
+[arran coastal way]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
 [walkhighlands.co.uk]: https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml
 [walking on arran]: https://www.cicerone.co.uk/walking-on-arran-thirdote
