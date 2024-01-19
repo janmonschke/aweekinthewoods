@@ -1,0 +1,1604 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <style>.hikeMap__mapContainer {
+    height: 400px;
+  }
+
+  .leaflet-container a {
+    background-image: none;
+  }
+
+  .leaflet-popup-content h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .hikeMap__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .hikeMap__legend {
+    margin: 0.6rem 0;
+  }
+
+  .hikeMap__legend summary {
+    display: list-item;
+    cursor: pointer;
+  }
+
+  .hikeMap__legend ul {
+    list-style-type: none;
+    margin-left: 0;
+    margin-top: 0.5rem;
+    display: flex;
+  }
+
+  .hikeMap__legend li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem 0.3rem 0.1rem;
+    border-radius: 0.2rem;
+    margin-right: 0.4rem;
+  }
+  .hikeMap__legend li:last-child {
+    margin-right: 0;
+  }
+
+  .hikeMap__legend li:hover:not(.hidden) {
+    background-color: #eee;
+  }
+
+  .hikeMap__legend li.hidden {
+    opacity: 0.5;
+  }
+
+  .hikeMap__legend i {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-size: 32px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+  }
+
+  .hikeMap__legend i.black {
+    background-image: url("/assets/gps-black.svg");
+  }
+  .hikeMap__legend i.blue {
+    background-image: url("/assets/gps-blue.svg");
+  }
+  .hikeMap__legend i.yellow {
+    background-image: url("/assets/gps-yellow.svg");
+  }
+  .hikeMap__legend i.green {
+    background-image: url("/assets/gps-green.svg");
+  }
+  .hikeMap__legend i.red {
+    background-image: url("/assets/gps-red.svg");
+  }
+
+  @media (max-width: 600px) {
+    .hikeMap__legend ul {
+      display: block;
+    }
+  }
+.blogPost__header {
+    text-align: center;
+  }
+
+  .blogPost__title {
+    margin-top: 1.45rem;
+    margin-bottom: 1.45rem;
+  }
+
+  .blogPost__coverImage {
+    margin-bottom: 1.45rem;
+  }
+
+  .blogPost__content iframe {
+    border: 0;
+    height: 400px;
+    margin-bottom: 4px;
+    width: 100%;
+  }
+
+  .blogPost__footer {
+    display: flex;
+  }
+
+  .blogPost__footerText {
+    margin-bottom: 0.1em;
+  }
+
+  .blogPost__footerAuthorImage {
+    margin-right: 0.725em;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    max-width: initial;
+  }
+
+  .blogPost__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0px;
+  }
+
+  .blogPost__navigation li {
+    margin-bottom: 1rem;
+  }
+.header__headerLink {
+    box-shadow: none;
+    text-decoration: none;
+    background-image: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 1.5em;
+  }
+
+  .is-root .header__hikingIcon,
+  .is-root .header__menuBtnIcon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem auto;
+  }
+
+  .header__hikingIcon,
+  .header__menuBtnIcon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem auto;
+  }
+
+  .header__menuBtn {
+    appearance: unset;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -123px;
+  }
+
+  .header__menuBtn:hover {
+    opacity: 0.5;
+  }
+
+  .header__headline {
+    font-size: 1.31951rem;
+    line-height: 2.175rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .is-root .header__headline {
+    font-size: 1.86607rem;
+    line-height: 2.175rem;
+    margin-bottom: 1.45rem;
+    margin-top: 0.29rem;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .js-menu-open .header__menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__closeIcon {
+    display: none;
+  }
+
+  .header__hamburgerIcon {
+    display: block;
+  }
+
+  .js-menu-open .header__closeIcon {
+    display: block;
+  }
+
+  .js-menu-open .header__hamburgerIcon {
+    display: none;
+  }
+
+  .header__menu h5 {
+    margin: 0.5em 0;
+  }
+
+  .header__menu a {
+    background: none;
+  }
+
+  .header__menu a:hover {
+    text-decoration: underline;
+  }
+
+  .header__menuRssIcon {
+    width: 1em;
+    height: 1em;
+    margin: 0 0 -0.2em 0.3em;
+  }
+
+  @media (max-width: 1070px) {
+    .header__menuBtn {
+      right: -82px;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .header__menuBtn {
+      right: -20px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .header__menuBtn {
+      right: -12px;
+    }
+  }
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:125%/1.45 'Quattrocento Sans',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Quattrocento Sans',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;color:hsla(0,0%,0%,0.9);font-family:'Work Sans',sans-serif;font-weight:600;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}ul{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.45rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:0.85rem;line-height:1.45rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}blockquote{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0.90625rem;padding-right:0;padding-top:0;margin-bottom:1.45rem;font-size:1.1487rem;line-height:1.45rem;border-left:0.54375rem solid #1ca086;color:hsla(0,0%,0%,0.65);font-style:italic;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.45rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.45rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.45rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li &gt; ol{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}li &gt; ul{margin-left:1.45rem;margin-bottom:calc(1.45rem / 2);margin-top:calc(1.45rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li &gt; p{margin-bottom:calc(1.45rem / 2);}code{font-size:0.85rem;line-height:1.45rem;}kbd{font-size:0.85rem;line-height:1.45rem;}samp{font-size:0.85rem;line-height:1.45rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96667rem;padding-right:0.96667rem;padding-top:0.725rem;padding-bottom:calc(0.725rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#1ca086;text-decoration:none;text-shadow:.03em 0 #fff,-.03em 0 #fff,0 .03em #fff,0 -.03em #fff,.06em 0 #fff,-.06em 0 #fff,.09em 0 #fff,-.09em 0 #fff,.12em 0 #fff,-.12em 0 #fff,.15em 0 #fff,-.15em 0 #fff;background-image:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, #1ca086 1px, #1ca086 2px, rgba(0, 0, 0, 0) 2px);}a:hover,a:active{text-shadow:none;background-image:none;}h1,h2,h3,h4,h5,h6{margin-top:2.175rem;margin-bottom:0.725rem;}blockquote &gt; :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.45rem;color:hsla(0,0%,0%,0.8);font-style:normal;font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){html{font-size:106.25%;line-height:24.65px;}blockquote{border-left:0.27187rem solid #1ca086;color:hsla(0,0%,0%,0.59);padding-left:0.81563rem;font-style:italic;margin-left:-1.0875rem;margin-right:0;}}h1 a{background-image:none;text-shadow:none;}h2 a{background-image:none;text-shadow:none;}h3 a{background-image:none;text-shadow:none;}
+/* quattrocento-sans-latin-ext-400-normal*/
+  @font-face {
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("/assets/fonts/quattrocento-sans-latin-ext-400-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/quattrocento-sans-all-400-normal.woff") format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+      U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* quattrocento-sans-latin-400-normal*/
+  @font-face {
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url("/assets/fonts/quattrocento-sans-latin-400-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/quattrocento-sans-all-400-normal.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+  /* quattrocento-sans-latin-ext-700-normal*/
+  @font-face {
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("/assets/fonts/quattrocento-sans-latin-ext-700-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/quattrocento-sans-all-700-normal.woff") format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+      U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* quattrocento-sans-latin-700-normal*/
+  @font-face {
+    font-family: "Quattrocento Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url("/assets/fonts/quattrocento-sans-latin-700-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/quattrocento-sans-all-700-normal.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+
+  /* work-sans-vietnamese-600-normal*/
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("/assets/fonts/work-sans-vietnamese-600-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/work-sans-all-600-normal.woff") format("woff");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+      U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* work-sans-latin-ext-600-normal*/
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("/assets/fonts/work-sans-latin-ext-600-normal.woff2")
+        format("woff2"),
+      url("/assets/fonts/work-sans-all-600-normal.woff") format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+      U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* work-sans-latin-600-normal*/
+  @font-face {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url("/assets/fonts/work-sans-latin-600-normal.woff2") format("woff2"),
+      url("/assets/fonts/work-sans-all-600-normal.woff") format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+      U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+      U+2215, U+FEFF, U+FFFD;
+  }
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.base {
+  max-width: 1040px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .base {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .base {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .base {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.hikingPicture__wrapper {
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  margin-left: -100px;
+  margin-right: -100px;
+}
+
+.hikingPicture__bgSpanner {
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  display: block;
+  background: linear-gradient(#cbe6fd, #fff);
+}
+
+.hikingPicture {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  vertical-align: middle;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #000;
+}
+
+.hikingPicture__caption {
+  display: block;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .hikingPicture__wrapper {
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hikingPicture__wrapper {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hikingPicture__wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hikingPictureWrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}</style>
+    <title>Arran Coastal Way | A week in the woods</title>
+    <link rel="preload" as="font" href="/assets/fonts/quattrocento-sans-latin-400-normal.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/quattrocento-sans-latin-ext-400-normal.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/work-sans-latin-600-normal.woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/work-sans-latin-ext-600-normal.woff2" crossorigin="anonymous">
+    <link rel="me" href="https://social.lol/@janmon">
+    <link rel="me" href="https://github.com/janmonschke">
+    <link rel="alternate" type="application/rss+xml" title="A week in the woods RSS feed" href="/rss.xml">
+    <link rel="icon" href="/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="48x48" href="/assets/icons/icon-48x48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/icons/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="/assets/icons/icon-96x96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/icons/icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/icons/icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="/assets/icons/icon-256x256.png">
+    <link rel="apple-touch-icon" sizes="384x384" href="/assets/icons/icon-384x384.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon-512x512.png">
+    <link rel="icon" href="/assets/favicon-32x32.png" type="image/png">
+    <meta charset="utf-8">
+    <meta httpequiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A week in the woods">
+    <meta property="article:author" content="Jan Monschke">
+    <meta name="description" content="
+I had been eyeing another hike in Scotland for a long time and when I came across the [Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.
+
+">
+    <meta property="og:description" content="
+I had been eyeing another hike in Scotland for a long time and when I came across the [Arran Coastal Way], I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.
+
+">
+    
+    
+    <meta property="article:published_time" content="Sun Apr 12 2020 02:00:00 GMT+0200 (Central European Summer Time)">
+    <meta property="og:image" content="https://aweekinthewoods.com/img/hikes/Kt5SW-OhhK-600.jpeg">
+    <meta property="image" content="https://aweekinthewoods.com/img/hikes/Kt5SW-OhhK-600.jpeg">
+  </head>
+
+  <body>
+    <div class="base">
+      <header>
+        <div class="js-header">
+  <a href="/" class="header__headerLink">
+    <img alt aria-hidden src="/assets/icon.svg" class="header__hikingIcon">
+    <button aria-label="Open menu" class="header__menuBtn js-menuBtn">
+      <img alt aria-hidden src="/assets/hamburger.svg" class="header__menuBtnIcon header__hamburgerIcon">
+      <img alt aria-hidden src="/assets/close.svg" class="header__menuBtnIcon hidden header__closeIcon">
+    </button>
+    <h1 class="header__headline">A week in the woods</h1>
+  </a>
+  <nav aria-label="main" class="header__menu">
+    <h5>France</h5>
+    <a href="/france/auvergne">Auvergne</a>
+    <a href="/france/gorges-du-verdon">Gorges du Verdon</a>
+    <h5>Scotland</h5>
+    <a href="/scotland/arran-coastal-way"> Arran Coastal Way </a>
+    <a href="/scotland/west-highland-way">West Highland Way</a>
+    <a href="/about" style="margin-top: 1em"> About </a>
+    <a href="/rss.xml">
+      RSS
+      <i>
+        <img alt aria-hidden src="/assets/rss.svg" class="header__menuRssIcon">
+      </i>
+    </a>
+  </nav>
+</div>
+
+
+
+      </header>
+      <main><article>
+  <header class="blogPost__header">
+    <h1 class="blogPost__title">Arran Coastal Way</h1>
+  </header>
+  <div class="blogPost__coverImage"><span class="hikingPicture__wrapper">
+      <span style="padding-bottom: 48.4%" class="hikingPicture__bgSpanner"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img alt="Arran Coastal Way" loading="eager" decoding="auto" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/gyHMgeSuHj-500.jpeg" width="2000" height="968" class="hikingPicture"></picture>
+    </span>
+  </div>
+  <section class="blogPost__content"><p>I had been eyeing another hike in Scotland for a long time and when I came across the <a href="https://www.walkhighlands.co.uk/arran/arran-coastal-way.shtml">Arran Coastal Way</a>, I was immediately hooked. Arran is described as Scotland in miniature because it has everything that Scotland has to offer but condensed into a small-ish island (mountains, green pastures, shores, deer, puffins, seals, midges...). The seven stages of this long-distance hike circle the entire island along its shores.</p>
+<p>Since some of the stages require a lot of road-walking, I decided to re-route us through the mountains for two of the stages. That way we avoided the roads and had a couple relaxed slack-packing hikes. The island features a regular bus service which came in very handy on our alternative stages and when we wanted to restock our supplies.</p>
+<h2>Map</h2>
+<hike-map path="isle-of-arran-coastal-way.kml">
+  <link rel="stylesheet" href="/assets/css/leaflet-1.9.3.css" async defer>
+  <script src="/assets/js/leaflet-1.9.3.js"></script>
+  <div class="hikeMap__mapContainer"></div>
+  <div class="hikeMap__footer">
+    <div class="hikeMap__legend"></div>
+    <a download href="isle-of-arran-coastal-way.kml" class="hikeMap__download">Download as KML</a>
+  </div>
+</hike-map>
+<h2>Sections</h2>
+<ol>
+<li><a href="#section1">Brodick to Sannox Bay</a> (17km)</li>
+<li><a href="#section2">Sannox Bay to Lochranza</a> (14km)</li>
+<li><a href="#section3">Loch na Davie Glen loop</a> (17km)</li>
+<li><a href="#section4">Coire Fhionn Lochan to Catacol over Meall nan Damh</a> (9km)</li>
+<li><a href="#section5">Blackwaterfoot to Lagg</a> (13km)</li>
+<li><a href="#section6">Lagg to Kildonan 🚌 Whiting Bay to Lamlash</a> (17km)</li>
+<li><a href="#section7">Lamlash to Brodick</a> (11km)</li>
+</ol>
+<h3><a name='section1'></a>Day 1: Brodick to Sannox Bay</h3>
+<p>(17km, 4h30, <a href="https://www.komoot.com/tour/32841362">komoot</a>)</p>
+<p>We started our journey early in the morning in <strong>Glasgow</strong> by hopping on a train to the <strong>Ardrossan Ferry Terminal</strong>. From there we took the ferry to <strong>Brodick</strong>. The entire trip took only 2h and was a scenic one already. Not soon after the ferry leaves the terminal, you can make out the peak of <strong>Goatfell</strong> on Arran. It felt great to stand on the ferry deck with a stiff breeze in our faces, slowly getting closer to the island.</p>
+<p>After the arrival in Brodick we started right away on the path along the coast. It's easy to spot as there are plenty of markers and signs. The first section of the hike gives you two options: A relaxed path along the coast that has several parts that require road-walking, or a path that leads you up Goatfell and then back to the coast with minial road-walking. We opted for the more strenous route up Goatfell.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 53.2%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Beginning of the hike at the Brodick beach" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/M9STcH010i-500.jpeg" width="2000" height="1064"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Beginning of the hike at the Brodick beach</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 49.45%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Looking back towards Brodick" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HnGMVWYFWc-500.jpeg" width="2000" height="989"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Looking back towards Brodick</figcaption>
+      </figure></p>
+<p>The weather was quite...well...Scottish. It was overcast, windy, with slight rain drizzle and the sun peaking out through the clouds from time to time. It was exactly what we signed up for and we enjoyed it. The first kilometers of the hike guide you along the coast over sandy paths, then a golf course and then into the forest that marks the start of the ascent to Goatfell.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 54.300000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Clouds forming around Goatfell" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/XOzG_xIrUv-500.jpeg" width="2000" height="1086"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Clouds forming around Goatfell</figcaption>
+      </figure></p>
+<p>The higher we got up to Goatfell, the weather started to get more and more rugged. Dark clouds were forming around the peak and the wind got very intense. When we reached the saddle of Goatfell we left our backpacks in a secluded spot and started our ascent. That was when the wind picked up even more and we could barely see 2m far. After 15min we decided it would be too dangerous to try to all the way up. The wind was so strong you could lean your full weight into it and you would still tip you over.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 51.800000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Bad view on Goatfell" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/JOmsUpElub-500.jpeg" width="2000" height="1036"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Bad view on Goatfell</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 50.24999999999999%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking down the slippery slabs towards Sannox" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zrTgAHMgY9-500.jpeg" width="2000" height="1005"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking down the slippery slabs towards Sannox</figcaption>
+      </figure></p>
+<p>As soon as we hiked down from the saddle, the weather cleared up and the sun came out. Instead of regretting to not have gone further up, we enjoyed the lush landscape and the smooth descent back to the coast.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 59.25%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Easy path along the coast" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/azzD6BsAtG-500.jpeg" width="2000" height="1185"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Easy path along the coast</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 61.4%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Is this Scottish beach weather? 😅" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zR6Bhhq4C_-500.jpeg" width="2000" height="1228"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Is this Scottish beach weather? 😅</figcaption>
+      </figure></p>
+<p>When we reached the shore we were greeted by rainbows and and easy walk on the road to a picknick site after <strong>Sannox Bay</strong> with plenty of space for all our tents.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 54.949999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Warming up at the campfire" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/em5_npRtGX-500.jpeg" width="2000" height="1099"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Warming up at the campfire</figcaption>
+      </figure></p>
+<h3><a name="section2"></a>Day 2: Sannox Bay to Lochranza</h3>
+<p>(14km, 4h, <a href="https://www.komoot.com/tour/33092169">komoot</a>)</p>
+<p>On day two we continued along the flat coastal path for most of the day. The weather cleared up a bit, it was not raining anymore but still pretty overcast. Joined by two more friends that arrived on the island that morning and came to Sannox by bus, we headed onto this more relaxed section of the hike.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 47.199999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Plenty of walking along the coast on day two" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/IpYqc1aJT8-500.jpeg" width="2000" height="944"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Plenty of walking along the coast on day two</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 49.45%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="So green, and so close to the sea ♥️" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/goAjs2YBCN-500.jpeg" width="2000" height="989"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">So green, and so close to the sea ♥️</figcaption>
+      </figure></p>
+<p>It felt magical walking right next to the coastal line. The sound of the waves, the salty smell, walking on sand and stone beaches. In contrast to the strenous hike the day before, this section felt a lot more relaxed and our legs could recover. The beauty of the landscape already exceeded our expectations and it was only day two.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 57.85%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Plenty of beautiful rock formations along the path" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/d4ilTpHTWI-500.jpeg" width="2000" height="1157"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Plenty of beautiful rock formations along the path</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 53.800000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="The path got pretty rocky from time to time" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/-638Fzengu-500.jpeg" width="2000" height="1076"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">The path got pretty rocky from time to time</figcaption>
+      </figure></p>
+<p>At times the path got very rocky which slowed us down quite a bit. But it all just added to the beauty of this stretch of the path. It felt like we were children playing at the beach, jumping from rock to rock and exploring the caves along the way.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 56.85%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="First of many caves on the Arran Coastal Way" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BueyD2xs-g-500.jpeg" width="2000" height="1137"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">First of many caves on the Arran Coastal Way</figcaption>
+      </figure></p>
+<p>There was not a lot of wildlife to see that day apart from sheep when we were arriving at <strong>Lochranza Bay</strong>. A sweet small village with a small port, castle ruins, and an excellent <strong>whiskey distillery</strong>.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 52.949999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Sheep grazing at the shore" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/8gcGTAVHg9-500.jpeg" width="2000" height="1059"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Sheep grazing at the shore</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.050000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Arriving at Lochranza Bay" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/cetxaDXgAb-500.jpeg" width="2000" height="921"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Arriving at Lochranza Bay</figcaption>
+      </figure></p>
+<p>We set up camp for the next two nights at the <strong>Lochranza Campsite</strong>. The next two official sections on the Arran Coastal Way required a lot of road walking which I wanted to avoid as much as possible. So I planned two alternative day hikes from Lochranza into the mountains and back to the campsite. This not only allowed us to skip the road-walking but we were now also able to experience the beautiful Arran mountains.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 50%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Lochranza Campsite" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UENP2GG2ZT-500.jpeg" width="2000" height="1000"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Lochranza Campsite</figcaption>
+      </figure></p>
+<h3><a name="section3"></a>Day 3: Loch na Davie Glen loop</h3>
+<p>(17km, 5h, <a href="https://www.komoot.com/tour/33092254">komoot</a>)</p>
+<p>The nice thing about staying at Lochranza campsite for two nights is that we were able to pack a light backpack with only the essentials. There is no point in carrying your tent, stove and other equipment through the mountains when you walk in a loop. So we headed out slackpack-style with enough water and food for the day but nothing else. Seeing how light the packs had become all of a sudden, gave us a good impression of how much we would usually carry on our backs.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 49%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="First views into the Glen shortly after the start in Lochranza" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Xy6SW_qIWI-500.jpeg" width="2000" height="980"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">First views into the Glen shortly after the start in Lochranza</figcaption>
+      </figure></p>
+<p>Just south of the whiksey distillery in Lochranza we found an entrance into the Loch na Davie Glen. It's a short ascent into the Glen on a smooth trail. While the weather looked like rain in the morning, it cleared up once we went into the Glen but we could still see the rain clouds looming over the mountains in the distance. We reached <strong>Loch na Davie</strong> after a couple of easy water crossings. It was a slot smaller than we had expected and we almost missed it. It did definitely make for a great location for a snack break.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 48.9%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="View of the mountains from the Glen" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/bktul-vEmB-500.jpeg" width="2000" height="978"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">View of the mountains from the Glen</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 44.75%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Optional climbing opportunities in the Glen" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Lp695KFCu0-500.jpeg" width="2000" height="895"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Optional climbing opportunities in the Glen</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.35%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="No path but typical Scottish mountain vegetation" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zhITH5RJUm-500.jpeg" width="2000" height="927"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">No path but typical Scottish mountain vegetation</figcaption>
+      </figure></p>
+<p>From Loch na Davie we headed deeper into the Glen where we lost the path, or where there was no clear path to continue on. It did not matter to us. We were in an epxploration mode with all the great views and the beautiful typical Scottish mountain vegetation. Which, unless wet, is very pleasant to walk on. Speaking of wet, the rain of the previous days created some very boggy patches on our way to the valley.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 50.4%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Boggy patches in the valley" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/zFgkLv8eDk-500.jpeg" width="2000" height="1008"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Boggy patches in the valley</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.35%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Impressive views all the way to the coast of Catacol" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/Udh353pbwY-500.jpeg" width="2000" height="927"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Impressive views all the way to the coast of Catacol</figcaption>
+      </figure></p>
+<p>The view did get even more spectacular when we turned into the next valley that would bring us to <strong>Catacol</strong>. The mild downwards slope allowed us to see all the way to the shore. At the same time, all clouds disappeared and the strong midday sun came out, making the landscape even more enjoyable. Luckily we came prepared with hats and sunscreen.</p>
+<p>The descent into Catacol was very pleasant and we were hiking along a smaller river for most of the time. A couple of bigger slabs in the water formed a waterfall and the lush and soft meadow righ next to it was the perfect place to rest. A great opportunity to refill water and to soak in the sun.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.800000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Plants at the shore in Catacol" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/k3KUKVVRkl-500.jpeg" width="2000" height="936"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Plants at the shore in Catacol</figcaption>
+      </figure></p>
+<p>After a short break in Catacol, we could decide to either take the bus back to Lochranza or to opt for the old postman's path that also goes from Catacol back to Lochranza through the forest. The lighter packs definitely made this an easy choice. We still had plenty of energy and time. Plus, the weather was just perfect for an extra couple of hours hiking.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.949999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="View back onto Catacol from the postman's path" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/C1U01bBIKn-500.jpeg" width="2000" height="939"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">View back onto Catacol from the postman's path</figcaption>
+      </figure></p>
+<p>For the first two kilometers we kind of regretted to have opted for the more strenous option because the ascent into the forst was definitely not a small one and we had already hiked for 12 km through the mountains. Once we made it all the way, that feeling of regret turned into feeling of accomplishment. Also, the forest protected us well from the intense sun.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.650000000000006%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Castle ruins in Lochranza" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LRx9zNoMX--500.jpeg" width="2000" height="933"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Castle ruins in Lochranza</figcaption>
+      </figure></p>
+<p>It was nice to walk into Lochranza from the other side of the bay and from an elevated view point. The castle ruins and the boats in the bay looked all so lovely and we could not wait to get back to the campsite to prepare a big dinner surround by swarns of midges. We also took the time to resupply a bit. It's pretty straight forward to get by bus from Lochranza to the supermarket in Brodick and back.</p>
+<h3><a name="section4"></a>Day 4: Coire Fhionn Lochan to Catacol over Meall nan Damh</h3>
+<p>(9km, 2h45, <a href="https://www.komoot.com/tour/33164860">komoot</a>)</p>
+<p>We got to the start of this section by <strong>bus from Lochranza campsite</strong> to <strong>Thundergay</strong>. Since the group was up for a more relaxed tour that day, I created a short trip into the mountains along some lochs and a river. The weather could not have been better that day with the sun shining bright from the early morning on.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 48.05%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Starting from Thundergay with the sea in our backs" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MCxJaWY_21-500.jpeg" width="2000" height="961"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Starting from Thundergay with the sea in our backs</figcaption>
+      </figure></p>
+<p>It's a nice hike up <strong>Coire Fhionn Lochan</strong>. After walking through a small settlement, you start the ascent on a gentle slope. It does get a bit rocky at times and you have to walk up a couple of stone stairs which can be slippery when wet. We however, did not think about rain at all. We were happy that the path was winding along a small burn so we could fill up our bottles with fresh water. The sun was burning hard onto us.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 48.8%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Taking a break at Coire Fhionn Lochan" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wLhhqR0i7j-500.jpeg" width="2000" height="976"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Taking a break at Coire Fhionn Lochan</figcaption>
+      </figure></p>
+<p>At the far end of the loch we found a small pebble beach and we took our first snack rest. One of our friends actually carried his very own camping chair all the way up which did make us quite jealous while we sat there, but we also knew that he had to carry that chair for the rest of the entire trip. My trusty Therm-A-Rest Z seat prove to be sufficient as always. 😊</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 52.849999999999994%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Loch in front of Meall nan Damh" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/MTogjEtIDJ-500.jpeg" width="2000" height="1057"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Loch in front of Meall nan Damh</figcaption>
+      </figure></p>
+<p>After the break we continued further up the mountains, our ultimate goal being an ascent of <strong>Meall nan Damh</strong>. At that point there was no actual path anymore and we walked in sometimes knee-deep bushes. The slope was not too much of a problem but the ground made it rather complex to get up.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 54.65%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="The higher we walked, the better was the view of mountains" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/e3XzKsUhvB-500.jpeg" width="2000" height="1093"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">The higher we walked, the better was the view of mountains</figcaption>
+      </figure></p>
+<p>Closer to the top, the vegetation was less dense and we walked up bigger slabs of rock. Occassionally turning around to enjoy the view of the sea and the mountains in the far distance.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 52.300000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Enjoying the view from Meall nan Damh" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/GuizYDlqVG-500.jpeg" width="2000" height="1046"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Enjoying the view from Meall nan Damh</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 42.8%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Stretching on top of the mountain after a strenous ascent" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/FTPi2x-mj_-500.jpeg" width="2000" height="856"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Stretching on top of the mountain after a strenous ascent</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 53.449999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Mountain spotting" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BJ_e_R9ilg-500.jpeg" width="2000" height="1069"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Mountain spotting</figcaption>
+      </figure></p>
+<p>The views on the top were amazing and 100% worth the effort to get up. You can see the bigger mountains of the island, you can observe boats in the sea and get a feeling of the gigantic valleys just below. We found it made for the perfect lunch spot before we would start the descent back to <strong>Catacol Bay</strong>.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.550000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Starting the long descent down into Catacol Bay" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/krYe3TxlUM-500.jpeg" width="2000" height="931"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Starting the long descent down into Catacol Bay</figcaption>
+      </figure></p>
+<p>The descent proved to be even more awkward than the ascent with more dense vegetation and the slipperiness of it made it hard to stay on course. We were also not sure what the best path would be, since there were obviously no markings. After some semi-scientific discusissions on how to read elevation maps and looking at the rather deep slope we agreed on a very direct path and made it back down through a small forest that ended at a small river, right next to the street.</p>
+<p>Midway we had to fix up a friend who slipped and ripped open her skin on some thorns. Luckily we brought our iodine tincture and enough plasters. This was definitely a good reminder to always think of taking the basic first aid items with you.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.650000000000006%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Taking one last look at Meall nan Damh before hopping on the bus" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/4k1rJiF8nX-500.jpeg" width="2000" height="933"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Taking one last look at Meall nan Damh before hopping on the bus</figcaption>
+      </figure></p>
+<p>Did I already mention, that the bus system in the island is amazing? The buses are very modern, where always on time for us and they are super convenient since the drivers will let you out at pretty much any spot along their route (and they might pick you up from there as well, we haven't tried it though).</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 59%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Arran Distillery offers a great, almost hands-on tour in Lochranza" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/mrnYpxLc8S-500.jpeg" width="2000" height="1180"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Arran Distillery offers a great, almost hands-on tour in Lochranza</figcaption>
+      </figure></p>
+<p>We had a lot of time for the rest fo the afternoon so we got onto the tour at the <strong>Arran Distillery</strong>. It was the best distillery tour that we had ever taken. The tour felt very intimate, the guide was happy to answer all questions and they gave a great insight in the entire process (including opening the tanks at different stages of the process).</p>
+<p>With the lightness of a couple drams of Arran whiskey in our bodies, we opted to play a couple of relaxed rounds of golf at the Lochranza campsite. We performed pretty well on all holes which is very unusual for us but we quickly agreed it was all due to the whiskey doping 😉</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 60.199999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Relaxing with some golf at Lochranza campsite" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/KZyYnZaV5A-500.jpeg" width="2000" height="1204"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Relaxing with some golf at Lochranza campsite</figcaption>
+      </figure></p>
+<h3><a name="section5"></a>Day 5: Blackwaterfoot to Lagg</h3>
+<p>(13km, 3h45, <a href="https://www.komoot.com/tour/33275726">komoot</a>)</p>
+<p>After two days off the actual coastal way, it was time for us to get back on track. We hopped on an early morning bus from Lochranza to <strong>Blackwaterfoot</strong> which is the start of the regular 5th section of this hike. The path starts close to the shore on soft and sandy grass that quickly turns more rocky and bouldery. While it did slow us down more than we wanted, it was a great opportunity to enjoy the breezy coastal winds and to observe the wildlife.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 46.45%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Rocky path along the shore after Blackwaterfoot" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/wwp3mMXba9-500.jpeg" width="2000" height="929"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Rocky path along the shore after Blackwaterfoot</figcaption>
+      </figure></p>
+<p>Halfway, the rocky path turns into a proper beach walk and we could observe plenty of seals that were bathing in the sun not far from the shore. The hot weather made this section quite challenging because we had a hard time finding water sources. The streams we found looked like they were coming from farmland and are therefore not save to drink from. Definitely something to pay attention to when walking this section.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 44.75%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking along the beach" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/tW3Yq1ITT_-500.jpeg" width="2000" height="895"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking along the beach</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 43.1%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Seals chilling in the sun not far from the shore" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ULTZ_WL-eQ-500.jpeg" width="2000" height="862"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Seals chilling in the sun not far from the shore</figcaption>
+      </figure></p>
+<p>The beach part of this section is optional and I think not actually part of the Arran Coastal Way. The official path turns inland before the beach part starts and you would continue along the road. As for the secions before, we opted to take the path without road walking. That definitely made this section more strenous than it is supposed to be but you are rewarded with walking on a beach next to the seals.</p>
+<p>For the last couple of kilometers we left the beach to make it to the <strong>Lagg Hotel</strong> where the owners allowed us to refill our water bottles. We took a longer break there, sitting in the sun, tasting some of the local beers (can recommend the Arran blonde). From there it was just a short walk back to the shore where we were scouting for campsites next to the water.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 66.64999999999999%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Scouting for a campsite (Ailsa Craig in the background)" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/BAZb_NZVJq-500.jpeg" width="2000" height="1333"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Scouting for a campsite (Ailsa Craig in the background)</figcaption>
+      </figure></p>
+<p>We pitched our tents on the grass just before the beach after talking to the owners and getting their permission. It's hard to put into words how magical it was to stay right next to the shore, enjoy a long dinner on the stone beach and talking until very late into the night &lt;3</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 51.65%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Preparing dinner at the beach (more sneaky Ailsa Craig in the back)" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/ZGtxGXqxYZ-500.jpeg" width="2000" height="1033"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Preparing dinner at the beach (more sneaky Ailsa Craig in the back)</figcaption>
+      </figure></p>
+<h3><a name="section6"></a>Day 6: Lagg to Kildonan 🚌 Whiting Bay to Lamlash</h3>
+<p>(17km, 4h, <a href="https://www.komoot.com/tour/33339809">komoot #1</a> <a href="https://www.komoot.com/tour/33374295">komoot #2</a>)</p>
+<p>The morning of the 6th day we could take it super easy because we had to time the rest of the day to the tides. We opted for the route along the coast to get to see <strong>Black Cave</strong> which is only accessible at low tide. A long breakfast of porridge with banana and dark chocolate later, we headed out to hike along the beautiful beaches.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 45.5%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking on sand beach" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/EJDTkPybnC-500.jpeg" width="2000" height="910"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking on sand beach</figcaption>
+      </figure></p>
+<p>This section is described as the most challenging one of the entire hike and it did live up to its expectations. It starts off with long walks on sand which is quite exhausting by itself. Then the path turns into a sea of boulders that we had to wal on for the next couple of kilometers. If you don't feel like taking this route, you can opt for a route more inland along the street.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 52.300000000000004%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking on rocks with backpacks" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/LHxBaQpWn_-500.jpeg" width="2000" height="1046"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking on rocks with backpacks</figcaption>
+      </figure></p>
+<p>It is impossible to miss Black Cave along the way. Its massive opening and the rock formations inside make for an impressive sight. We took the opportunity to explore the cave a bit, rest on the stones in front, observe the seals and bask in the sun ourselves. We knew we had to continue on those awkward boulders for quite a bit longer so we made sure to take a long enough rest.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-1000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 118.6%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-1000.avif 1000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-1000.webp 1000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-1000.jpeg 1000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="View from inside of Black Cave" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/AHzrsI0KEs-500.jpeg" width="1000" height="1186"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">View from inside of Black Cave</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 45.5%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="These rocks are only accessible when it's low tide" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/a8dYiG1w-h-500.jpeg" width="2000" height="910"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">These rocks are only accessible when it's low tide</figcaption>
+      </figure></p>
+<p>Up until <strong>Kildonan</strong> the path consists pretty much only of large boulders and it got harder and harder to walk on them with our big backpacks. We were quite happy when we could see the village in the far and the path became easier to walk on. The sun was very intense again and we were too exhausted already so we decided to cut a bit of the coastal walking and take the bus to <strong>Whiting Bay</strong> from Kildonan. That also gave us the chance to rest a bit and enjoy the sea. It's a vacation after all ☀️.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 54.15%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Best place to wait for the bus to Whiting Bay" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/UtO-gj8DNw-500.jpeg" width="2000" height="1083"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Best place to wait for the bus to Whiting Bay</figcaption>
+      </figure></p>
+<p>In Whiting Bay we got some water from the amazing staff at the <strong>Coffee Pot</strong>, a beautiful tiny café next to the shore. They have plenty of delicious little snacks and I highly recommend stopping there. Whiting Bay was not our final destination for the day and we continued along the inland route towards <strong>Lamlash</strong>. The inland route to Lamlash is one of the two options at this point. The other one is the costal path. We went with the inland route because it promised views of waterfalls in deep forests.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 47.55%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking through the forest again" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/F3mjbh1te2-500.jpeg" width="2000" height="951"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking through the forest again</figcaption>
+      </figure></p>
+<p>The forest route was definitely the better choice that day as it protected us from the very intense sun (around 30°C that day) and there were plenty of sources for very refreshing water. After a short but intense ascend along the waterfalls the path got more easy and the elevation opened up great views onto <strong>Holy Isle</strong>.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 39.7%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Holy Isle" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/sBgw3Z5eRg-500.jpeg" width="2000" height="794"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Holy Isle</figcaption>
+      </figure></p>
+<p>The slow descend into Lamlash felt like the perfect relaxing final stretch for the day and we found a perfect green patch to pitch all our tents just before Lamlash. The ground was nice and soft and there was still plenty of sun in the evening. Once the sun was gone however, the midges came out in hordes but we had already started prearing dinner so it was too late to escape into a potentially less-infested spot.</p>
+<h3><a name="section7"></a>Day 7: Lamlash to Brodick</h3>
+<p>(11km, 2h30, <a href="https://www.komoot.com/tour/33447990">komoot</a>)</p>
+<p>We rose early and quietly so we would not wake up the darn midges in the morning and enjoyed our breakfast at a nearby road in peace. 🙅‍♂️🦟 This section is only 11km of mostly easy walks next to the shore and through some fields before reaching the Brodick ferry terminal.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 49.05%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Walking along the shore with Goatfell in the back" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/03Vi91s-dM-500.jpeg" width="2000" height="981"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Walking along the shore with Goatfell in the back</figcaption>
+      </figure></p>
+<p>After making our way through Lamlash we reached the shore again and had an even better view of Holy Island than the day before. The day started off quite a bit colder than the previous days and the breeze from the sea did not feel as refreshing either. A couple kilometers in, the sun made it through the clouds again as if it wanted to have one last amazing day of walking on the island.</p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 45.15%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="More easy grass walking" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/HxnVAVQSmQ-500.jpeg" width="2000" height="903"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">More easy grass walking</figcaption>
+      </figure></p>
+<p>
+      <figure>
+        
+      <a href="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-2000.jpeg" target="_blank">
+        
+    <span class="hikingPicture__wrapper">
+      <span class="hikingPicture__bgSpanner" style="padding-bottom: 47.699999999999996%;"></span>
+      <picture><source type="image/avif" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-500.avif 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1000.avif 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1500.avif 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-2000.avif 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/webp" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-500.webp 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1000.webp 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1500.webp 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-2000.webp 2000w" sizes="(max-width: 1000px), 100vw"><source type="image/jpeg" srcset="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-500.jpeg 500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1000.jpeg 1000w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-1500.jpeg 1500w, /img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-2000.jpeg 2000w" sizes="(max-width: 1000px), 100vw"><img class="hikingPicture" loading="lazy" decoding="async" alt="Brodick Ferry Terminal in sight" src="/img/hikes/scotland/arran-coastal-way/isle-of-arran-coastal-way/P2OdfXkZBd-500.jpeg" width="2000" height="954"></picture>
+    </span>
+  
+      </a>
+    
+        <figcaption class="hikingPicture__caption">Brodick Ferry Terminal in sight</figcaption>
+      </figure></p>
+<p>Back in Brodick we obviously had to go back to the local co-op market to get some Arran Blonde and some Arran whiskey to bring back home. With the sun in our faces and our bellies filled with delicious locally made ice cream, we watched the ferry arrive slowly, looked back at Goatfell one last time and embarked on the boat trip back to mainland Scotland.</p>
+</section>
+</article>
+<footer>
+  <p>
+    Published on <span>Sun Apr 12 2020</span>
+  </p>
+  <nav>
+    <h4>More hiking adventures:</h4>
+    <ul class="blogPost__navigation">
+      <li>
+        <a href="/france/gorges-du-verdon/" rel="prev">← <span>Hiking into the Gorges du Verdon</span></a>
+      </li>
+      <li>
+        <a href="/france/auvergne/" rel="next"><span>Mountain hiking in the Auvergne (GR400)</span> →</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="blogPost__footer">
+    <picture><source type="image/avif" srcset="/img/AvyWncVxZ4-80.avif 80w, /img/AvyWncVxZ4-160.avif 160w" sizes="100vw"><source type="image/webp" srcset="/img/AvyWncVxZ4-80.webp 80w, /img/AvyWncVxZ4-160.webp 160w" sizes="100vw"><source type="image/jpeg" srcset="/img/AvyWncVxZ4-80.jpeg 80w, /img/AvyWncVxZ4-160.jpeg 160w" sizes="100vw"><img loading="lazy" decoding="async" src="/img/AvyWncVxZ4-80.jpeg" alt="Jan Monschke" width="160" height="160" class="blogPost__footerAuthorImage"></picture>
+    <p>
+      Written by <strong>Jan Monschke</strong>, an avid hiker living
+      in Berlin, which is way too far away from the mountains. You can find his
+      personal blog at
+      <a href="https://janmonschke.com" target="_blank"> janmonschke.com </a>
+      and follow him on
+      <a href="https://social.lol/@janmon" target="_blank" rel="me">
+        🐘 Mastodon
+      </a>
+      .
+    </p>
+  </div>
+</footer>
+
+
+</main>
+      <footer>
+        <p>
+          <small>Licenses:
+            <a href="https://thenounproject.com/icon/rss-2146954/" rel="noreferrer" target="_blank">RSS icon</a>
+            created by Adrien Coquet,
+            <a href="https://thenounproject.com/icon/hiking-2018469/" rel="noreferrer" target="_blank">Hiking icon</a>
+            created by Made by Made,
+            <a href="https://thenounproject.com/icon/hamburger-2235852/" rel="noreferrer" target="_blank">Hamburger icon</a>
+            and
+            <a href="https://thenounproject.com/icon/hamburger-2235852/" rel="noreferrer" target="_blank">Close icon</a>
+            created by Marie Van den Broeck.
+          </small>
+        </p>
+      </footer>
+    </div>
+    <style></style>
+    <script>const headerEl = document.querySelector(".js-header");
+  const menuBtn = document.querySelector(".js-menuBtn");
+
+  menuBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    const menuOpen = headerEl.classList.toggle('js-menu-open');
+    const menuLabel = menuOpen ? "Close menu" : "Open menu";
+    menuBtn.setAttribute("aria-label", menuLabel);
+  });</script>
+    <script type="module">const iconSizes = {
+    iconSize: [48, 48],
+    iconAnchor: [24, 24],
+    popupAnchor: [0, -24],
+  };
+
+  const gpsIcons = {
+    blue: L.icon({
+      iconUrl: "/assets/gps-blue.svg",
+      ...iconSizes,
+    }),
+    black: L.icon({
+      iconUrl: "/assets/gps-black.svg",
+      ...iconSizes,
+    }),
+    red: L.icon({
+      iconUrl: "/assets/gps-red.svg",
+      ...iconSizes,
+    }),
+    green: L.icon({
+      iconUrl: "/assets/gps-green.svg",
+      ...iconSizes,
+    }),
+    yellow: L.icon({
+      iconUrl: "/assets/gps-yellow.svg",
+      ...iconSizes,
+    }),
+  };
+
+  /**
+   * @typedef {Object} Coordinate
+   * @property {number} lat
+   * @property {number} lng
+   */
+
+  /**
+   * @param {string} textContent
+   * @return {Coordinate[]}
+   */
+  function parseCoordinates(textContent) {
+    return textContent.split("\n").reduce((coordinates, coordPairText) => {
+      coordPairText = coordPairText.trim();
+
+      if (coordPairText) {
+        const [lng, lat] = coordPairText.split(",");
+        coordinates.push({ lat, lng });
+      }
+      return coordinates;
+    }, []);
+  }
+
+  /**
+   * @typedef {Object} PlaceMark
+   * @property {string} name
+   * @property {string?} description
+   * @property {Coordinate[]} coordinates
+   */
+
+  /**
+   * @param {Element} element
+   * @return PlaceMark
+   */
+  function parsePlaceMark(element) {
+    const point = element.querySelector("Point");
+    const LineString = element.querySelector("LineString");
+    const name = element.querySelector("name").textContent;
+    const description = element.querySelector("description");
+    const coordinates = point
+      ? point.querySelector("coordinates").textContent
+      : LineString.querySelector("coordinates").textContent;
+
+    return {
+      name,
+      description: description ? description.textContent : undefined,
+      coordinates: parseCoordinates(coordinates),
+    };
+  }
+
+  /**
+   * @typedef {Object} Folder
+   * @property {string} name
+   * @property {string?} iconColor
+   * @property {PlaceMark[]} placemarks
+   */
+
+  /**
+   * @typedef {Object} ParsedKml
+   * @property {Folder[]} folders
+   */
+
+  /**
+   * @param {Document} doc
+   * @return {ParsedKml}
+   */
+  function parseKMLDoc(doc) {
+    let folders = [];
+    for (let folder of doc.querySelectorAll("Folder")) {
+      const name = folder.querySelector("name").textContent;
+      const iconColor = folder.querySelector("iconColor")?.textContent;
+      const placemarks = Array.from(folder.querySelectorAll("Placemark")).map(
+        parsePlaceMark
+      );
+      folders.push({
+        name,
+        iconColor,
+        placemarks,
+      });
+    }
+
+    return { folders };
+  }
+
+  /**
+   * @param {ParsedKml} parsedKml
+   */
+  function addKmlToMap(parsedKml, map) {
+    const bounds = L.latLngBounds();
+    const markers = {};
+    parsedKml.folders.forEach((folder) => {
+      folder.placemarks.forEach((placemark) => {
+        if (placemark.coordinates.length > 1) {
+          const line = L.polyline(placemark.coordinates, {
+            color: "royalblue",
+          })
+            .addTo(map)
+            .bindPopup(
+              "<h2>" + placemark.name + "</h2>" + (placemark.description || "")
+            );
+          bounds.extend(line.getBounds());
+        } else {
+          const iconColor = folder.iconColor || "black";
+          const icon = gpsIcons[iconColor];
+          const marker = L.marker(placemark.coordinates[0], { icon });
+          marker
+            .addTo(map)
+            .bindPopup(
+              "<h2>" + placemark.name + "</h2>" + (placemark.description || "")
+            );
+
+          if (markers[iconColor]) {
+            markers[iconColor].push(marker);
+          } else {
+            markers[iconColor] = [marker];
+          }
+        }
+      });
+    });
+    map.fitBounds(bounds);
+    return markers;
+  }
+
+  window.customElements.define(
+    "hike-map",
+    class extends HTMLElement {
+      connectedCallback() {
+        // Make sure to serve the correct icons
+        delete L.Icon.Default.prototype._getIconUrl;
+        L.Icon.Default.mergeOptions({
+          iconRetinaUrl: "/assets/marker-icon-2x.png",
+          iconUrl: "/assets/marker-icon.png",
+          shadowUrl: "/assets/marker-shadow.png",
+        });
+        const hikeMapContainer = this.querySelector(".hikeMap__mapContainer");
+        const legendContainer = this.querySelector(".hikeMap__legend");
+        const downloadLink = this.querySelector(".hikeMap__download");
+
+        const mapPath = downloadLink.getAttribute("href");
+
+        const map = L.map(hikeMapContainer);
+
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        fetch(mapPath)
+          .then((res) => res.text())
+          .then((kmltext) => {
+            // Create new kml overlay
+            const parser = new DOMParser();
+            const kml = parser.parseFromString(kmltext, "text/xml");
+
+            const parsedKml = parseKMLDoc(kml);
+            const markers = addKmlToMap(parsedKml, map);
+            window.markers = markers;
+            window.map = map;
+
+            // add the legend
+            const legendDetails = document.createElement("details");
+
+            const legendSummary = document.createElement("summary");
+            legendSummary.textContent = "Legend";
+            legendDetails.appendChild(legendSummary);
+
+            const legendList = document.createElement("ul");
+
+            parsedKml.folders.forEach((folder) => {
+              if (!folder.iconColor) {
+                return;
+              }
+              const legendListItem = document.createElement("li");
+              legendListItem.setAttribute("role", "button");
+              const icon = document.createElement("i");
+              icon.classList.add("icon", folder.iconColor);
+              legendListItem.appendChild(icon);
+              legendListItem.append(folder.name);
+              legendList.appendChild(legendListItem);
+
+              legendListItem.addEventListener("click", () => {
+                if (legendListItem.classList.contains("hidden")) {
+                  markers[folder.iconColor].forEach((marker) => {
+                    marker.addTo(map);
+                  });
+                  legendListItem.classList.remove("hidden");
+                } else {
+                  markers[folder.iconColor].forEach((marker) => {
+                    marker.remove();
+                  });
+                  legendListItem.classList.add("hidden");
+                }
+              });
+            });
+            legendDetails.appendChild(legendList);
+
+            legendContainer.appendChild(legendDetails);
+          })
+          .catch((e) => console.error(e));
+      }
+    }
+  );</script>
+    <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+  
+
+
+
+
+
+</body>
+</html>
