@@ -16,7 +16,7 @@ const baseImageOptions = {
   ...imageOptions,
   urlPath: "/img/hikes",
   outputDir: path.join("_site", "img", "hikes"),
-  widths: [500, 1000, 1500, 2000],
+  widths: [500, 1000, 1500],
 };
 
 module.exports = function renderHikingPicture({

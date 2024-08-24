@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
   });
 
   const imageOptions = {
-    formats: ["avif", "webp", "jpeg"],
+    formats: ["avif", "jpeg"],
 
     urlPath: "/img",
 
@@ -37,9 +37,6 @@ module.exports = function (eleventyConfig) {
       decoding: "async",
     },
 
-    sharpWebpOptions: {
-      quality: 80,
-    },
     sharpJpegOptions: {
       quality: 90,
     },
@@ -51,7 +48,7 @@ module.exports = function (eleventyConfig) {
   const hikingImageOptions = {
     urlPath: "/img/hikes",
     outputDir: path.join("_site", "img", "hikes"),
-    widths: [500, 1000, 1500, 2000],
+    widths: [500, 1000, 1500],
   };
 
   const hikingImageAttributes = {

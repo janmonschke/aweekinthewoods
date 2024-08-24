@@ -1,11 +1,8 @@
 module.exports = {
-  formats: ["avif", "webp", "jpeg"],
+  formats: ["avif", "jpeg"],
 
   urlPath: "/img",
 
-  sharpWebpOptions: {
-    quality: 80,
-  },
   sharpJpegOptions: {
     quality: 90,
   },
